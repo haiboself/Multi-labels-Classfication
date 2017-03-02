@@ -1,0 +1,1594 @@
+以下选项中合法的用户标识符是(B)A.long B._2Test C.3Dmax D.U.dat
+下列四组选项中.正确的C语言标识符是(C)A.%x B.a+b C.a123 D.123
+下列C语言标识符中合法的变量名是(B)A.2e3 B.you C.*y D.float
+C语言中的简单数据类型包括(D)A.整型 实型 逻辑型 B.整型 实型 逻辑型 字符型 C.整型 字符型 逻辑型 D.整型 实型 字符型
+下列表达式中.是正确的C语言字符常量的是(D)A."x" B.e3 C."COMPUTER" D.#
+在下列表达式中.属于字符型常量的是(B)A.A B.a C."A" D.b
+以下选项中合法的字符常量是(B)A."B" B.\n C.68 D.E
+下面字符常量表示错误的是(D)A.a B. C.\n D."\n"
+已定义c为字符型变量.则下列语句中正确的是(C)A.c=97 B.c="97" C.c=a D.c="a"
+已知ch是字符型变量.不正确的赋值语句是(A)A.ch=a+b; B.ch=\0; C.ch=7; D.ch=;;
+在C语言中.字符型数据所占的内存空间是(C)A.2字节 B.4字节 C.1字节 D.由用户自定义
+若int类型数据占2个字节,则unsigned int类型数据的取值范围是(B)A.0～255 B.0～65535 C.-32768～32767 D.-256～255
+下列四组选项中.均是不合法的用户标识符的选项是(B)A.W P_0 do B.b-a goto int C.float la0 _A D.-123 abc TEMP
+下面不正确的字符常量是(A)A.“c” B.‘\\’’ C.‘’ D.‘K’
+设C语言中.一个int型数据在内存中占2个字节.则unsigned int 型数据的取值范围为(C)A.0～255 B.0～32767 C.0～65535 D.0～2147483647
+若有以下类型说明语句：char a;int b;float c;double d;则表达式a*b+d-c的结果类型为(D)A.float B.char C.int D.double
+若有以下类型说明语句：char w;int x;float y;double z;则表达式w-x*y/z的结果的类型为(D)A.float B.char C.int D.double
+C语言中运算对象必须是整型的运算符是(A)A.%= B./ C.= D.<=
+在C语言程序中.表达式8/5的结果是(B)A.1.6 B.1 C.3 D.0
+设x为int型变量,则执行以下语句x=10;x+=x;后,x的值为(B)A.10 B.20 C.40 D.30
+在C语言程序中.表达式5%2的结果是(C)A.2.5 B.2 C.1 D.3
+C语言中.关系表达式和逻辑表达式的值是(B)A.0 B.0或1 C.1 D.T或F
+设a,b和c都是int型变量.且a=3,b=4,c=5,则下面表达式中.值为0的表达式是(D)A.a&&b B.a<=b C.a||b+c&&b-c D.!((a<b)&&!c||1)
+下面表达式的值为4的是(D)A.11/3 B.11.0/3 C.(float)11/3 D.(int)(11.0/3+0.5)
+下列关于C语言的叙述错误的是(A)A.大写字母和小写字母的意义相同 B.不同类型的变量可以在一个表达式中 C.在赋值表达式中等号(=)左边的变量和右边的值可以是不同类型 D.同一个运算符号在不同的场合可以有不同的含义
+以下运算符中优先级最高的运算符是(B)A.&& B.++ C.+= D.!=
+若有语句int a=1,b; double y=2.3; b=(int)y; 则b的值为(B)A.3 B.2 C.1 D.2.3
+设intx=0, y=1; 表达式(x||y)的值是(B)A.0 B.1 C.2 D.-1
+以下运算符中优先级最低的是(D)A.&& B.& C.|| D.|
+若有运算符<<,sizeof,^,&=则他们按优先级由高到低的正确排列次序是(C)A.sizeof,&=,<<,^ B.sizeof,<<,^,&= C.^,<<,sizeof,&= D.<<,^,&=,sizeof
+若x=2,y=3,则x&y的结果是(B)A.0 B.2 C.3 D.5
+判断char型变量ch是否为大写字母的正确表达式是(C)A.‘A’<=ch<=‘Z’ B.(ch>=‘A’)&(ch<=‘Z’) C.(ch>=‘A’)&&(ch<=‘Z’) D.(‘A’<= ch)AND(‘Z’>= ch)
+若希望当A的值为奇数时.表达式的值为“真”.A的值为偶数时.表达式的值为“假”。则以下不能满足要求的表达式是(C)A.A%2==1 B.!(A%2==0) C.!(A%2) D.A%2
+设有：int a=1,b=2,c=3,d=4,m=2,n=2;执行(m=a>b)&&(n=c>d)后n的值为(B)A.1 B.2 C.3 D.4
+以下程序main() { int a,b,d=241; a=d/100%9;2%9余2 b=(-1)&&(-1); printf(“%d,%d”,a,b); }的运行结果是(B)A.6,1 B.2,1 C.6,0 D.2,0
+设以下变量均为int类型.则值不等于7的表达式是(C)A.(x=y=6,x+y,x+1) B.(x=y=6,x+y,y+1) C.(x=6,x+1,y=6,x+y) D.(y=6,y+1,x=y,x+1)
+以下叙述不正确的是(D)A.在C程序中.逗号运算符的优先级最低 B.在C程序中.MAX和max是两个不同的变量 C.若a和b类型相同.在计算了赋值表达式a=b后.b中的值将放入a中.而b中的值不变 D.当从键盘输入数据时.对于整型变量只能输入整型数值.对于实型变量只能输入实型数值
+设有说明：char w; int x; float y; double z;则表达式w*x+z-y值的数据类型为(D)A.float B.char C.int D.double
+已知：(设整型2字节.字符型1字节.浮点型4字节)struct{ int i;char c;float a;}test;则sizeof(test)的值是(D)A.4 B.5 C.6 D.7
+表示关系x<=y<=z的c语言表达式为(A)A.(x<=y)&&(y<=z) B.(x<=y.AND(y<=z) C.(x<=y<=z) D.(x<=y)&(y<=z)
+能正确表示逻辑关系："a≥=10或a≤0"的C语言表达式是(D)A.a>=10ora<=0 B.a>=0|a<=10 C.a>=10&&a<=0 D.a>=10‖a<=0
+为表示逻辑表达式79<X<90,应使用的C语言表达式是(A)A.( X>79 )&&( X<90 ) B.( X>79 )!=( X<90 ) C.79<X<90 D.(X>79 )||( X<90 )
+设有语句"int a=2,b=3,c=-2,d=2;",则逻辑表达式"a>0&&b&&c<0&&d>0"的值是(A)A.1 B.0 C.-1 D.出错
+若有以下说明语句：struct  student{ int num;char name[ ];float score;stu;则下面的叙述不正确的是(D)A.struct是结构体类型的关键字 B.struct student 是用户定义的结构体类型 C.num, score都是结构体成员名 D.stu是用户定义的结构体类型名
+若有以下说明语句：struct  date{ int year;   int month;   int day;  }brithday;则下面的叙述不正确的是(C)A.struct是声明结构体类型时用的关键字 B.struct date 是用户定义的结构体类型名 C.brithday是用户定义的结构体类型名 D.year,day 都是结构体成员名
+下面程序struct KeyWord{ charKey[20];intID; }kw[]={"void",1,"char",2,"int",3,"float",4,"double",5};main(){ printf("%c,%d\n",kw[3].Key[0],kw[3].ID.;}的运行结果是(C)A.i,3 B.n,3 C.f,4 D.l,4
+以下对结构  struct student{ int age;int num;}stu1,*p;p=&stu1;变量stul中成员age的非法引用是(B)A.stu1.age B.student.age C.p->age D.(*p).age
+有如下定义struct person{char  name[9]; int age;};struct person class[10]={"Tom",17,"John",19,"Susan",18,"Adam",16,};根据上述定义.能输出字母A的语句是(B)A.printf("%c\n",class[3].name); B.printf("%c\n",class[3].name[0]); C.printf("%c\n",class[3].name[1]); D.printf("%c\n",class[
+存放100个学生的数据.包括学号.姓名.成绩在如下的定义中.不正确的是(B)A.struct student {int sno; char name[20]; float score;} stu[100]; B.struct student stu[100] {int sno; char name[20]; float score}; C.struct{ int sno; char name[20];float score;} stu[100]; D.struct student {int sno; ch
+设有定义语句"struct {int x; int y;} d[2]={{1,3},{2,7}};"则"printf("%d\n",d[0].y/d[0].x*d[1].x);"输出的是(D)A.0 B.1 C.3 D.6
+已知struct  sk {int a;  float b;}data, *p;若有p=&data.则对data中的成员a的正确引用是(C)A.(*p).data.a B.p->data.a C.(*p).a D.p.data.a
+C语言结构体类型变量在程序执行期间(A)A.所有成员一直驻留在内存中 B.只有一个成员驻留在内存中 C.部分成员驻留在内存中 D.没有成员驻留在内存中
+下面程序main() { struct cmplx{int x; int y; }cnum[2]={1,3,2,7}; printf("%d\n",cnum[0].y/cnum[0].x*cnum[1].x); }的运行结果是(D)A.0 B.1 C.3 D.6
+下面对typedef的叙述中不正确的是(B)A.用typedef可以定义各种类型名.但不能用来定义变量 B.用typedef可以增加新类型 C.用typedef只是将已存在的类型用一个新的标识符来代表 D.使用typedef有利于程序的通用和移植
+以下scanf函数调用语句中对结构体变量成员 struct pupil {char name[20]; int age; int sex; }pup[5],*p; p=pup;的不正确引用是(B)A.scanf("%s",pup[0].name); B.scanf("%d",&pup[0].age); C.scanf("%d",&(p->sex)); D.scanf("%d",p->age);
+根据下面的定义.struct person{charname[9];intage;}; structpersonclass[5]={"John",17,"Paul",19,"Mary",18,"Adam",16}; 能输出Mary的语句是(B)A.printf("%s\n",class[1].name); B.printf("%s\n",class[2].name);C.printf("%s\n",class[3].name); D.printf("%s\n",class[0].name);
+定义以下结构体数组struct date{intyear;intmonth;intday;};structs{structdatebirthday;charname[20];}x[4]={{2008,10,1,"guangzhou"},{2009,12,25,"Tianjin"}};语句printf("%s,%d,%d,%d",x[0].name,x[1].birthday.year);的输出结果为(A)A.guangzhou,2009 B.guangzhou,2008 C.Tianjin,2008 D.
+定义以下结构体数组struct{ intnum; charname[10]; }x[3]={1,"china",2,"USA",3,"England"}; 语句printf("\n%d,%s",x[1].num,x[2].name)的输出结果为(D)A.2,USA B.3,England C.1,china D.2,England
+定义以下结构体数组struct date{ intyear;intmonth; }; structs{ structdatebirth;charname[20]; }x[4]={{2008,8,"hangzhou"},{2009,3,"Tianjin"}}; 语句printf("%c,%d",x[1].name[1],x[1].birth.year);的输出结果为(C)A.a,2008 B.hangzhou,2008 C.i,2009 D.Tianjin,2009
+定义以下结构体类型struct s{ inta;charb;floatf;}; 则语句printf("%d",sizeof(structs))的输出结果为(B)A.3B.7C.6D.4
+当定义一个结构体变量时.系统为它分配的内存空间是(D)A.结构中一个成员所需的内存容量 B.结构中第一个成员所需的内存容量 C.结构体中占内存容量最大者所需的容量 D.结构中各成员所需内存容量之和
+定义以下结构体数组structc{intx;inty; }s[2]={1,3,2,7}; 语句printf("%d",s[0].x*s[1].x)的输出结果为(C)A.14B.6C.2D.21
+运行下列程序段.struct country{intnum;charname[10]; }x[5]={1,"China",2,"USA",3,"France",4,"England",5,"Spanish"};structcountry*p;p=x+2; printf("%d,%c",p->num,(*p).name[2]);输出结果是(A)A.3,a B.4,g C.2,U D.5,S
+以下对一维数组a的正确说明是(D)A.char a(10); B.int a[]; C.int k=5.a[k]; D.char  a[3]={a,b,c};
+在C语言中对一维整型数组的正确定义为(D)A.int a(10); B.int n=10,a[n]; C.int  n;a[n]; D.#define N 10 int a[N];
+已知：int  a[10]; 则对a数组元素的正确引用是(D)A.a[10] B.a[3.5] C.a(5) D.a[0]
+若有以下数组int a[12]={1,2,3,4,5,6,7,8,9,10,11,12};说明.则数值最大的和最小的元素下标分别是(B)A.1,12 B.0,11 C.1,11 D.0,12
+若有以下数组int a[12]={1,4,7,10,2,5,8,11,3,6,9,12};说明.则i=10;a[a[i]]元素数值是(B)A.10 B.9 C.6 D.5
+假定int类型变量占用两个字节.其有定义：int  x[10]={0,2,4};.则数组x在内存中所占字节数是(D)A.3 B.6 C.10 D.20
+判断字符串s1是否大于字符串s2.应当使用(D)A.if(s1>s2) B.if(strcmp(s1,s2)) C.if(strcmp(s2,s1)>0) D.if(strcmp(s1,s2)>0)
+以下定义语句中.错误的是(D)A.int  a[]={1,2}; B.char  *a; C.char s[10]="test"; D.int  n=5,a[n];
+下面程序段int i; int x[3][3]={1,2,3,4,5,6,7,8,9}; for (i=0;i<3;i++) printf("%d ",x[i][2-i]); 的输出结果是(C)A.1 5 9 B.1 4 7 C.3 5 7 D.3 6 9
+对二维数组的正确定义是(C)A.int a[ ] [ ]={1,2,3,4,5,6}; B.int a[2] [ ]={1,2,3,4,5,6}; C.int a[ ] [3]={1,2,3,4,5,6}; D.int a[2,3]={1,2,3,4,5,6};
+已知int a[3][4];则对数组元素引用正确的是(C)A.a[2][4] B.a[1,3] C.a[2][0] D.a(2)(1)
+对字符数组s赋值,不合法的是:(C)A.char s[]="china"; B.char s[20]={" china "}; C.char s[20];s=" china"; D.char s[20]={c,h,i,n,a};
+下面各语句中.能正确进行赋字符串操作的语句是(C)A.char s[5]={"ABCDE"}; B.char s[5]={A.B.C.D.E,\0}; C.char *s;s="ABCDE"; D.char *s;scanf("%s",&s);
+字符串 "ABCD"在内存占用的字节数是(D)A.4 B.6 C.1 D.5
+下面不正确的字符串常量是(A)A.PROGRAM B."1212" C."0" D."  "
+设有数组定义:char array [ ]="abcd"; 则数组array所占的空间为(B)A.4个字节 B.5个字节 C.6个字节 D.7个字节
+已知char x[]="hello", y[]={h,e,a,b,e};, 则关于两个数组长度的正确描述是(B)A.相同 B.x大于y C.x小于y D.以上答案都不对
+给出以下定义:char x[ ]="abcdefg";char y[ ]={a,b,c,d,e,f,g};则正确的叙述为(C)A.数组x和数组y等价 B.数组x和数组y的长度相同 C.数组x的长度大于数组y的长度 D.数组x的长度小于数组y的长度
+若有以下语句static char x[  ]="12345" ;static char y[  ]={1,2,3,4, 5,\0} ;则正确的描述是(D)A.x数组长度大于y数组长度 B.x数组和y数组不相同 C.x数组长度小于y数组长度 D.x数组等价于y数组
+已知：char s[20]= "programming", *ps=s; 则不能引用字母o的表达式是(C)A.ps[2] B.s[2] C.ps+2 D.ps+=2,  *ps
+判断两字符串s1,s2是否相等,应使用(D)A.if(s1==s2) B.if(s1=s2) C.if(strcpy(s1,s2)) D.if(strcmp(s1,s2)==0)
+以下printf语句printf("%d\n",strlen("school"));的输出结果为(A)A.7 B.6 C.存在语法错误 D.不定值
+对字符数组s赋值,不合法的一个是(C)A.char s[]="Beijing"; B.char s[20]={"beijing"}; C.char s[20];s="Beijing"; D.char s[20]={B,e,i,j,i,n,g};
+对字符数组str赋初值.str不能作为字符串使用的一个是(D)A.char str[]="shanghai"; B.char str[]={"shanghai"}; C.char str[9]={s,h,a,n,g,h,a,i,\0}; D.char str[8]={ s,h,a,n,g,h,a,i};
+合法的数组定义是(C)A.int a[]={"string"}; B.int a[5]={0,1,2,3,4,5}; C.char a[]= "string"; D.char a[5]={0,1,2,3,4,5};
+以下对二维数组a的正确说明是(C)A.int a[3][]; B.float a(3,4); C.double a[1][4] D.float a(3)(4);
+若二维数组a有m列.则在a[i][j]前的元素个数为(B)A.j*m+i B.i*m+j C.i*m+j-1 D.i*m+j+1
+有两个字符数组a,b,则以下正确的输入语句是(B)A.gets(a,b); B.scanf("%s%s",a,b); C.scanf("%s%s",&a,&b); D.gets("a"),gets("b");
+在C语言中.认为逻辑"真"的是(D)A.true B.大于0的数 C.非0整数 D.非0的数
+有int w=11,x=12,y=3,m; 执行下面语句m=(w<x)w:x;m=(m<y)m:y;后m的结果是(C)A.1 B.2 C.3 D.以上结果都不对
+设整型变量 a=2.则执行下列语句后.浮点型变量b的值不为0.5的是(B)A.b=1.0/a B.b=(float)(1/a) C.b=1/(float)a D.b=1/(a*1.0)
+若"int n; float f=13.8;",则执行语句"n=(int)f%3"后.n的值是(A)A.1 B.4 C.4.333333 D.4.6
+已知int x=10,y=20,z=30;以下语句if(x>y) z=x; x=y; y=z; 执行后x,y,z的值是(B)A.x=10, y=20, z=30 B.x=20, y=30, z=30 C.x=20, y=30, z=10 D.x=20, y=30, z=20
+设x,t均为int型变量.则执行语句"x=10;t=x&&x>10;"后t的值为(D)A.不定值 B.10 C.1 D.0
+若int i=10; 执行下列程序switch ( i )  {  case   9:i+=1;case  10:i+=1;case  11:i+=1;default :i+=1; }后.变量i的正确结果是(A)A.13 B.12 C.11 D.10
+在下面的条件语句中(其中s1和s2表示是C语言的语句).只有一个在功能上与其它三个语句不等价.它是(D)A.if (a)   s1 ;  else  s2; B.if (a==0)  s2;  else  s1; C.
+假定所有变量均已正确定义.则下列程序段int a=0,y=10;if(a=0) y--; else if(a>0) y++; else y+=y;运行后y的值是(A)A.20 B.11 C.9 D.0
+C语言对嵌套if语句的规定是：else语句总是与配对的是(D)A.其之前最近的if B.第一个if C.缩进位置相同的if D.其之前最近的且尚未配对的if
+在C语言语句中.用来决定分支流程的表达式是(A)A.可用任意表达式 B.只能用逻辑表达式或关系表达式 C.只能用逻辑表达式 D.只能用关系表达式
+C语言中用表示逻辑"真"的是(B)A.true B.整数值1 C.非零整数值 D.false
+若k是int型变量.且有下面的程序段：int k;k= -3;if  (k<=0)  printf("####");else  printf("&&&&");上面程序段的输出结果是(A)A.#### B.&&&& C.####&&&& D.有语法错误.无输出结果
+以下程序main(){ int x=-10,y= 1,z=1;if(x<y)if(y<0) z=0;else z=z+1;printf("%d\n",z);}的输出结果是(C)A.0 B.1 C.2 D.3
+以下程序段 int a=10,b=50,c=30;if(a>b)a=b;b=c;c=a;printf("a=%2d b=%2d c=%2d\n",a,b,c);的输出结果是(B)A.a=10 b=50 c=10 B.a=10 b=30 c=10 C.a=50 b=30 c=10 D.a=50 b=30 c=50
+在C语言中.下列说法中正确的是(D)A.do-while语句构成的循环不能用其它语句构成的循环来代替 B.do-while语句构成的循环只能用break语句退出 C.do-while语句构成的循环在while后的表达式非零时结束循环 D.do-while语句构成的循环,在while后的表达式为零时结束循环
+对于break语句和continue语句的说法错误的是(B)A.break语句不能用于循环语句和switch语句之外的任何其他语句中 B.break和continue也可以用于if语句中 C.continue语句只结束本次循环.而不是终止整个循环的执行 D.break语句是结束整个循环过程.不再判断执行循环的条件是否成立
+语句while(!y);中的表达式!y等价于(A)A.y==0 B.y!=1 C.y=!0 D.y==1
+有以下程序段int  k=0while(k)k++;则while循环体执行的次数是(C)A.无限次 B.有语法错.不能执行 C.一次也不执行 D.执行1次
+下列循环语句中有语法错误的是(D)A.while(x=y) 5;B.while(0); C  do 2;while(x= =b);D do x++  while(x= =10);
+当运行时输入：abcd$abcde. 下面程序 #include<stdio.h>main(){  while(putchar(getchar())!=$);printf("end");}的运行结果是(B)A.abcd$abcde B.abcd$end C.abcdend D.abcd$abcdeend
+以下程序段x=-1;do { x=x*x; }while(x>0);(A)A.是死循环 B.循环执行一次C.循环执行二次 D.有语法错误
+下面程序段int sum=0, n=10;do  { sum=sum+n;n++; }while(n<10)printf("%d,%d",sum,n)执行后的结果为:(B)A.0, 10 B.10, 11 C.0, 11 D.以上结果都不对
+循环"for(i=0,x=1;i=10&&x>0;i++);"的循环执行(A)A.无限次 B.不确定次 C.10次 D.9次
+有如下程序main(){    int    i,sum=2;for(i=1;i<=3;i+=2)   sum+=i;printf("%d\n",sum);   }该程序的执行结果是(A)A.6 B.3 C.死循环 D.4
+执行语句"for ( i=0;  i++<3 ;   )  ;"后.变量i的值为(C)A.2 B.3 C.4 D.5
+设x和y均为int型变量.则执行以下的循环for(y=1,x=1;y<=50;y++){    if(x>=0) break;    if(x%2==1) {x+=5;continue;}    x-=3;}后.y的值为(D)A.2 B.4 C.6 D.1
+设有程序段 int k=10; while(k=0)k=k-1; while是先判断在执行 这下面描述中正确的是(C)A.while循环执行10次 B.循环是无限循环 C.循环体语句一次也不执行 D.循环体语句执行一次
+语句while(!E);中的表达式!E等价于(C)A.E==0 B.E!=1 C.E!=0 D.E==1
+以下程序段x=-1; do{ x=x*x; x=-1 x=-1*-1=1 T } x=1 x=1*1=1 F while(!x); (C)A.是死循环 B.循环执行二次 C.循环执行一次 D.有语法错误
+若i为整型变量.则以下循环for(i=2;i==0;)printf("%d",i--); 执行次数是(B)A.无限次 B.0次 C.1次 D.2次
+执行语句for(i=1;i++<4; );后变量i的值是(C)A.3 B.4 C.5 D.不定
+已知int x=5,y=5,z=5;执行语句x%=y+z;后.x的值是(C)A.0 B.1 C.5 D.6
+语句int *p;说明了(C)A.p是指向一维数组的指针 B.p是指向函数的指针,该函数返回一int型数据 C.p是指向int型数据的指针 D.p是函数名,该函数返回一指向int型数据的指针
+若x是整型变量.pb是基类型为整型的指针变量.则正确的赋值表达式是(A)A.pb=&x B.pb=x C.*pb=&x D.*pb=*x
+对于同类型的指针变量.不可能进行的运算是(C)A.- B.= C.+ D.==
+对于基类型相同的两个指针变量之间.不能进行的运算是(C)A.< B.= C.+ D.-
+有语句：int a[10],;则对指针变量p的正确定义和初始化正确的是(B)A.int p=*a; B.int *p=a; C.int p=&a; D.int *p=&a;
+若指针变量p指向整型数组a[10]的首地址, 即p=a ; 则下列数组元素a[i](0<i<10)的表示方法中正确的是(C)A.p+i B.&( a+i) C.*(a+i) D.*(p+i*2)
+若有以下定义int a[10]={1,2,3,4,5,6,7,8,9,10},*p=a;则不能表示a数组元素的表达式是(B)A.*p B.a[10] C.*a D.a[p-a]
+已知int a[5],*p=a;下面的叙述中正确的是(A)A.p+1与a+1等价 B.p[1]与*p等价 C.*(p+1)与a+1等价 D.p[1]与a++等价
+有如下程序main(){    char s[]="ABCD", *P;for(p=s+1; p<s+4; p++)   printf ("%s\n",p);  }该程序的输出结果是(D)A.ABCD BCD CD D B.A B C D C.B C D D.BCD CD D
+若有以下定义.int a[10],*p=a; 则p+5表示(A)A.元素a[5]的地址 B.元素a[5]的值 C.元素a[6]的地址 D.元素a[6]的值
+若有语句int *point,a=4;和point=&a;下面均代表地址的一组选项是(D)A.a,point,*&a B.&*a,&a,*point C.*&point,*point,&a D.&a,&*point ,point
+下面程序段char *s="abcde"; s+=2;printf("%s",s); 的运行结果是(A)A.cde B.字符c C.字符c的地址 D.无确定的输出结果
+设p1和p2是指向同一个字符串的指针变量.c为字符变量.则以下不能正确执行的赋值语句是(B)A.c=*p1+*p2; B.p2=c C.p1=p2 D.c=*p1*(*p2);
+以下正确的程序段是(B)A.char str[20]; B.char *p; C.char str[20]; D.char str[20],*p=str; scanf("%s",&str); scanf("%s",p); scanf("%s",&str[2]); scanf("%s",p[2]);
+若有说明语句 char a[]="It is mine"; char *p="It is mine"; 则以下不正确的叙述是(B)A.a+1表示的是字符t的地址 B.p指向另外的字符串时.字符串的长度不受限制 C.p变量中存放的地址值可以改变 D.a中只能存放10个字符
+下面程序#include <stdio.h> #include <string.h> main() { char *s1="AbDeG"; char *s2="AbdEg"; s1+=2;s2+=2; printf("%d\n",strcmp(s1,s2)); } 运行结果是(B)A.正数 B.负数 C.零 D.不确定的值
+若有以下定义int a[5],*p=a;.则对a数组元素的正确引用是(D)A.*&a[5] B.a+2 C.*(p+5) D.*(a+2)
+C语言中函数返回值的类型决定于(A)A.函数定义时指定的类型 B.return语句中的表达式类型 C.调用该函数时的实参的数据类型 D.形参的数据类型
+在C语言中.函数的数据类型是指(A)A.函数返回值的数据类型 B.函数形参的数据类型 C.调用该函数时的实参的数据类型 D.任意指定的数据类型
+C程序中函数返回值的类型决定于(A)A.函数定义时指定的函数类型 B.函数中使用的最后一个变量的类型 C.调用函数时临时确定 D.调用该函数的主调函数类型
+在函数调用时.以下说法正确的是(B)A.函数调用后必须带回返回值 B.实际参数和形式参数可以同名 C.函数间的数据传递不可以使用全局变量 D.主调函数和被调函数总是在同一个文件里
+在C语言程序中.有关函数的定义正确的是(B)A.函数的定义可以嵌套.但函数的调用不可以嵌套 B.函数的定义不可以嵌套.但函数的调用可以嵌套 C.函数的定义和函数的调用均不可以嵌套 D.函数的定义和函数的均可以嵌套
+C语言中对函数的描述正确的是(C)A.可以嵌套调用,不可以递归调用 B.可以嵌套定义 C.嵌套调用.递归调用均可 D.不可以嵌套调用
+用数组名作为函数调用时的实参时.传递给形参的是(C)A.数组首地址 B.数组第一个元素的值 C.数组全部元素的值 D.数组元素的个数
+在C语言中,全局变量的存储类别是(A)A.static B.extern C.void D.register
+C语言中,凡未指定存储类别的局部变量的隐含存储类别是(A)A.自动(auto) B.静态(static) C.外部(extern) D.寄存器(register)
+若有以下调用语句main(){ ... int a;float x;...fun(x,a);...},则正确的fun函数首部是(B)A.void fun(int m,float x) B.void fun(float a,int x) C.void fun(int m,float x[]) D.void fun(int x,float a)
+有如下函数调用语句  func(rec1,rec2+rec3,(rec4,rec5));该函数调用语句中,含有的实参个数是(A)A.3 B.4 C.5 D.有语法错误
+设在主函数中有以下定义和函数调用语句,且fun函数为void类型;  main() { double s[10][22];   int n;...   fun(s);...}正确的fun函数的首部应为(要求形参名为b)(B)A.void fun(double b[22]) B.void fun(double b[][22]) C.void fun(double b[][]) D.void fun(double b[22][])
+设有如下的函数  ggg(x)   float x;  {printf("\n%d",x*x);}则函数的类型(C)A.与参数x的类型相同 B.是void C.是int D.无法确定
+在调用函数时.如果实参是简单变量.它与对应形参之间的数据传递方式是(B)A.地址传递 B.单向值传递 C.由实参传给形参.再由形参传回实参 D.传递方式由用户指定
+在调用函数时.如果实参是数组名.它与对应形参之间的数据传递方式是(A)A.地址传递 B.单向值传递 C.由实参传给形参.再由形参传回实参 D.传递方式由用户指定
+以下函数fun( float  x) { float  y;   y=3*x-4;   return  y;  }fun形参的类型是(D)A.int B.不确定 C.void D.float
+对于C语言的函数.下列叙述中正确的是(A)A.函数的定义不能嵌套.但函数调用可以嵌套 B.函数的定义可以嵌套.但函数调用不能嵌套 C.函数的定义和调用都不能嵌套 D.函数的定义和调用都可以嵌套
+若主调用函数类型为double.被调用函数定义中没有进行函数类型说明.而return语句中的表达式类型为float型.则被调函数返回值的类型是(A)A.int 型 B.float 型 C.double 型 D.由系统当时的情况而定
+若函数调用时参数为基本数据类型的变量.以下叙述正确的是(C)A.实参与其对应的形参共占存储单元 B.只有当实参与对应的形参同名时才共占存储单元 C.实参与其对应的形参分别占用不同的存储单元 D.实参将数据传递给形参后.立即释放原先占用的存储单元
+以下叙述中.不正确的是(B)A.在同一C程序文件中.不同函数中可以使用同名变量 B.在main函数体内定义的变量是全局变量 C.形参是局部变量.函数调用完成即失去意义 D.若同一文件中全局变量和局部变量同名.则全局变量在局部变量作用范围内不起作用
+对以下程序sub (char x,char y){ int z; z=x%y; return  z; }main( ){ int g=5,h=3,k;  k=sub(g,h);  printf("%d\n",k);  }.正确的说法是(D)A.实参与其对应的形参类型不一致.程序不能运行 B.被调函数缺少数据类型说明.程序不能运行 C.主函数中缺少对被调函数的说明语句.程序不能运行 D.程序中没有错误.可以正常运行
+以下正确的函数定义形式是(A)A.double fun(int x,int y) B.double fun(int x; int y) C.double fun(int x, int y); D.double fun(int x,y);
+已知int x;char y;则下面错误的scanf函数调用语句为(B)A.scanf("%d,%d",&x,&y); B.scanf("%d,%c",x,y) C.scanf("%d%d",&x,&y) D.scanf("%d,%c",&x,&y)
+内存空间被分成不同区域.其中用函数void* malloc(unsigned int size);申请的内存分配在(C)A.程序区 B.静态存储区 C.动态存储区 D.栈区
+下面各函数中能实现打开文件功能的是(A)A.fopen B.fgetc C.fputc D.fclose
+在进行文件操作时.写文件的一般含义是(B)A.将磁盘中的信息存入计算机内存 B.将计算机内存中的信息存入磁盘 C.将计算机CPU中的信息存入磁盘 D.将磁盘中的信息存入计算机CPU
+以读写方式打开一个已有的文本文件file1,并且FILE *fp.下面fopen函数正确的调用方式是(B)A.fp=fopen("file1","r") B.fp=fopen("file1","r+") C.fp=fopen("file1","rb") D.fp=fopen("file1","w")
+标准库函数fputs(p1,p2)的功能是(C)A.从p1指向的文件中读一个字符串存入p2指向的内存 B.从p2指向的文件中读一个字符串存入p1指向的内存 C.从p1指向的内存中读一个字符串写到p2指向的文件中 D.从p2指向的内存中读一个字符串写到p1指向的文件中
+若执行fopen函数时发生错误,则函数的返回值是(B)A.地址值 B.0 C.1 D.EOF
+若要用fopen函数打开一个新的二进制文件,该文件要既能读也能写,则文件方式字符串应是(C)A."ab+" B."wb+" C."rb+" D."ab"
+fgetc函数的作用是从指定文件读入一个字符,该文件的打开方式必须是(C)A.只写 B.追加 C.读或读写 D.答案B和C都正确
+利用fseek函数可实现的操作(B)A.fseek(文件类型指针,起始点,位移量); B.fseek(fp,位移量,起始点); C.fseek(位移量,起始点,fp); D.fseek(起始点,位移量,文件类型指针);
+在执行fopen函数时,ferror函数的初值是(D)A.TURE B.-1 C.1 D.0
+若有定义FILE *fp.则打开与关闭文件的命令是(C)A.fopen(fp),fclose(fp) B.fopen(fp,“w”),fclose(fp) C.open(fp),close(fp) D.open(fp,“W”),close(fp)
+下列关于C语言数据文件的叙述中正确的是(C)A.文件由ASCII码字符序列组成.C语言只能读写文本文件B.文件由二进制数据序列组成,C语言只能读写二进制文件 C.文件由数据流形式组成.可按数据的存放形式分为二进制文件和文本文件 D.文件由记录序列组成.可按数据的存放形式分为二进制文件和文本文件
+若执行fopen函数时发生错误.则函数的返回值是(B)A.地址值 B.0 C.1 D.EOF
+若要用fopen函数打开一个新的二进制文件.该文件要既能读也能写.则文件方式字符串应是(B)A."ab+" B."wb+" C."rb+" D."ab"
+fscanf函数的正确调用形式是(D)A.fscanf(fp,格式字符串,输出表列) B.fscanf(格式字符串.输出表列,fp); C.fscanf(格式字符串,文件指针,输出表列); D.fscanf(文件指针.格式字符串,输入表列);
+利用fseek函数可实现的操作(A)A.fseek(文件类型指针.起始点.位移量); B.fseek(fp,位移量,起始点); C.fseek(位移量.起始点,fp); D.fseek(起始点,位移量,文件类型指针);
+在执行fopen函数时.ferror函数的初值是(D)A.TURE B.-1 C.1 D.0
+下列正确的预编译命令是(D)A.define PI 3.14159 B.#define P(a,b)=strcpy(a,b) C.#define stdio.h D.#define PI 3.14159;
+下列命令或语句中.错误的是(C)A.#define PI 3.14159 B.#include <math.h>; C.if(2); D.for(;;) if(1) break;
+请读程序： #include <stdio.h> #define MUL(x,y) (x)*y main() { int a=3,b=4,c; c=MUL(a++,b++); printf("%d\n",C.; } 上面程序的输出结果是(C)A.12 B.15 C.20 D.16
+对下面程序段： #define A 3 #define B(a) ((A+1)*a) ... x=3*(A+B(7)); 正确的判断是(C)A.程序错误.不许嵌套宏定义 B.x=93 C.x=21 D.程序错误.宏定义不许有参数
+以下正确的描述是(B)A.C语言的预处理功能是指完成宏替换和包含文件的调用 B.预处理指令只能位于C源程序文件的首部 C.凡是C源程序中行首以"#"标识的控制行都是预处理指令 D.C语言的编译预处理就是对源程序进行初步的语法检查
+以下程序#define MAX(x,y) (x)>(y)(x):(y)main(){int a=5,b=2,c=3,d=3,t;t=MAX(a+b,c+d)*10;printf(“%d\n”,t);}的输出结果是(C)A.70 B.60 C.7 D.6
+以下叙述正确的是(D)A.可以把define和if定义为用户标识符 B.可以把define定义为用户标识符.但不能把if定义为用户标识符 C.可以把if定义为用户标识符.但不能把define定义不用户标识符 D.define和if都不能定义为用户标识符
+执行以下程序后，a,b的值分别为 main() {int a,b,k=4,m=6,*p1=&k,*p2=&m;  a=p1==&m;  b=(-*p1)/(*p2)+7;  printf("a=%d\n",a);  printf("b=%d\n",b);  } A) -1,5       B) 1,6     C) 0,7      D) 4,10
+当说明一个结构体变量时系统分配给它的内存是 A) 各成员所需内存量的总和 B) 结构中第一个成员所需内存量 C) 成员中占内存量最大者所需的容量 D) 结构中最后一个成员所需内存量
+以下运算符中优先级最低的是 A) &&       B) &      C) ||     D) |
+以下可作为函数fopen中第一个参数的正确格式是 A) c:user\text.txt                B) c:\user\text.txt C) "c:\user\text.txt"             D) "c:\\user\\text.txt"
+printf函数中用到格式符%5s,其中数字5表示输出的字符串占用5列，如果字符串长度大于5，则输出按方式 A) 从左起输出该字符串，右补空格 B) 按原字符长从左向右全部输出 C) 右对齐输出该字串，左补空格 D) 输出错误信息
+以下C程序正确的运行结果是 main() {long y=-43456;  printf("y=%-8ld\n",y);  printf("y=%-08ld\n",y);  printf("y=%08ld\n",y);  printf("y=%+8ld\n",y);   } A) y=  -43456  (换行) y=-  43456 (换行) y=-0043456 (换行) y=-43456  B) y=-43456    (换行) y=-43456   (换
+以下能对一维数组a进行正确初始化的语句是 A) int a[10]=(0,0,0,0,0)             B) int a[10]={}; C) int a[]={0};                      D) int a[10]={10*1};
+以下正确的函数定义形式是 A) double fun(int x,int y)                B) double fun(int x;int y) C) double fun(int x,int y);               D) double fun(int x,y);
+以下正确的说法是：在C语言中 A) 实参和与其对应的形参各占用独立的存储单元 B) 实参和与其对应的形参共占用一个存储单元 C) 只有当实参和与其对应的形参同名时才共占用存储单元 D) 形参是虚拟的，不占用存储单元
+若调用一个函数，且此函数中没有return语句，则正确的说法是：该函数 A) 没有返回值                         B) 返回若干个系统默认值 C) 能返回一个用户所希望的值           D) 返回一个不确定的值 
+以下叙述中正确的是 A) 在程序的一行上可以出现多个有效的预处理命令行 B) 使用带参的宏时，参数的类型应与宏定义时的一致 C) 宏替换不占用运行时间，只占编译时间 D) 在以下定义中 C R 是称为“宏名”的标识符    #define C R  045
+以下程序的运行结果是 #define MIN(x,y) (x)<(y)?(x):(y) main() {int i=10,j=15,k;  k=10*MIN(i,j);  printf("%d\n",k);  } A) 10         B) 15           C) 100          D) 150
+以下程序中调用scanf函数给变量a输入数值的方法是错误的，其错误原因是 main() {int *p,*q,a,b;  p=&a;  printf("input a:");  scanf("%d",*p); } A) *p表示的是指针变量p的地址 B) *p表示的是变量a的值，而不是变量a的地址 C) *p表示的是指针变量p的值 D) *p只能用来说明p是
+设有以下说明语句 struct stu       {int a;        float b;        }stutype; 则下面的叙述不正确的是 A) struct是结构体类型的关键字 B) struct stu是用户定义的结构体类型 C) stutype是用户定义的结构体类型名 D) a和b都是结构体成员名
+C语言结构体类型变量在程序执行期间 A) 所有成员一直驻留在内存中            B) 只有一个成员驻留在内存中 C) 部分成员驻留在内存中                D) 没有成员驻留在内存中
+若执行fopen函数时发生错误，则函数的返回值是 A) 地址值        B) 0        C) 1          D) EOF
+若要用fopen函数打开一个新的二进制文件，该文件要既能读也能写，则文件方式字符串应是 A) "ab++"           B) "wb+"        C) "rb+"        D) "ab"
+在C语言中(以16位PC机为例)，一个char型数据在内存中所占的字节数为_______；一个int型数据在内存中所占的字节数为_______
+在C语言中(以16位PC机为例)，一个float型数据在内存中所占的字节数为_____；一个double型数据在内存中所占的字节数为_________
+当a=3,b=2,c=1时，表达式f=a>b>c的值是_________
+以下程序的运行结果是______________ #include <stdio.h> void main(void) {int x=1,y,z;  x*=3+2;  printf("%d\t",x);  x*=y=z=5;  printf("%d\t",x);  x=y==z;  printf("%d\n",x); } 
+C语言提供的三种逻辑运算符是_______，_______和_________
+下面程序段是从键盘输入的字符中统计数字字符的个数，用换行符结束循环。请填空 int n=0,c; c=getchar(); while( _______ )      {if( ______ ) n++;          c=getchar();       }
+设C语言中，一个int型数据在内存中占2个字节，则int型数据的取值范围为_______
+在C语言中的实型变量分为两种类型，它们是_______和__________
+以下叙述不正确的是 A) 一个C源程序可由一个或多个函数组成 B) 一个C源程序必须包含一个main函数 C) C程序的基本组成单位是函数 D) 在C程序中，注释说明只能位于一条语句的后面
+C语言规定，在一个源程序中，main函数的位置 A) 必须在最开始            B) 必须在系统调用的库函数的后面 C) 可以任意                D) 必须在最后
+一个C语言程序是由 A) 一个主程序和若干子程序组成              B) 函数组成 C) 若干过程组成                            D) 若干子程序组成
+C源程序的基本单位是______________
+在C语言中(以16位PC机为例)，5种基本数据类型的存储空间长度的排列顺序为 A) char<int<long int<=float<double B) char=int<long int<=float<double C) char<int<long int=float=double D) char=int=long int<=float<double
+若x,i,j和k都是int型变量，则计算下面表达式后，x的值为   x=(i=4,j=16.k=32) A) 4       B) 16       C) 32       D) 52
+假设所有变量均为整型，则表达式(a=2,b=5,b++,a+b)的值是 A) 7        B) 8         C) 6         D) 2
+下面四个选项中，均是不合法的整型常量的选项是 A) --0f1  -0xffff   0011               B) -0xcdf  017  12,456 C) -018   999     5e2                  D) -0x48eg  -068   03f
+下面四个选项中，均是不合法的浮点数的选项是 A) 160.  0.12    e3               B) 123  2e4.2  .e5 C) -.18  123e4   0.0              D) -e3  .234   1e3 
+下面四个选项中，均是合法的浮点数的选项是 A) +1e+1   5e-9.4  03e2              B) -.60   12e-4   -8e5 C) 123e   1.2e-.4  +2e-1             D) -e3   .8e-4   5.e-0 
+下面正确的字符常量是 A) "c"          B) '\\''      C) 'W'      D) ''
+下面四个选项中，均是不正确的八进制数或十六进制数的选项是 A) 016  0x8f    018                  B) 0abc  017    0xa C) 010  -0x11   0x16                 D) 0a12  7ff    -123 
+下面四个选项中，均是正确的八进制数或十六进制数的选项是 A) -10    0x8f   -011                 B) 0abc  -017   0xc C) 0010   -0x11  0xf1                 D) 0a12  -0x123  -0xa
+以下程序的输出结果是 main() {   printf("\n*s1=%15s*","chinabeijing");   printf("\n*s2=%-15s*","chi"); } A) *s1=chinabeijing   * (换行)  *s2=**chi* B) *s1=chinabeijing   * (换行)  *s2=chi  * C) *s1=*  chinabeijing* (换行)  *s2=  chi* D) *s1=   chinabeijing
+在C语言中，引用数组元素时，其数组下标的数据类型允许是 A) 整型常量                   B) 整型表达式 C) 整型常量或整型表达式       D) 任何类型的表达式
+关于建立函数的目的，以下正确的说法是 A) 提高程序的执行效率             B) 提高程序的可读性 C) 减少程序的篇幅                 D) 减少程序文件所占内存 
+以下正确的说法是 A) 用户若需调用标准库函数，调用前必须重新定义 B) 用户可以重新定义标准库函数，若如此，该函数将失去原有含义 C) 系统根本不允许用户重新定义标准库函数 D) 用户若需调用标准库函数，调用前不必使用预编译命令将该函数所在文件包括到用户源文件中，系统
+以下叙述中不正确的是 A) 预处理命令行都必须以#号开始 B) 在程序中凡是以#号开始的语句行都是预处理命令行 C) C程序在执行过程中对预处理命令行进行处理 D) 以下是正确的宏定义       #define IBM_PC
+以下程序的运行结果是 sub(int x,int y,int *z) {*z=y-x;} main() {int a,b,c;  sub(10,5,&a);  sub(7,a,&b);  sub(a,b,&c);  printf("%4d,%4d,%4d\n",a,b,c); } A) 5,2,3      B) -5,-12,-7     C) -5,-12,-17     D) 5,-2,-7        
+若s是int型变量，且s=6，则下面表达式的值是_________ s%2+(s+1)%2
+若a为整型变量，则下面表达式的值为_________ (a=4*5,a*2),a+6
+已知各变量的类型如下： int i=8,k,a,b; unsigned long w=5; double x=1.42,y=5.2; 则以下符合C语言语法的表达式是 A) a+=a-=(b=4)*(a=3)                 B) a=a*3+2 C) x%(-3)                            D) y=float(i) 
+以下符合C语言语法的赋值表达式是 A) d=9+e+f=d+9                   B) d=9+e,f=d+9 C) d=9+e,e++,d+9                 D) d=9+e++=d+7
+已知字母A的ASCII码为十进制数65，且c2为字符型，则执行语句c2='A'+'6'-'3';后，c2中的值为 A) D       B) 68        C) 不确定的值     D) C
+在C语言中，要求运算数必须是整型的运算符是 A) /        B) ++        C) !=         D) %
+若以下变量均是整型，且num=sum=7；则计算表达式sUM=num++,sUM++,++num后sum的值为 A) 7         B) 8        C) 9          D) 10
+在C语言中，int、char和short三种类型数据在内存中所占用的字节数 A) 由用用户自己定义               B) 均为2个字节 C) 是任意的                       D) 由所用机器的机器字长决定
+若有定义：int a=7;float x=2.5,y=4.7;则表达式x+a%3*(int)(x+y)%2/4的值是 A) 2.500000      B) 2.750000      C) 3.500000     D) 0.000000
+设变量a是整型，f是实型，i是双精度型，则表达式10+'a'+i*f值的数据类型为 A) int        B) float        C) double        D) 不确定
+在C语言中，char型数据在内存中的存储形式是 A) 补码          B) 反码        C) 原码       D) ASCII码
+表达式18/4*sqrt(4.0)/8值的数据类型为 A) int       B) float        C) double      D) 不确定
+设C语言中，一个int型数据在内存中占2个字节，则unsigned int型数据的取值范围为 A) 0--255    B) 0--32767     C) 0--65535     D) 0--2147483647
+设有说明：char w;int x;float y;double z;则表达式w*x+z-y值的数据类型为 A) float       B) char        C) int        D) double
+若有以下定义，则能使值为3的表达式是   int k=7,x=12; A) x%=(k%=5)                  B) x%=(k-k%5) C) x%=k-k%5                   D) (x%=k)-(k%=5)
+设以下变量均为int类型，则值不等于7的表达式是 A) (x=y=6,x+y,x+1)             B) (x=y=6,x+y,y+1) C) (x=6,x+1,y=6,x+y)           D) (y=6,y+1,x=y,x+1)
+若a是int型变量，且a的初值为6，则计算表达式后a的值为_________ a+=a-=a*a
+若a是int型变量，则计算表达式后a的值为_______ a=25/3%3
+若有定义：int a=2,b=3;float x=3.5,y=2.5;则下面表达式的值为_______ (float)(a+b)/2+(int)x%(int)y
+若有定义：int x=3,y=2;float a=2.5,b=3.5;则下面表达式的值为_________ (x+y)%2+(int)a/(int)b
+若x和n均是整型变量，且x的初值为12，n的初值为5，则计算表达式后x的值为____________ x%=(n%=2)
+表达式 0x13|0x17的值是 A) 0x13       B) 0x17         C) 0xE8       D) 0xc8
+若a=1,b=2则 a|b的值是 A) 0         B) 1         C) 2        D) 3 
+表达式0x13^0x17的值是 A) 0x04        B) 0x13          C) 0xE8        D) 0x17
+请读程序片段： int x=20; printf("%d\n",~x); 上面程序片段的输出结果是 A) 02         B) -20       C) -21        D) -11
+表达式~0x13的值是 A) 0xFFEC       B) 0xFF71      C) 0xFF68       D) 0xFF17
+设有以下语句： char x=3,y=6,z; z=x^y<<2; 则z的二进制值是 A) 00010100      B) 00011011      C) 00011100     D) 00011000
+设有程序段： t=0; while(printf("*"))       {t++;        if(t<3) break;        } 下面描述正确的是 A) 其中循环控制表达式与0等价 B) 其中循环控制表达式与'0'等价 C) 其中循环控制表达式是不合法的 D) 以上说法都不对
+下面程序的功能是将从键盘输入的一对数，由小到大排序输出，当输入一对相等数时结束循环，请选择填空 #include <stdio.h> main() {int a,b,t;  scanf("%d%d",&a,&b);  while( ___________ )       {if(a>b)          {t=a;a=b;b=t;}        printf("%d,%d\n",a,b);         s
+逻辑运算符两侧运算对象的数据类型 A) 只能是0或1 B) 只能是0或非0正数 C) 只能是整型或字符型数据 D) 可以是任何类型的数据
+下列运算符中优先级最高的是 A) <       B) +      C) &&     D) !=
+已知x=43,ch='A',y=0；则表达式(x>=y&&ch<'B'&&!y)的值是 A) 0        B) 语法错       C) 1        D) “假”
+若希望当A的值为奇数时，表达式的值为“真”，A的值为偶数时，表达式的值为“假”，则以下不能满足要求的表达式是 A) A%2==1                B) !(A%2==0) C) !(A%2)                D) A%2 
+判断char型变量cl是否为小写字母的正确表达式是 A) 'a'<=cl<='z'              B) (cl>=a)&&(cl<=z) C) ('a'>=cl)||('z'<=cl)      D) (cl>='a')&&(cl<='z')
+以下不正确的if语句形式是 A) if(x>y&&x!=y); B) if(x==y) x+=y;  C) if(x!=y) scanf("%d",&x) else scanf("%d",&y); D) if(x<y) {x++;y++;}
+已知 int x=10,y=20,z=30;以下语句执行后x,y,z的值是 if(x>y)   z=x;x=y;y=z; A) x=10,y=20,z=30           B) x=20,y=30,z=30 C) x=20,y=30,z=10           D) x=20,y=30,z=20 
+以下程序的输出结果是 main() {int x=2,y=-1,z=2;  if(x<y)    if(y<0) z=0;    else    z+=1;  printf("%d\n",z); } A) 3          B) 2          C) 1        D) 0
+为了避免在嵌套的条件语句 if-else 中产生二义性，C语言规定：else子句总是与________配对 A) 缩排位置相同的if           B) 其之前最近的if C) 其之后最近的if             D) 同一行上的if
+C语言中 while 和 do-while 循环的主要区别是 A) do-while 的循环体至少无条件执行一次 B) while的循环控制条件比 do-while的循环控制条件更严格 C) do-while 允许从外部转到循环体内 D) do-while 的循环体不能是复合语句
+以下程序段______ x=-1; do {x=x*x;} while(!x); A) 是死循环                 B) 循环执行二次 C) 循环执行一次             D) 有语法错误
+以下描述中正确的是 A) 由于 do-while 循环中循环体语句只能是一条可执行语句，所以循环体内不能使用复合语句 B) do-while 循环由do开始，用while结束，在 while(表达式)后面不能写分号 C) 在 do-while 循环体中，一定要有能使 while 后面表达式的值变为零(“假”)的操作 D) 
+若有如下语句 int x=3; do{ printf("%d\n",x-=2);}while(!(--x)); 则上面程序段 A) 输出的是1                 B) 输出的是1和-2 C) 输出的是3和0              D) 是死循环
+下面程序的运行结果是 #include <stdio.h> main() {int y=10;  do{y--;}while(--y);  printf("%d\n",y--);  } A) -1          B) 1         C) 8        D) 0
+若运行以下程序时，从键盘输入 ADescriptor<CR>(<CR>表示回车)，则下面程序的运行结果是 #include <stdio.h> main() {char c;  int v0=1,v1=0,v2=0;  do{     switch(c=getchar())          {case 'a':case 'A':           case 'e':case 'E':           case 'i':case 'I': 
+下面程序的运行结果是 #include <stdio.h> main() {int a=1,b=10;  do   {b-=a;a++;}while(b--<0);  printf("a=%d,b=%d\n",a,b); } A) a=3,b=11      B) a=2,b=8     C) a=1,b=-1     D) a=4,b=9
+C语言中的标识符只能由三种字符组成，它们是_______，______和__________
+若x和y都是double型变量，且x的初值为3.0，y的初值为2.0，则表达式 pow(y,fabs(x))的值为_________
+表达式8/4*(int)2.5/(int)(1.25*(3.7+2.3))值的数据类型为______
+假设m是一个三位数，从左到右用a,b,c表示各位的数字，则从左到右各个数字是bac的三位数的表达式是___________
+设有程序段 int k=10; while(k=0) k=k-1; 则下面描述中正确的是________ A) while循环执行10次              B) 循环是无限循环 C) 循环体语句一次也不执行         D) 循环体语句执行一次
+语句while(!E);中的表达式!E等价于_______ A) E==0         B) E!=1       C) E!=0       D) E==1
+下面程序段的运行结果是_________ a=1;b=2;c=2; while(a<b<c) {t=a;a=b;b=t;c--;} printf("%d,%d,%d",a,b,c); A) 1,2,0        B) 2,1,0        C) 1,2,1       D) 2,1,1
+下面程序段的运行结果是 x=y=0; while(x<15) y++,x+=++y; printf("%d,%d",y,x); A) 20,7        B) 6,12       C) 20,8       D) 8,20
+以下对二维数组a的正确说明是 A) int a[3][]                    B) float a(3,4) C) double a[1][4]                D) float a(3)(4)
+若有说明 int a[3][4];则对a数组元素的正确引用是 A) a[2][4]     B) a[1,3]       C) a[1+1][0]      D) a(2)(1)
+若有说明 int a[3][4];则a数组元素的非法引用是 A) a[0][2*1]     B) a[1][3]     C) a[4-2][0]      D) a[0][4]
+以下能对二维数组a进行正确初始化的语句是 A) int a[2][]={{1,0,1},{5,2,3}};  B) int a[][3]={{1,2,3},{4,5,6}}; C) int a[2][4]={{1,2,3},{4,5},{6}}; D) int a[][3]={{1,0,1}{},{1,1}};
+以下不能对二维数组a进行正确初始化的语句是 A) int a[2][3]={0}; B) int a[][3]={{1,2},{0}}; C) int a[2][3]={{1,2},{3,4},{5,6}}; D) int a[][3]={1,2,3,4,5,6};
+若有说明： int a[3][4]={0};则下面正确的叙述是 A) 只有元素a[0][0]可得到初值0 B) 此说明语句不正确 C) 数组a中各元素都可得到初值，但其值不一定为0 D) 数组a中每个元素均可得到初值0
+当顺利执行了文件关闭操作时，fclose函数的返回值是 A) -1        B) TRUE         C) 0           D) 1
+fwrite函数的一般调用形式是 A) fwrite(buffer,count,size,fp); B) fwrite(fp,size,count,buffer); C) fwrite(fp,count,size,buffer); D) fwrite(buffer,size,count,fp);
+fgetc函数的作用是从指定文件读入一个字符，该文件的打开方式必须是 A) 只写       B) 追加        C) 读或读写      D) 答案B和C都正确 
+设有以下结构体类型： struct st {char name[8];  int num;  float s[4]; }student[50]; 并且结构体数组student中的元素都已有值，若要将这些元素写到硬盘文件fp中，以下不正确的形式是 A) fwrite(student,sizeof(struct st),50,fp); B) fwrite(student,50*sizeof(struct st)
+在C语言中，要求运算数必须是整型或字符型的运算符是 A) &&        B) &        C) !       D) ||
+表达式 a<b||~c&d的运算顺序是 A) ~,&,<,||                B) ~,||,&,< C) ~,&,||,<                D) ~,<,&,||
+以下叙述中不正确的是 A) 表达式a&=b等价于a=a&b B) 表达式a|=b等价于a=a|b C) 表达式a!=b等价于a=a!b D) 表达式a^=b等价于a=a^b
+表达式 0x13&0x17的值是 A) 0x17       B) 0x13       C) 0xf8       D) 0xec
+在执行完以下C语句后，B的值是 char Z='A'; int B; B=((241&15)&&(Z|'A')); A) 0         B) 1         C) TRUE          D) FALSE
+下面有关 for 循环的正确描述是 A) for 循环只能用于循环次数已经确定的情况 B) for 循环是先执行循环循环体语句，后判断表达式 C) 在 for 循环中，不能用 break 语句跳出循环体 D) for 循环的循环体语句中，可以包含多条语句，但必须用花括号括起来 
+对 for(表达式1; ;表达式3) 可理解为 A) for(表达式1;0;表达式3)         B) for(表达式1;1;表达式3) C) for(表达式1;表达式1;表达式3)   D) for(表达式1;表达式3;表达式3)
+若i为整型变量，则以下循环执行次数是   for(i=2;i==0;) printf("%d",i--); A) 无限次       B) 0次       C) 1次       D) 2次
+以下 for 循环的执行次数是   for(x=0,y=0;(y=123)&&(x<4);x++); A) 是无限循环      B) 循环次数不定      C) 4次      D) 3次
+下面程序段的运行结果是 for(y=1;y<10;) y=((x=3*y,x+1),x-1); printf("x=%d,y=%d",x,y); A) x=27,y=27               B) x=12,y=13 C) x=15,y=14               D) x=y=27
+执行语句 for(i=1;i++<4;); 后变量 i 的值是 A) 3        B) 4        C) 5        D) 不定
+以下不正确的说法是：C语言规定 A) 实参可以是常量，变量或表达式 B) 形参可以是常量，变量或表达式 C) 实参可以为任何类型 D) 形参应与其对应的实参类型一致
+以下正确的说法是 A) 定义函数时，形参的类型说明可以放在函数体内 B) return后边的值不能为表达式 C) 如果函数值的类型与返回值类型不一致，以函数值类型为准 D) 如果形参与实参类型不一致，以实参类型为准
+C语言规定：简单变量做实参时，它和对应形参之间的数据传递方式是 A) 地址传递                            B) 单向值传递 C) 由实参传给形参，再由形参传回给实参  D) 由用户指定的传递方式
+C语言允许函数类型缺省定义，此时函数值隐含的类型是 A) float       B) int       C) long       D) double
+C语言规定，函数返回值的类型是由 A) return语句中的表达式类型所决定 B) 调用该函数时的主调函数类型所决定 C) 调用该函数时系统临时决定 D) 在定义该函数时所指定的函数类型所决定
+下面函数调用语句含有实参的个数为 func((exp1,exp2),(exp3,exp4,exp5)); A) 1        B) 2         C) 4         D) 5
+以下错误的描述是:函数调用可以 A) 出现在执行语句中            B) 出现在一个表达式中 C) 做为一个函数的实参          D) 做为一个函数的形参 
+以下正确的描述是:在C语言程序中 A) 函数的定义可以嵌套，但函数的调用不可以嵌套 B) 函数的定义不可以嵌套，但函数的调用可以嵌套 C) 函数的定义和函数的调用均不可以嵌套 D) 函数的定义和函数的调用均可以嵌套
+若用数组名作为函数的实参，传递给形参的是 A) 数据的首地址             B) 数组第一个元素的值 C) 数组中全部元素的值       D) 数组元素的个数
+已有如下数组定义和 f 函数调用语句，则在 f 函数的说明中，对形参数组 array 的错误定义方式为 int a[3][4]; f(a); A) f(int array[][6])            B) f(int array[3][]) C) f(int array[][4])            D) f(int array[2][5])
+以下程序的运行结果是 #include "stdio.h" main() { struct date          {int year,month,day;           }today;   printf("%d\n",sizeof(struct date)); } A) 6         B) 8         C) 10          D) 12
+根据下面的定义，能打印出字母 M 的语句是 struct person{char name[9];               int age;               }; struct person class[10]={"John",17,                          "Paul",19,                          "Mary",18,                          "adam",16     
+阅读以下程序及对程序功能的描述，其中正确的描述是 #include <stdio.h> main() { FILE *in,*out; char ch,infile[10],outfile[10]; printf("Enter the infile name:\n"); scanf("%s",infile); printf("Enter the outfile name:\n"); scanf("%s",outfile); if((in=fopen(infi
+函数调用语句：fseek(fp,-20L,2)；的含义是 A) 将文件位置指针移到距离文件头20个字节处  B) 将文件位置指针从当前位置向后移动20个字节 C) 将文件位置指针从文件末尾处退后20个字节 D) 将文件位置指针移到离当前位置20个字节处
+利用 fseek 函数可以实现的操作是 A) 改变文件的位置指针          B) 文件的顺序读写 C) 文件的随机读写              D) 以上答案均正确
+fseek函数的正确调用形式是 A) fseek(文件类型指针,起始点,位移量) B) fseek(fp,位移量,起始点) C) fseek(位移量,起始点,fp) D) fseek(起始点,位移量,文件类型指针)
+函数 rewind 的作用是 A) 使位置指针重新返回文件的开头 B) 将位置指针指向文件中所要求的特定位置 C) 使位置指针指向文件的末尾 D) 使位置指针自动移至下一个字符位置
+函数 ftell(fp) 的作用是 A) 得到流式文件中的当前位置       B) 移到流式文件的位置指针 C) 初始化流式文件的位置指针       D) 以上答案均正确
+在C程序中，数据可以用____和_____两种代码形式存放
+在C语言中，文件的存取是以_______为单位的，这种文件被称为_____文件
+函数调用语句：fgets(buf,n,fp)；从fp指向的文件中读入_____个字符放到buf字符数组中，函数值为______
+下面程序的功能是将一个磁盘中的二进制复制到另一个磁盘中，两个文件名随命令行一起输入，输入时原有文件的文件名在前，新复制文件夹的文件名在后，请在_______处填入适当内容 #include <stdio.h> main(int argc,char *argv[]) {   FILE *old,*new;   char ch;   if(argc!=3)
+若有说明： int a[][4]={0,0};则下面不正确的叙述是 A) 数组a的每个元素都可得到初值0 B) 二维数组a的第一维大小为1 C) 因为二维数组a中第二维大小的值除经初值个数的商为1,故数组a的行数为1 D) 只有元素a[0][0]和a[0][1]可得到初值0，其余元素均得不到初值0
+若有说明：int a[3][4];则数组a中各元素 A) 可在程序的运行阶段得到初值0 B) 可在程序的编译阶段得到初值0 C) 不能得到确定的初值 D) 可在程序的编译或运行阶段得到初值0
+下面程序________(每行程序前面的数字表示行号) 1   main() 2       { 3         int a[3]={3*0}; 4         int i; 5         for(i=0;i<3;i++) scanf("%d",&a[i]); 6         for(i=1;i<3;i++) a[0]=a[0]+a[i]; 7         printf("%d\n",a[0]); 8        } A) 第3行有错误 
+若二维数组a有m列，则计算任一元素a[i][j]在数组中位置的公式为_______(假设a[0][0]位于数组的第一个位置上) A) i*m+j        B) j*m+i       C) i*m+j-1       D) i*m+j+1
+对以下说明语句的正确理解是__________ int a[10]={6,7,8,9,10}; A) 将5个初值依次赋给a[1]至a[5] B) 将5个初值依次赋给a[0]至a[4] C) 将5个初值依次赋给a[6]至a[10] D) 因为数组长度与初值的个数不相同，所以此语句不正确
+定义如下变量和数组：  int k;  int a[3][3]={1,2,3,4,5,6,7,8,9}; 则下面语句的输出结果是  for(k=0;k<3;k++) printf("%d",a[k][2-k]); A) 3 5 7       B) 3 6 9         C) 1 5 9       D) 1 4 7  
+变量的指针，其含义是指该变量的 A) 值       B) 地址        C) 名        D) 一个标志
+若有语句int *point,a=4;和 point=&a;下面均代表地址的一组选项是 A) a,point,*&a             B) &*a,&a,*point C) *&point,*point,&a       D) &a,&*point,point
+若有说明：int *p,m=5,n;以下正确的程序段是 A) p=&n;scanf("%d",&p);           B) p=&n;scanf("%d",*p) C) scanf("%d",&n);*p=n;           D) p=&n;*p=m;
+若有说明：int *p1,*p2,m=5,n;以下均是正确赋值语句的选项是 A) p1=&m;p2=&p1            B) p1=&m;p2=&n;*p1=*p2; C) p1=&m;p2=p1;            D) p1=&m;*p2=*p1;
+下面程序段中，for循环的执行次数是 char *s="\ta\017bc"; for(;*s!='\0';s++) printf("*"); A) 9      B) 5       C) 6      D) 7
+下面能正确进行字符串赋值操作的是 A) char s[5]={"ABCDE"};   B) char s[5]={'A','B','C','D','E'}; C) char *s;s="ABCDE";     D) char *s;scanf("%s",s);
+下面程序段的运行结果是 char *s="abcde"; s+=2;printf("%d",s); A) cde                  B) 字符'c'      C) 字符'c'的地址        D) 无确定的输出结果
+设p1和p2是指向同一个字符串的指针变量，c为字符变量，则以下不能正确执行的赋值语句是 A) c=*p1+*p2;     B) p2=c;    C) p1=p2;    D) c=*p1*(*p2);
+若有下面的程序段： char s[]="china";char *p; p=s; 则下列叙述正确的是 A) s和p完全相同 B) 数组s中的内容和指针变量p中的内容相等 C) s数组长度和p所指向的字符串长度相等 D) *p与s[0]相等
+下面程序段的运行结果是 char *p="%d,a=%d,b=%d\n"; int a=111,b=10,c; c=a%b;p+=3; printf(p,c,a,b); A) 1,a=111,b=10         B) a=1,b=111 C) a=111,b=10           D) 以上结果都不对
+下面程序段的运行结果是 char str[]="ABC",*p=str; printf("%d\n",*(p+3)); A) 67        B) 0      C) 字符'C'的地址      D) 字符'C'
+下面程序段的运行结果是 char *p="abcdefgh"; p+=3; printf("%d\n",strlen(strcpy(p,"ABCD"))); A) 8       B) 12      C) 4      D) 7
+下面程序段的运行结果是 char a[]="lanuage",*p; p=a; while(*p!='u') {printf("%c",*p-32);p++;} A) LANGUAGE      B) language     C) LANG      D) langUAGE
+下面说明不正确的是 A) char a[10]="china";        B) char a[10],*p=a;p="china" C) char *a;a="china";         D) char a[10],*p;p=a="china"
+ C语言中的函数(      ). A）可以嵌套定义。                                      B）不可以嵌套调用。 C）可以嵌套调用，但不能递归调用。      D）嵌套调用和递归调用均可。
+ int a=0，b=1，c=2，x，y；，则!(x=a)&&(y=b)&&c的值为【  】。
+ 以下不正确的描述为(      ). A）在函数之外定义的变量为外部变量，外部变量是全局变量。 B）在函数中既可以使用本函数中的局部变量，又可以使用全局变量。 C）若在同一个源文件中，外部变量与局部变量同名，则在局部变量的作用范围内，外部变量不起作用。
+（   ）是C语言提供的合法的数据类型关键字。 A)Float      B)signed     C)integer       D)Char
+C程序中若函数类型未加显式说明，则函数的隐含类型为________类型。   A、void         B、int            C、char       D、double
+C函数返回值的类型由(      )决定。 A)调用函数时临时 B)return语句中的表达式类型 C)调用该函数的主调函数类型 D)定义函数时指定的函数返回值类型
+C语言标准库函数fgets(str,n,fp)的功能是（  ）    A、从文件fp中读取长度n的字符串存入str指向的内存　　　        B、从文件fp中读取长度不超过n-1个字符串存入str指向的内存   C、从文件fp中读取n个字符串存入str指向的内存   D、从文件str读取至多n个字符到文件fp
+C语言程序的三种基本结构是____   A、顺序结构，选择结构，循环结构  B、递归结构，循环结构，转移结构  C、嵌套结构，递归结构，顺序结构  D、循环结构，转移结构，顺序结构
+C语言程序由____构成？      A、子程序         B、过程            C、函数      D、主程序和子程序
+C语言程序总是从________开始执行。     A、主过程     B、主函数            C、子程序     D、主程序
+C语言的编译系统对宏命令是________时候处理的。   A、在程序运行        B、在程序连接时  C、和源程序其它C语言同时进行编译时  D、对源程序其它成份正式编译之前进行处理的
+C语言的格式输出函数是【   】。
+C语言规定，程序中各函数之间____。   A、既允许直接递归调用也允许间接递归调用  B、不允许直接递归调用也不允许间接递归调用  C、允许直接递归调用不允许间接递归调用  D、不允许直接递归调用允许间接递归调用
+C语言使字符型数据和整型数据之间可以通用。一个字符数据既可以以字符形式输出，也可以以整数形式输出。 
+C语言提供的合法的数据类型关键字是____。 A、double     B、short      C、integer      D、char
+C语言提供的合法数据关键字是(      )。 A) float   B) Sagned    C) Integer     D) Char
+C语言允许函数值类型缺省定义，此时该函数值隐含的类型是(     ). A）float   B）int   C）long int   D）void
+C语言中(     )函数的递归调用. A) 允许        B) 不允许   
+C语言中定义了一个变量，代表内存中的一个地址。 
+C语言中对于嵌套if语句规定else总是与什么配对？____。   A、第一个if                                  B、其之前最近的if  C、缩进位值相同的if                  D、其之前最近的不带else的if语句
+C语言中静态变量和外部变量的初始化是在________阶段完成的。   A、程序执行过程中        B、编译           C、运行           D、程序外部
+C语言中可处理的文件类型是_________    A、文本文件和数据文件           B、文本文件和二进制文件   C、数据文件和二进制文件       D、数据代码文件
+C语言中可以把一个字符串赋给一个字符变量。  
+C语言中数组名作为参数传递给函数，作为实在参数的数组名被处理为_____。   A、该数组的长度。                     B、该数组的元素个数。  C、该数组中各元素的值。         D、该数组的首地址。
+C语言中数组下标的下限是________。     A、1                B、0             C、视具体情况       D、无固定下限
+C语言中提供的合法关键字是____ A、swith            B、cher           C、Case           D、default
+C语言中文件的存取方式是________。   A、顺序存取                                           B、随机存取  C、顺序存取、随机存取均可               D、顺序存取、随机存取均不可
+C语言中最简单的数据类型包括   A) 整型、实型、逻辑型   B) 整型、实型、字符型   C) 整型、字符型、逻辑型 D) 整型、实型、逻辑型、字符型
+getchar函数的功能是接收从键盘输入的一个整数。
+getchar函数可以接收【    】个字符，输入数字也按字符处理。
+main()  {    printf("\n %d %x %o",19,19,19);    printf("\n %d %x %o",0x1c,0x1c,0x1c);    printf("\n\n");  }  该程序产生的结果是:  A、19  13  23   28  1c  34            B、28  1c  34  28  1c  34           C、28  1c  34  28  1c  34            D、19  13   23  28  1c  34
+scanf函数是一个标准库函数，它的函数原型在头文件【     】中。
+TURBO C中int类型变量所占字节数是(     )。    A)1          B)2           C)3            D)4
+typedef double DOU的作用是________。   A、建立一个新的数据类型                        B、定义一个双精度变量  C、定义了一个新的数据类型标识符        D、语法错误
+t为int类型，进人下面的循环之前，t的值为0  while( t=l )  { …… }  则以下叙述中正确的是  A、循环控制表达式的值为0              B、循环控制表达式的值为1  C、循环控制表达式不合法                D、以上说法都不对
+while(!x)中的(!x)与下面条件____等价。  A. x= =0  B. x= =1  C. x!=1  D.  x!=0
+把k1、k2定义成基本整型变量，并赋初值0的定义语句是int k1=k2=0; 。
+变量a所占内存字节数是______。   A、4         B、5      C、 6        D、8  union U  { char st[4];    int i;    long l;  };  struct A  { int c;    union U u;  }a;
+标准函数 fgets(s, n, f) 的功能是______。   A) 从文件f中读取长度为n的字符串存入指针s所指的内存  B) 从文件f中读取长度不超过n-1的字符串存入指针s所指的内存  C) 从文件f中读取n个字符串存入指针s所指的内存  D) 从文件f中读取长度为n-1的字符串存入指针s所指的内存
+表达式1/3*3的计算结果是【  】。
+表达式18/4*sqrt (4.0)/8值的数据类型为(     )。 A)int        B)float     C)double     D)不确定
+表达式3.5 + 1/2 + 56%10的计算结果是【  】 。
+表示关系x<=y<=z的c语言表达式为 A.(x<=y)&&(y<=z)     B.(x<=y)AND(y<=z) C.(x<=y<=z)               D.(x<=y)&(y<=z)
+不合法的main函数命令行参数表示形式是______     A) main(int   a,char  *c[])    B) main(int  arc,char   **arv)    C) main(int   argc,char  *argv)    D) main(int  argv,char  *argc[])
+不能把字符串:Hello!赋给数组b的语句是 A.char b[10]={'H','e','l','l','o','!'};     B.char b[10];b=Hello!; C.char b[10];strcpy(b,Hello!);         D.char b[10]=Hello!;
+除了利用实际参数和形式参数在各函数之间传递数据外，利用全局变量，也可以在各函数间传递数据。  
+当a=3，b=2，c=1时，表达式f=a>b>c  的值是【】
+当int类型长度为2字节时,则类型unsigned int的值域范围为______   A、0至255                   B、-256至255  C、-32768至32676      D、0到65535
+当全局变量与函数内部的局部变量同名时，则在函数内部(  )。 A）全局变量有效 B）局部变量有效 C）全局变量与局部变量都有效 D）全局变量与局部变量都无效
+当执行以下程序段时   A. 循环体将执行一次          B. 循环体将执行两次   C. 循环体将执行无限次      D. 系统将提示有语法错误      x=-1；   do  { x=x*x；} while（！x）；
+定义如下变题和数组:  int i;                                                       1 2 3 int x[3][3]={1,2,3,4,5,6,7,8,9};             4 5 6 则下面语句的输出结果是  for(i=0;i<3;i++) printf("%d",x[i][2-i]);  A) 1 5 9     B) 1 4 7     C) 3 5 7     D) 3 6 9
+定义为void类型的函数，其含义是(    ). A）调用函数后，被调用的函数没有返回值 B）调用函数后，被调用的函数不返回 C）调用函数后，被调用的函数的返回值为任意的类型 D）以上三种说法都是错误的
+逗号表达式(a=3*5，a*4)，a+15的值为(       )。 A)15    B)60   C)30   D)不确定
+对共用体类型(　　)是正确的。   （A） 允许将共用体变量作为一个整体来进行赋值或复制  （B） 只允许存放其元素的值和元素的地址  （C） 可以把共用体变量作为参数直接传递给函数  （D） 可以从函数返回共用体变量的值
+对于C程序的函数，下列叙述中正确的是______。   A.函数的定义不能嵌套，但函数调用可以嵌套。  B.函数的定义可以嵌套，但函数调用不能嵌套。  C.函数的定义和调用均不能嵌套。  D.函数的定义和调用均可以嵌套。
+对于以下递归函数f, 调用f(4),其返回值为(    ).  int f(int n)  {  if (n)                return f(n-1)+n;     else               return n;  } A) 8        B) 10            C) 11            D) 12 
+根据下面的定义，能打印出字母M的语句是_____。   A) printf("%c\n",class[3].name);  D) printf("%c\n",class[2].name[0]);  B) printf("%c\n",class[3].name[1]);  C) printf("%c\n",class[2].name[1]);  struct person { char name[9]; int age;};  struct person class[10]={"John",17,  "Pa
+关于READ语句取数方式正确的是_____。    A. 一个READ语句对应一个数据行   B. 每个READ语句读数均从一行开头开始   C. READ语句是一个接一个读数据   D. 以上均错
+函数的实参与形参的类型应一致。  
+函数调用:strcat(strcpy(str1,str2),str3)的功能是____。   A) 将串str1复制到串str2中后再连接到串str3之后  B) 将串str1连接到串str2之后再复制到串str3之后  C) 将串str2复制到串str1中后再将串str3连接到串str1之后  D) 将串str2连接到串str1之后再将串str1复制到串str3中
+函数调用语句f((x,y),(a,b,c),(1,2,3,4));中，所含的实参个数是(     ). A) 1   B) 2   C) 3   D) 4
+合法的C语言中，合法的长整型常数是_____   A) '\t'    B) "A"    C) 65    D) A
+假定int类型变量占用两个字节，其有定义：int x[10]={0,2,4};，则数组x在内存中所占字节数是______   A) 3     B) 6     C) 10     D) 20
+假定x和y为 double型，则表达式x=2,y=x+3/2的值是______。   A) 3.500000    B) 3     C) 2.000000     D) 3.000000
+假设所有变量均为整型，则表达式(a=2,b=5,a++,b++,a+b)的值为【  】。
+假设所有变量均为整型，则表达式(a=2,b=5,b++,a+b)的值是【  】。
+可以使用(    )输入字符型数据。 A）putchar(c);  B）getchar(c);  C）getchar(); D）scanf("%c",&c);
+类型定义:  char s[3]="AB";  char *p;  执行了语句p=s以后,*(p+2)的值是________   A、'B'             B、'\0'              C、不确定     D、字符'B'的地址
+类型定义:int a[10];                    int *p;  执行赋值语句p=a;之后,那么  p+5是________,*(p+5)是________。   A、a[5]的值        a[5]的值  B、a[5]的地址    a[5]的地址  C、a[5]的地址    a[5]的值  D、a[5]的值        a[5]的地址
+两次运行下面的程序，如果从键盘上分别输入6和4,则输出结果是____。   main()  { int x;    scanf("%d",&x);    if(x + + >5) printf("%d",x);    else printf("%d\n",x - -); }  A) 7和5    B) 6和3    C) 7和4     D) 6和4
+逻辑运算符两侧运算对象的数据类型是 (        )。 A) 只是0或1                                B) 只能是0或非0正数 C) 只能是整型或字符型数据    D) 可以是任何合法的类型数据
+能正确表示a≥10或a≤0的关系表达式是____。   A)a>=10 or a<=0   B)a>=10│a<=0  C)a>=10 && a<=0   D)a>=10 ││a<=0
+能正确表示a和b同时为正或同时为负的逻辑表达式是____   A) (a>=0‖b>=0)&&(a<0‖b<0)  B) (a>=0&&b>=0)&&(a<0&&b<0)  C) (a+b>0)&&(a+b<=0)  D) a*b>0
+请读程序:               #include<math.h>               #include<stdio.h>               main()               { float x,y,z;                 scan(%f%f,&x,&y);                 z=x/y;                    while(1)                 { if(fabs(z)>1.0)   绝对值            
+请读程序:               #include<stdio.h>               char fun(char *c)               { if( *c<='Z' && *c>='A'.*c-='A'-'a';                  return *c;               }               main()               {  char s[81], *p=s;                   gets(s);       
+请读程序:               #include<stdio.h>               int a[]={2,4,6,8};               main()               { int i;                 int *p=a;                 for(i=0;i<4;i++.a[i]=*p++;                 printf(%d\n,a[2]);                } 程序的输出结果是:    A.6   
+请读程序:           #include<stdio.h>           #include<string.h>           main()           {   char *s1="AbCdEf", *s2="aB";                s1++; s2++;               printf(%d\n,strcmp(s1,s2));            } 输出结果是:   A.正数        B.负数         C.零          D.不
+请读程序:  #include<stdio.h>  main() { float x,y;   scan(%f,&x);   if(x<0.0) y=0.0   else if((x<5.0)&&(x!=2.0))                 y=1.0/(x+2.0);         else if (x<10.0.y=1.0/x;               else y=10.0;   printf(%f\n,y); } 若运行时从键盘上输入2.0<CR>(<CR>表示回车)，则上面程序的输出
+请读程序: main() {   int a=1,b=2,c=3;   ++a;   c+=++b;   {       int b=4,c;       c=b*3;       a+=c;       printf(first:%d,%d,%d\n,a,b,C.;       a+=c;       printf(Second:%d,%d,%d\n,a,b,C.;     }     printf(third:%d,%d,%d\n,a,b,C.;  } 该程序的输出是________。 A.first
+请读程序:                #include<stdio.h>                func( int a, int b)                {  int c;                   c=a+b;                   return c;                }                main()                {  int x=6, y=7, z=8, r;                   r=func
+请读程序:                #include<stdio.h>                main()                { int mun=0;                  while(num<=2)                  { num++; printf("%d\n",num);}                }  输出结果是  A) 1    B) 1     C) 1     D) 1                           2     
+请读程序:            #include<stdio.h>            #include<string.h>            main()            {  char *s1="AbCdEf", *s2="aB";               s1++; s2++;               printf("%d\n",strcmp(s1,s2));             }  输出结果是:  A)正数   B)负数    C)零    D)不确定的值
+请读程序:            main()            { int x,I;              for(I=1;I<=50;I++)              { x=I;                if(x%2==0)                   if(x%3==0)                      if(x%7==0)                        printf(“%d",I);               }            }   
+请读程序:    main( )    {  printf(%d,null);} 则上面程序的输出结果是____ A.0      B.变量无定义    C.-1      D.1
+请读程序:  #include <math.h>  main()  {    int a=1,b=4,c=2;    float x=5.5,y=9.0,z;    z=(a+b)/c+sqrt((double)y)*1.2/c+x;    printf("%f\n",z);  }  则上面程序的输出结果是____   A、数据溢出     B、9.3     C、9.300000     D、0.93
+请读程序:  int a,b,c;  a=(b=(c=10)+5)-5;  printf("a,b,c=d%,d%,d%",a,b,c);  c=a=0;  b=(a+10);  printf("a,b,c=%d,d%,d%",a,b,c);   则上面程序的输出结果是____   A、a,b,c=0,10,10   a,b,c=10,15,10              B、a,b,c=10,15,10  a,b,c=10,15,10  C、a,b,c=10,15,10  a,b,c=0,10,0   
+请读程序:  m=1234.123;  printf=("%-8.3f\n",m);  printf=("%10.3f\n",m);  则上面程序的输出结果是____   A、1234.12300         1234.123  B、1234.123         1234.123  C、1234.123         1234.12300  D、1234.12300         1234.123
+请读程序:  main()  { char *p;    char s[80];    scanf("%s",s);    p=s[0];    printf("%s",p);  }  请判断上面程序____   A、错误:p=s[0];        正确:p=*s;   B、错误:p=s[0];        正确:p=s[];   C、错误:p=s[0];        正确:p=s;   D、错误:p=s[0];        正确:p=&s;
+请读程序:  main()  { int *p,x;    x=10;    *p=x;    printf("%d\n",*p);  }  请判断上面程序____   A、错误:*p=x;     printf("%d\n"),*p);     正确:p=&x;     printf("%d\n",p);   B、错误:*p=x;     printf("%d\n"),*p);     正确:p=**x;     printf("%d\n",p); C、错误:int *p,x;     正确:int *
+请读程序:  main()  { static int a[]={1,2,3,4,5,6}    int *p;    int i;    p=a;    *(p+3)+=2;    printf("n1=%d,n2=%d\n:",*p,*(p+3));  }  其输出是________。  A、n1=1;n2=   5   B、n1=2,n2=6     C、n1=1  n2=7   D、n1=1,n2=6
+请读程序:  main()  {    int a=4,b=7;    printf("%d\n",(a=a+1,b+a,b+1));   则上面程序的输出结果是____     A、5       B、4         C、13     D、8
+请读程序片段(字符串内没有空格):       printf("%d\n",strlen("ATS\n012\1\\"));的输出结果是   A) 11     B) 10        C) 9      D) 8
+请读程序片段：           #include<stdio.h>           main()           { int a, b;             for(a=1;b=1;a<=100;a++)             { if(b>=20.break;                if(b%3==1)                {  b+=3;                   continue;                 }                 b-
+请读程序片段：   char str[ ]=“ABCD”，*p=str;   printf(“%d\n”，*(p+4))；  上面程序片段的输出结果是   A)68                          B)0                    C)字符'D'的地址      D)不确定的值
+请选出合法的C语言赋值语句 A.a=b=58                       B.i++;            C.a=58,b=58                  D.k=int(a+b);
+全局变量的有效范围为(  ) A) 该程序的所有文件                  B) 从本源文件的开始到结束       C) 该程序的主函数                      D) 定义变量的位置开始到本源文件结束
+如果i的原值为3，则：j = ++ i，j的值为3。
+如果函数的首部省略了函数返回值的类型名，则函数被默认为(   )。 A)void类型  B)空类型     C)int类型   D)char类型
+若a是int型变量，且a的初值为6，则计算表达式后a的值为【  】。a+=a-=a*a
+若a是int型变量，则执行下面表达式后，a的值为【】。a=25/3%3
+若i,j已定义为int类型，则以下程序段中内循环体的总的执行次数是______。   for (i=5;i;i--)  for(j=0;j<4;j++){…}  A)20     B)25     C)24     D)30
+若k为 int整型变量且赋值7，请写出赋值表达式 k *= k + 3的运算结果【】。
+若k为int型变量，则以下语句（     ）。 k=8567; printf("|%-06d|\n",k); A)输出格式描述不合法       B)输出为|008567|       C)输出为|8567|        D)输出为|-08567|
+若x和n均是int型变量，且x的初值为12,n的初值为5,则执行下面表达式后，x的值为【  】。x%=(n%=2)
+若x是int型变量，且有下面的程序片段：     for(x=3;x<6;x++) printf((x%2)?("**%d"):("##%d\n"),x);    上面程序片段的输出结果是____。     A) **3      B) ##3     C) ##3      D) **3##4       ##4         **4        **4##5      **5       **5         ##5
+若x是int型变量，则执行下面表达式后，x的值为【  】。x=(a=4,6*2)
+若x为float型变量则以下语句________。 x=223.82748; printf(%6.2f\n,x); A.输出为223.8       B.输出为223.83       C.输出为223.82    D.不能输出
+若x为float型变量则以下语句________。   x=223.82748;  printf("%6.2f\n",x);   A、输出为223.8     B、输出为223.83     C、输出为223.82      D、不能输出
+若x为int型变量，则以下函数acf返回值为________  acf(x)  { printf("%d\n",x);}   A、void类型        B、int类型              C、无法确定      D、无返回值
+若变量a是int类型，并执行了语句：a=‘A'+1.6；，则正确的叙述是   A) a的值是字符C                                 B) a的值是浮点型                                                                                   C) 不允许字符型和浮点型相加         D) a的值是字符‘A’的ASCII值加上1。
+若变量已正确说明为float类型，要通过语句scanf("%f %f %f ",&a,&b,&c);给a赋于10.0，b赋予22.0，c赋予33.0，不正确的输入形式是：____。   A) 10<回车>           B) 10.0,22.0,33.0<回车>  22<回车>                      33<回车>  C) 10.0<回车>        D) 10 22<回车>  22.0 33.0<回车>          33<回车>
+若程序中有下面的说明和定义  struct abc  {int x;char y;}  struct abc s1,s2;  则会发生的情况是______ 。     A) 编译出错                                                   B) 程序将顺利编译`连接`执行    C) 能顺利通过编译`连接`但不能执行         D) 能顺利通过编译`但连接出错
+若使用一维数组名作为函数实参，则以下说法正确的是（  ） A）必须在主调函数中说明此数组的大小 B）实参数组与形参数组类型可以不匹配 C）实参数组与形参数组的大小可以不一致 D）实参数组名与形参数组名必须一致
+若调用一个函数，且此函数中无return语句，则正确的说法是(     ). A) 没有返回值；                                                   B) 返回若干个系统默认值； C) 能返回一个用户所希望的函数值；               D) 返回一个不确定的值
+若想要通过异或运算对变量a进行高4位求反，低四位不变，则b应为____。（二进制表示）   A、11110000       B、00001111     C、视a值而定      D、不可能实现
+若要求在if后一对圆括号中表示a不等于0的关系,则能正确表示这一关系的表达式为  A) a<>0    B) !a     C) a=0      D) a
+若要使函数不带回任何值，可以____。   （A） 不使用return语句                         （B） 不定义函数类型  （C） 把函数定义为void类型               （D） 不返回main(  )函数
+若已定义：int a[9]，*p=a；并在以后的语句中未改变p的值，不能表示a[1] 地址的表达式是____。   A) p+1    B) a+1     C) a++     D) ++p
+若已定义a为int型变量，则对p的说明和初始化正确的是________ A、int *p=a;                 B、int p=a;                 C、int *p=*a;            D、int *p=&a;
+若已定义x和y为double类型，则表达式:x=1，y=x+3/2的值是____。   A)1     B)2     C)2.0     D)2.5
+若已知int类型占两个字节，则下述程序运行结果为________。  struct st  {    char a[10];    int b;    double c;  };  printf("%d\n",sizeof(struct st));    A、8           B、16          C、30          D、20
+若有定义: float w;  int a, b; 则合法的switch语句是______。   A) switch(w)                    B) switch(a);    { case 1.0: printf("*\n");      { case 1 printf("*\n");      case 2.0: printf("**\n");       case 2 printf("**\n");    }                                     
+若有定义：int a=8，b=5，c；，执行语句c=a/b+0.4;后，c的值为____。   A) 1.4        B) 1            C) 2.0          D) 2
+若有定义:int x,y;char a,b,c;并有以下输入数据(此处< CR> 代表换行符，/u代表空格): 6/u2 A/uB/uC 则能给x赋整数6，给y赋整数2，给a赋字符A，给b赋字符B，给c赋字符C 的正确程序段是_____ A.scanf(x=%d y+%d,&x,&y);a=getchar();b=getchar();c=getchar(); B.scanf(%d %d,&x,&y);a=getchar();b=getchar();c=getchar(); C.scanf(%d%d%c%c
+若有说明，double *p,a;则能通过scanf语句正确给输入项读入数据的程序段是 A.*p=&a; scanf(%lf,p);  B.p=(double *)malloc(8);scanf(%f,p); C.p=&a;scanf(%lf,A.;  D.p=&a; scanf(%le,p);
+若有说明：int i, j=2，*p=&i;，则能完成i=j赋值功能的语句是____。  A) i=*p;       B) *p=*&j;       C) i=&j;      D) i=**p;
+若有说明和语句: int a=5; a++; 此处表达式a++的值是 A.7    B.6    C.5     D.4
+若有说明语句：int  a,b,c,*d=&c；，则能正确从键盘读入三个整数分别赋给变量a、b、c的语句是______。  A) scanf("%d%d%d",&a,&b,d);       B) scanf("%d%d%d",&a,&b,&d);   C) scanf("%d%d%d",a,b,d);             D) scanf("%d%d%d",a,b,*d);
+若有下面的程序片段:     int a[12]={0}, *p[3], **pp, i;     for(i=0; i<3; i++)       p[i]=&a[i*4];     pp=p;   则对数组元素的错误引用是    A)pp[0][1]   B)a[10]     C)p[3][1]   D)*(*(p+2)+2)
+若有下面的说明和定义，则sizeof(struct aa) 的值是______。   struct aa  { int r1;double r2; float r3;    union uu{char u1[5]; long u2[2]; } ua;  } mya;  A)30     B)29     C)24     D)22
+若有以下变量说明和函数定义： int a=4,b=6,c,k;   char ch='x';   float x,y,z; sub(int x, int y, char ch, float *z) {  switch(ch)    {  case '+': *z=x+y;break;       case '-': *z=x-y;break;       case '*': *z=x*y;break;       case '/': *z=x/y;break;       } } 则以下合法的函数调用语句
+若有以下程序段，  int c1=1,c2=2,c3;  c3=1.0/c2*c1;  则执行后，c3中的值是____。   A) 0 B) 0.5 C) 1 D) 2
+若有以下定义 char s='\092'; 则该语句（    ） A)使s的值包含一个字符       B)定义不合法，s的值不确定         C)使s的值包含4个字符        D)使s的值包含3个字符
+若有以下定义,则能使值为3的表达式是(     )。 int k=7, x=12; A)x%=(k%=5)        B)x%=(k-k%5)             C)x%=k-k%5         D)(x%=k)-(k%=5)
+若有以下定义，则执行下面表达式y+=y-=m*=y后，y的值为-6。int m=5,y=2; 
+若有以下定义: char s[20]=programming,*ps=s; 则不能代表字符o的表达式是 A.ps+2     B.s[2]     C.ps[2]     D.ps+=2,*ps
+若有以下定义：int x=3,y=2;float a=2.5,b=3.5;则下面表达式的值为【  】。(x+y)%2+(int)a/(int)b
+若有以下定义和语句：  double r=99， *p=&r；  *p=r；  则以下正确的叙述是________    A) 以下两处的*p含义相同，都说明给指针变量p赋值  B) 在"double r=99， *p=&r；"中，把r的地址赋值给了p所指的存储单元  C) 语句"*p=r；"把变量r的值赋给指针变量p  D) 语句"*p=r；"取变量r的值放回r中
+若有以下定义和语句:  int a[10]={1,2,3,4,5,6,7,8,9,10},*p=a;  则不能表示a数组元素的表达式是______。   A) *p     B) a[10]     C) *a     D) a[p-a]
+若有以下定义和语句:  int w[2][3],(*pw)[3];  pw=w;   则对w数组元素非法引用是______。   A)*(w[0]+2)     B)*(pw+1)[2]     C)pw[0][0]     D)*(pw[1]+2)
+若有以下函数定义，则在主函数中正确的调用语句是(   )。  viod fun(int  array[3][5]) { ………..} main() { int  a[3][5], b;    ……..} A）fun(a[3][5]);    B）b=fun(a);    C) fun(a);    D) fun(&a);
+若有以下函数定义，则在主函数中正确的调用语句是( )。 void   fun(int  array[][5]） { ………..} main() { int  a[3][5], b;    ……..} A）fun(a[3][5]);   B）b=fun(a);   C)  fun(a);   D)  fun(a)
+若有以下函数调用语句fun(a+b, (x,y), fun(n+k,d,(a,b)));在此函数调用语句中实际参数的个数是(      ). A) 3   B) 4  C) 5  D) 6
+若有以下类型说明语句char w; int x; float y; double z;   则表达式w *x+z-y的结果为____。  A. float  B. char  C.int  D.  double
+若有以下说明和语句，请选出哪个是对c数组元素的正确引用______。   int c[4][5], (*cp)[5];  cp=c;   A) cp+1               B) *(cp+3)   C) *(cp+1)+3      D) *(*cp+2)
+若有以下说明和语句，则输出结果是_____。    char *sp="\"D:\\ANL.WSP\"";   printf("%s",sp);   A、 字符串中有非法字符，输出值不定   B、 \"D:\\ANL.WSP\"   C、 "D:\ANL.WSP"   D、 "D:\\ANL.WSP"
+若在scanf函数语句中没有非格式字符作输入数据的间隔，则可用(     )。 作为输入数据的间隔。 A）空格    B）逗号         C）TAB   D）回车
+设 int a=12，则执行完语句 a+=a-=a*a后，a的值是_______   A) 552       B) 264       C) 144       D) -264
+设 int x=1, y=1; 表达式(!x||y--)的值是 A.0    B.1    C.2      D.-1
+设a,b和c都是int型变量，且a=3,b=4,c=5,则下列表达式中，值为0的表达式是________   A)'a'&&'b'       B)a<=b         C)a||b+c&&b-c   D)!((a<b)&&!c||1)
+设a=-1，b=0，c=1，则表达式a||b+c&&b==c的值是【 】
+设a=1,b=2,c=3,d=4,则表达式：a<b?a:c<d?a:d的结果为_____。   A)4     B)3     C)2     D)1
+设a=2,b=3,c=4,则表达式 a+b>c&&b= =c&&a||b+c&&b+c的值为(         )。 A) 5     B) 8     C) 0       D) 1
+设a=3，b=2，则表达式a^b>>2的值的二进制表示为________。   A、00000011         B、00000110         C、00000100             D、00000010
+设a为整型变量,初值为12,执行完语句a+=a-=a*a后,a的值是________。   A、552       B、144           C、-264         D、0
+设ch是char型变量，其值为A，且有下面的表达式：      ch=(ch>='A'&&ch<='Z')?(ch+32):ch   的值是____。     A) A         B) a        C) Z          D) z
+设C语言中，int类型数据占2个字节，则float类型数据占（      ）个字节。 A)1           B)2            C)8         D)4
+设C语言中，int类型数据占2个字节，则long类型数据占（    ）个字节。  A：1      B：2       C：8        D：4
+设C语言中，一个int型数据在内存中占2个字节，则int数据的取值范围为【  】。
+设i,x都是int类型，则下面的for循环体可执行多少次？  for(i=0,x=0;i<=9&&x!=876;i++) printf("*");   A、9次          B、876次           C、10次         D、无限循环
+设int n=3；则n++的结果是(      )。 A)2     B)3     C)4      D)5
+设int n=3；则有表达式n++，n的结果是(      )。 A)2     B)3     C)4      D)5
+设x，y，z均为int型变量，请写出描述"x,y中有一个为负数"的表达式【 】
+设x、y、t均为int型变量，则执行语句：x=y=3;t=++x||++y;后，y的值为______。   A) 不定值 B) 4 C) 3 D) 1
+设x.y.z和k都是int型变量,则执行表达式:x=(y=4,z=16,k=32)后,x的值为____     A 4      B 16      C 32      D 52
+设x=3，y=-4，z=5，则表达式!(x>y)+(y!=z)||(x+y)&&(y=z)的值是【 】
+设x=3,y=-4,z=6，写出表达式的结果。____。  !(x>y)+(y!=z)||(x+y)&&(y-z)   A、0          B、1           C、-1        D、6
+设x和y均为int型变量,则执行下的循环后,y值为____。   for(y=1,x=1;y<=50;y++)  { if(x>=10))break;     if (x%2==1)    { x+=5; continue;}     x-=3;  }  A) 2     B) 4     C) 6     D) 8
+设如下说明char a,b[10];以下哪条输入函数调用是合法的_____。   （A） scanf("%c%s",&a,b)              （B） scanf("%c%s",a,b)  （C） scanf("%c%s",&a,&b)          （D） scanf("%c%s",a,&b)
+设一整型(int)变量占用2个字节则下述共同体变量x所占用内存字节数为______。   union exp  { int i;    float j;    double k;  }x;   A、14个        B、7个          C、8个      D、随机而定
+设已定义x为double类型变量____     x=213.82631;     printf("%-6.2e\n",x);  则以上语句    A：输出格式描述符的域宽不够，不能输出           B：输出为21.38e+01    C：输出为2.14e+02                                                    D：输出为-2.14e2
+设有  static char str[ ]="Beijing";  则执行  printf("%d\n", strlen(strcpy(str,"China")));  后的输出结果为______。   A) 5     B) 7    C) 12     D) 14
+设有x=03,y=02,z=01,X&y&z=(　　)。   （A） 0   （B） 1        （C） 3   （D） 6
+设有逗号表达式(a=3*5，a*4)，a+15，a的值为(      )。 A)60    B)30   C)15   D)90 
+设有如下定义: int x=10,y=3,z; 则语句  printf("%d\n",z=(x%y,x/y)); 的输出结果是_____   A) 1     B) 0     C) 4    D) 3
+设有如下定义： int x=10,y=3,z ; 则语句 printf("%d\n",z=(x%y,x/y)); 的输出结果是(     ). A) 1          B）0          C) 4         D）3
+设有如下定义：int x=l，y=-1；，则语句：  printf("%d\n"，(x--&++y))；的输出结果是____   A) 1    B) 0     C) -1     D) 2
+设有如下一段程序: int *var,ab; ab=100 var=&ab; ab=*var+10; 执行上面的程序后,ab的值为 A.120      B.110      C.100     D.90
+设有数组定义: char array [ ]="China"; 则数组 array所占的空间为____。   A) 4个字节 B) 5个字节 C) 6个字节 D) 7个字节
+设有说明：char w;int x;float y;double z;则表达式w*x+z-y值的数据类型为(     )。 A) float         B) char             C) int            D) double
+设有以下函数：  f ( int a)  { int b=0;    static int c = 3;    b++; c++;    return(a+b+c);  }  如果在下面的程序中调用该函数，则输出结果是  main()  { int a = 2, i;    for(i=0;i<3;i++) printf("%d\n",f(a));  }  A) 7   B) 7     C) 7     D) 7     8      9        10       7     9      11 
+设有以下宏定义:  #define N 3  #define Y(n) ( (N+1)*n)  则执行语句:z=2 * (N+Y(5+1));后,z的值为______。   A) 出错    B) 42    C) 48    D) 54
+设有以下语句：int x=03,y=02,z=01;那么语句printf("%d",x|y&~Z)的执行结果(　　)。   （A） 1        （B） 2          （C） 3       （D） 0
+设在C语言中，int类型数据占2个字节，则long类型占________字节，unsigned int占________个字节，short类型占________个字节。   A、4，2，2                    B、2，1，1  C、4，2，1                    D、4，4，2
+设正x、y均为整型变量，且x=10 y=3，则以下语句的输出结果是 printf(%d,%d\n,x--,--y); A.10,3     B.9.3    C.9.2    D.10.2
+实参可以是常量、变量或表达式。
+使用getchar函数接收字符，若输入多于一个字符时，只接收第【   】个字符。
+使用scanf函数时，在源程序开头(    )。 A）书写#include "stdio.h"           B）书写#include <stdio.h> C）不必写#include <stdio.h>     D）书写#include "scanf.h"
+输入语句的格式为： scanf("%d%d%d",&a,&b,&c);是正确的。
+数据是操作的对象，操作的结果会改变数据的状况。 
+下列for循环语句 ____。   int i,k;  for(i=0,k=-1;i+ +,k+ +)    printf("* * *");  A：判断循环结束条件非法    B：是无限循环  C：只循环一次                        D：一次也不循环
+下列if语句中，不正确的是________。   A、if(x>y);  B、if(x==y) x+=y;  C、if(x!=y) scanf("%d",&x) else x=1;  D、if(x<y) {x++;y++}
+下列变量定义中合法的是_____   A) short _a=1-.le-1;     B) double b=1+5e2.5;  C) long do=0xfdaL;     D) float 2_and=1-e-3;
+下列标识符组中，合法的用户标识符为  (    )。 A)_0123与ssiped             B)del-word与signed C)list与*jer                      D) keep%与wind
+下列标识符组中，合法的用户标识符为(    )。 A) PAd与p#d          B) Scanf 与a10 C) void与max          D) A*与temp
+下列程序的结果为(   ).   change(int x,int y)   { int t;     t=x;x=y;y=t;   }   main()  {      int x=2,y=3;      change(x,y);      printf("x=%d,y=%d\n",x,y);  } A) x=3,y=2     B) x=2,y=3      C) x=2,y=2     D) x=3,y=3
+下列程序的输出结果是____。   A) 3    B) 3.2    C) 0    D) 3.07  main()  { double d=3.2; int x,y;    x=1.2; y=(x+3.8)/5.0;    printf("%d \n", d*y);  }
+下列程序的输出结果是____。   A) 非法    B）a[4]的地址    C）5    D）3  main()   { char a[10]={9,8,7,6,5,4,3,2,1,0},*p=a+5;    printf("%d",*--p);  }
+下列程序的输出结果是____。   main( )  { char ch[2][5]={"6934,"8254"},*p[2];    int i,j,s=0;    for(i=0;i<2;i + +) p[i]=ch[i];    for(i=0;i<2;i + +)    for(j=0;p[i][j]>'\0'&&p[i][j]<='9';j+=2) s=10*s+p[i][j]-'0';    printf("%d\n",s); } A) 6385     B) 69825     C) 638
+下列程序的输出结果是______。   A) 4 B) 6 C) 8 D) 10  int b=2;  int func(int *a)  { b += *a; return(b);}  main()  { int a=2, res=2;    res += func(&a);    printf("%d \n",res);  }
+下列程序的运行结果是______。   A) 6 3     B) 3 6      C) 编译出错     D) 0 0  void fun(int *a, int *b)  { int *k;    k=a; a=b; b=k;  }  main()  { int a=3, b=6, *x=&a, *y=&b;    fun(x,y);    printf("%d %d", a, b);  }
+下列程序的运行结果是______。   A) a=%2,b=%5              B) a=2,b=5  C) a=d, b=d                   D) a=%d,b=%d  #include <stdio.h>  main()  { int a=2,c=5;    printf("a=%d,b=%d\n",a,c);   }
+下列程序段输出结果是什么？____。   a=1;b=10;  do{      b-=a;      a++;    }while(b--<0);  printf("a,b=%d,%d",a,b);  A、a,b=7,5 B、a,b=2,8 C、a,b=2,2 D、a,b=8,2
+下列程序段选择项，使i的运行结果为4的程序段是（   ）     A：int i =0,j=0;        B:int i=1,j=0           (i=3,(j+ +)+i);        j=i=(i=3)*2);     C:int i=0,j=1;          D: int i=1,j=1;         (j= =1)?(i):(i=3);      i+=j+=2;
+下列程序段执行后，s的值是________  static char ch[]="600";  int a,s=0;  for(a=0;ch[a]>='0'&&ch[a]<='9';a++)    s=10*s+ch[a]-'0';  A、600    B、6    C、0    D、出错
+下列程序执行后的输出结果是______   A) G B) H C) i D) J  main()  { int x='f'; printf("%c \n",'A'+(x-'a'+1)); }
+下列程序执行后的输出结果是______。   A) -32767    B) FFFE     C) -1    D) -32768  main()  { char x=0xFFFF; printf("%d \n",x--); }
+下列程序执行后的输出结果是______。   A) hello   B) hel   C) hlo   D) hlm  void func1(int i);  void func2(int i);  char st[]="hello,friend!";  void func1(int i)  { printf("%c",st[i]);    if(i<3){i+=2;func2(i);}  }  void func2(int i)  { printf("%c",st[i]);    if(i<3){i+=
+下列程序执行后输出的结果是____。   int d=1;  fun (int q)  { int d=5;    d + =p + +; printf("%d".d);    }  main( )  { int a=3;    fun(a);    d + = a + +; printf("%d\n",d);  }  A) 8 4 B) 9 6 C) 9 4 D) 8 5
+下列定义不正确的有 (  ) 。 A）#define PI 3.141592           B）#define S 345 C）int max(x,y);                         D）char c;       int x,y ;        {  }
+下列描述中不正确的是____。   A) 字符型数组中可以存放字符串  B) 可以对字符型数组进行整体输入、输出  C) 可以对整型数组进行整体输入、输出  D) 不能在赋值语句中通过赋值运算符"="对字符型数组进行整体赋值
+下列哪个是C语言的正确赋值语句   A、a=1,b=2       B、i++;            C、a=b=5         D、y=int(x);
+下列哪个循环不是无限循环。 A.for(y=0;x=1;++y);                           B.for(;;x=0); C.while(x=1.{x=1;}                            D.for(y=0,x=1;x>++y;x+=i);
+下列哪些数据类型可以进行位运算。  A、整型和浮点型 B、字符型，双精度型 C、整型和字符型 D、所有类型均可
+下列说法正确的是________。   A、C程序必须在开头用预处理命令       #include <stdio.h>  B、预处理命令必须位于C源程序的首部  C、在C语言中，预处理命令都以"#"开头  D、C语言的预处理命令只能实现宏定义       和条件编译的功能
+下列说法中正确的是(     ). A）调用函数时，实参变量与形参变量可以共用内存单元 B）调用函数时，实参的个数、类型和顺序与形参可以不一致 C）调用函数时，形参可以是表达式 D）调用函数时，将为形参分配内存单元
+下列四组选项中,均不是C语言关健字的选项是(     )。                                                              A) define    B) gect     C) include      D) while    IF                char         scanf           go      type             printf        case            pow
+下列循环体执行多少次？  k=70;  while(k=0) k-=1;  A、70次   B、69次   C、无限次   D、0次
+下列循环语句中，(　　)不会形成死循环。  　（A） for(i=1;;i++) sum=sum+i  　（B） for (i=1;i<=100;){sum=sum+i;i++}  　（C） for(;;)　      （D） for(i=1;i<=100;)sum=sum+i
+下列有关C语言文件的说法正确的是________。   A、C语言文件是由记录组成  B、C语言文件被看作是一个字符（字节）的序列，称为流式文件  C、C语言有专门的文件操作命令  D、以上说法都不正确
+下列语句中，不正确的是 (  )。 A）c=2*max(a,b);                  B）m=max(a,max(b,c)); C）printf("%d",max(a,b));       D）int max(int x,int max(int y,int z)) 
+下面不正确的字符串常量是(    )。 A)'abc'       B)"12'12"       C)"0"          D)" "
+下面程序 #include <stdio.h> f ( int x )  { if ( x= = 0 || x = = 1 ) return ( 3 ) ;   else  return ( x–f(x–2))；　 } main ()  {    printf ("%d\n", f(9)); } 输出结果是(     )。 A) 7 B) 3 C) 6 D) 8
+下面程序 #include <stdio.h> main ( ) {   char *a="1234";   fun(a);  printf("\n");  } fun ( char *s) { char t;     if(*s) {t = *s++; fun(s); }   if(t !='\0') putchar( t );  } 输出为(   )。 A) 1234   B) 4321 C)1324   D) 4231
+下面程序把数组元素中的最大值放入a[0]中。则在if 语句中的条件表达式应该是______。   A) p>a     B) *p>a[0]     C) *p>*a[0]     D) *p[0]> *a[0]  main( )  { int a[10]={6，7，2，9，1，10，5，8，4，3}，*p=a，i；    for(i=0；i<10；i++，p++)    if(________) *a=*p；    printf("%d"，*a)；  }
+下面程序的输出结果是____。  #include<stdio.h>  main()  { int I=2,p;    p=f(I,I+1);    printf("%d",p);  }  int f(a,b)  int a,b;  { int c;    if(a>b) c=1;    else    if(a==b) c=0;    else c=-1;    return c;  }  A) -1     B) 0     C) 1     D) 2
+下面程序的输出结果是______。   A) 0       B) 1      C) 10      D) 9  main()  { int a[ ]={1,2,3,4,5,6,7,8,9,0,},*p;    p=a;    printf("%d\n",*p+9);  }
+下面程序的输出是 main() { int x=100, a=10, b=20, ok1=5, ok2=0;   if(a<b)   if(b!=15)   if(! ok1)      x=1;   else   if(ok2)x=10;   x=-1;   printf(%d\n,x);} A.-1       B.0        C.1       D.不确定的值
+下面程序的输出是____ int w=3; main() { int w=10; printf(%d\n,fun(5)*w); } fun(int k) { if(k==0.return w;    return(fun(k-1)*k); } A.360      B.3600       C.1080       D.1200
+下面程序的输出是____。   A) 0 B) 1 C) 3 D) 不确定的值  main()  { int x=10,y=3;    printf("%d\n",y=x/y);}
+下面程序的输出是______。   A) 17 B) 18 C) 23 D) 24  main()  { int x=023;    printf(%d\n",--x);   }
+下面程序的输出是______。   A) 0 1 2 3 B) 0 4 0 10 C) 0 4 5 15 D) 1 4 5 15  main()  { enum team {my,your=4,his,her=his+10};    printf("%d %d %d %d\n",my,your,his,her);}
+下面程序的输出是______。   A) ABCD  B) A   C) D D) ABCD       BCD         B        C      ABC       CD           C         B      AB       D              D         A      A  char s[]="ABCD";  main()  { char *p;    for(p=s; p<s+4; p++)    printf("%s\n,p);  }
+下面程序段中，主函数中变量a被初始化为 (   )。  int f()  {   return 3.5;  }  main()  {    int a=f();  } A）3.5             B）无确定值       C）3                   D）程序出错 
+下面的DO循环中，一共循环(　　)次。  M=5  N=1  DO WHILE N<=M  N=N+1  ENDDO   （A） 1     （B） 6           （C） 4      （D） 5
+下面的程序执行后，文件testt.t中的内容是   #include <stdio.h>  void fun(char *fname.,char *st)  { FILE *myf; int i;    myf=fopen(fname,"w" );    for(i=0;i<strlen(st); i++)fputc(st[i],myf);    fclose(myf);  }  main()  { fun("test","new world"; fun("test","hello,"0;)  A）hel
+下面的函数调用语句中（）个实参。     func((v1,v2),(v3,v4,v5),v6);      A:3    B:4    C:5     D:6
+下面各语句行中，能正确赋值字符串的操作语句行是 A.char st[4][5]={“ABCDE”}； B.char s[5]={'A'，'B'，'C'，'D'，'E'}； C.char *s;s=“ABCDE”； D.char *s;scanf(“%S”，S)；
+下面函数 f(double x)  {printf(“%6d\n”,x);} 的类型为(     ). A) 实型  B)void 类型 C）int 类型  D) A)、B)、C)均不正确
+下面函数swap_p的功能是完成交换两个指针的操作。  请按指定的顺序在题后的相应序号后填上适当的内容,使之成为完整正确的函数。  swap_p(s,t)  int ________,________;  { int *term;    term=________;*s=________;*t=________;  }   A、s(或t);  *t(或*s);  *s;  *t;  term;  B、**s(或**t);  **t(或**s);  *s;  *t;  term;    C、**s(或**t
+下面函数的功能是 int funl(char * x) { char * y=x;   while(*y++);   return(y-x-1);} A.求字符串的长度                              B.比较两个字符串的大小 C.将字符串x复制到字符串y              D.将字符串x连接到字符串y后面
+下面描述中正确的是_____。   A. C语言中预处理是指完成宏替换和文件包含指定的文件的调用。  B. 预处理指令只能位于C源程序文件的首部。  C. 凡是源程序中行首以"#"标识的控制行都是预处理指令。  D. 预处理就是完成C编译程序对C源程序的第一遍扫描，为编译的词法分析和语法分析作准备。
+下面哪个表达式满足x为奇数时为真，x为偶数时为假。   A、x%2==0             B、(x/2*2-x)==0          C、!!(x%2)          D、!x%2!=0
+下面四个选项中,均是不合法的用户标识符的选项是(      )。 A) A            B) float       C) b-a        D) _123      p_0             lao            goto          temp   do               _A            int           INT
+下面四个选项中,均是不正确的八进制或十六进制数的选项是(     )。 A)016       B)0abc           C)010           D)0a12     0x8f        017              -0x11           7ff   018         0xa              0x16            -123
+下面四个选项中,均是非法常量的选项是(    )。 A)'as'        B)'\\'             C)-0x18         D)0xabc     -0fff        '\01'              01177           '\0'   '\0a'        12,456             0xf             "a"
+下面四个选项中,均是合法整型常量的选项是(     )。 A)160        B)-0xcdf    C) -01         D)-0x48a    -0xffff      01a          986,012       2e5   011          0xe          0668          0x <<02>>B>>2
+下面叙述不正确的是(   ). A) 在函数中，通常用return语句传回函数值； B) 在函数中，可以有多条return语句； C) 在C中，主函数main后的一对圆括号中也可以带有形参； D) 在C中，调用函数必须在一条独立的语句中完成；
+下述对C语言字符数组的描术中错误的是______。   A) 字符数组可以存放字符串  B) 字符数组中的字符串可以整体输入、输出  C) 可以在赋值语句中通过赋值运算符"="对字符数组整体赋值  D) 不可以用关系运算符对字符数组中的字符串进行比较
+现已定义整型变量int i=1； 执行循环语句while(i+ +<5)；后，i的值为(    )。 A)1     B)5       C)6           D)以上三个答案均不正确
+写出下列程序的运行结果。  #include <stdio.h>  #include <string.h>  main()  {    char s[10]={'C','G','E','T'};    printf("%d\n",strlen(s));  }  A、7     B、10     C、1     D、4
+写出下列语句执行后a,b的值。   int a=7,b=6;  b=(++a)+(a++);   A、a=8，b=14       B、a=7，b=8  C、a=14，b=14     D、a=8，b=8
+写出下列语句执行结果。  int a,b,c,d=4,m=6,n=8;  int *p1=&d,*p2=&m,*p3;  a=p1==&d;  b=3*(-*p1)/(*p2)+7;  c=*(p3=&n)=*p1*(*p2);  printf("%d,%d,%d",a,b,c);   A、1,5,24       B、4,5,23             C、1,2,22       D、5,5,14
+写出一表达式当x的值在(a,b)之间，或在(c,d)之间时为真，其它为假。   A、(x>a)&&(x<b)||(x>c)&&(x<d)  B、(x>a)&&(x<b)&&(x>c)&&(x<d)  C、(x>a)||(x<b)||(x>c)||(x<d)  D、(x>a)&&(x<b)||(x>c)||(x<d)
+形参和实参的变量名称可以一样。  
+一个C程序由函数A、B、C和函数p构成,在函数A中分别调用了函数B和函数C,在函数B中调用了函数A,且在函数p中也调用了函数A,则可以说_______。   A、函数B中调用的函数A是函数A的间接递归调用  B、函数A被函数B中调用的函数A间接递归调用  C、函数p直接递归调用了函数A  D、函数p中调用的函数A是函数p的嵌套
+一个C语言程序总是从____开始执行。   A）主过程      B)主函数             C）子程序      D) 主过程
+一个源文件中定义的全局变量的作用域为_____   A、本文件全部范围            B、本程序全部范围  C、本函数全部范围            D、从定义开始至本文件结束
+已有以下数组定义和f函数调用语句，则在f函数的说明中，对形参数组array的错误定义方式是(   ). int  a[3][4]; f(a); A）f(int  array[ ][6])    B）f(int  array[ 3][ ]) C）f(int  array[ ][4])    D）f(int  array[ 2][5])
+已知A=7.5，B=2，C=3.6，表达式A>B&&C>A || A<B&&!C>B的值是【  】
+已知变量定义i=4,j=7,表达式k=(i++)*(++j)的值为____。   A)28    B)35     C)32    D)40
+已知各变量的类型说明如下： int i=8,k,a,b; unsigned long w=5; double x=1.42,y=5.2; 则以下符合C语言语法的表达式是(     )。 A)a+=a-=(b=4)*(a=3)                     B)a=a*3=2 C)x%(-3)                                        D)y=float(i)
+已知各变量的类型说明如下： int k,a,b; unsigned long w=5; double x=1.42 则以下不符合C语言语法的表达式是(    )。 A)x%(-3)                               B)w+=-2 C)k=(a=2,b=3,a+b)               D)a+=a-=(b=4)*(a=3)
+已知整型变量a=13和b=6,则!a的值是________，b<<2的值是________   A、1    24    B、0   24          C、1    23    D、0   12
+已知字母a的ASCII码的十进制代码为97，则执行下列语句后输出为____。        ch='a';       a--;       printf("%d,%c\n",a+'2'-'0',a+'3'-'0');       A、 a,c              B、 a-运算不合法，故有语法错       C、98，c         D、格式描述和输出项为匹配，输出无定义
+已知字母A的ASCII码为十进制数65,且c2为字符型,则执行语句c2='A'+'6'-'3'后,c2中的值为(     )。 A)D           B)68         C)不确定的值                D)C
+以下____为不正确的if语句。     A. if(x>y);                                                                       B. if(x= =y)x+=y;    C. if(x!=y) scanf(''%d'',&x) else scanf(''%d'',&y);            D. if(x<y){x++;y++;}
+以下不正确的描述为_____。    A. 调用函数时，实参可以是表达式。   B. 调用函数时，实参与形参可以共用内存单元。   C. 调用函数时，将为形参分配内存单元。   D. 调用函数时，实参与形参的类型必须一致。
+以下程序的输出结果是 (      ) 。  int power(int x,int y);  main() { float a=2.6,b=3.4;   int p;   p=power((int)a,(int)b);   printf("%d\n",p); }  int power(int x,int y) { int i,p=1;   for(i=y;i>0;i--)   p=p*x;   return p; } A) 8        B) 9          C) 27         D) 
+以下程序的输出结果是 ______   A)x=4 B)x=8 C)x=6 D)x=12   main( )   { int i,j,x=0;     for (i=0;i<2;i++)     {  x++;        for(j=0;j<3;j++)        {   if (j%2) continue;            x++;         }         x++;      }      printf("=%d\n",x);   }
+以下程序的输出结果是 main( ) {  int k=17；    printf(%d，%o，%x \n，k，k，k)； } A.17，021，0x11        B.17，17，17 B.17，0x11，021        D.17，21，11
+以下程序的输出结果是 main() { int i, a[10];   for(i=9;i>=0;i--.a[i]=10-i;   printf(%d%d%d,a[2],a[5],a[8]); } A.258   B.741      C.852        D.369
+以下程序的输出结果是  main()  {  int  a=5,b=4,c=6,d;     printf("%d\n",d=a>b?(a>c?a:c):(b));  }   A) 5           B) 4           C) 6            D) 不确定
+以下程序的输出结果是  struct HAR  { int x, y; struct HAR *p;} h[2];  main()  { h[0],x=1;h[0];y=2;    h[1],x=3;h[1];y=4;    h[0],p=&h[1],h[1].p=h;    printf("%d %d \n",(h[0],p)->x,(h[1],p)->y);  }  A) 12 B) 23 C) 14 D) 32
+以下程序的输出结果是   #include   <stdio.h>  main()  { int  i=0,a=0;    while(i<20)    {  for(;;)       { if((i%10)==0)  break;         else           i--;        }        i+=11;      a+=i;     }     printf("%d\n",a);  }       A) 21              B) 32        C) 33 
+以下程序的输出结果是____。  main()  { int  a=0,i;    for(i=1;i<5;i++)    {  switch(i)       { case 0:         case 3:a+=2;         case 1:         case 2:a+=3;         default:a+=5;        }     }     printf("%d\n",a);  }   A) 31          B) 13           C) 10      
+以下程序的输出结果是____。   Amovep(int p, int (a)[3],int n)  { int i, j;    for( i=0;i<n;i++)    for(j=0;j<n;j++){ *p=a[i][j];p++; }  }  main()  { int *p,a[3][3]={{1,3,5},{2,4,6}};    p=(int *)malloc(100);    amovep(p,a,3);    printf("%d %d \n",p[2],p[5]);free(p); 
+以下程序的输出结果是____。   main( )  { int a=-1,b=4,k;    k=(+ +a〈0)&&!(b - -〈=0);    printf("%d%d%d\n",k,ab); }  A) 104 B) 103 C) 003 D) 004
+以下程序的输出结果是____。   main()  {  int a, b;    for(a=1, b=1; a<=100; a++)    { if(b>=10) break;      if (b%3= =1)        { b+=3; continue; }     }     printf("%d\n",a);  }  A) 101 B) 6 C) 5 D) 4
+以下程序的输出结果是____。   main()  { int num= 0;    while(num<=2)    { num++; printf("%d\n",num);  }  A) 1 B) 1 C)1 D) l     2    2   2     3    3     4
+以下程序的输出结果是_____   main()  { int a[4][4]={{1,3,5},{2,4,6},{3,5,7}};    printf("%d%d%d%d\n",a[0][3],a[1][2],a[2][1],a[3][0];  }     A)0650    B) 1470         C)5430    D) 输出值不定
+以下程序的输出结果是______ fut (int**s,int p[2][3]) { **s=p[1][1]; } main( ) { int a[2][3]={1,3,5,7,9,11},*p;   p=(int*)malloc(sizeof(int));   fut(&p,a);   primtf(%d\n,*p); } A.1    B.7     C.9     D.11
+以下程序的输出结果是______。   A) 10 1 9 2     B) 9 8 7 6     C) 10 9 9 0     D) 10 10 9 1  main( )  { int x=10，y=10，i；    for(i=0；x>8；y=++i)    printf("%d，%d "，x--，y)；  }
+以下程序的输出结果是______。   A) ABCD   B) ABCD   C) EFG    D) EFGH       FGH          EFG           JK             IJKL       KL             IJ               O                         M  main()  { char w[][10]={ "ABCD","EFGH","IJKL","MNOP"},k;    for(k=1;k<3;k++) 
+以下程序的输出结果是______。   A) -1 1    B) 0 1    C) 1 0    D) 0 0  main( )  { int a= -1，b=1，k；    if((++a<0)&& ! (b-- <=0))    printf("%d %d\n"，a，b)；    else    printf("%d %d\n"，b，a)；  }
+以下程序的输出结果是______。   A) 9 B) 6 C) 36 D) 18  #define f(x) x*x  main( )  { int a=6，b=2，c；    c=f(a) / f(b)；    printf("%d \n"，c)；  }
+以下程序的输出结果是______。   i=5;  i=++i*4+2;  A、5       B、6        C、23   D、26
+以下程序的输出结果是______。   main()  { char c='z';     printf("%c",c-25);  }  A) a    B) Z    C) z-25    D) y
+以下程序的输出结果是______。   main()  {int x,y,z;   x=y=z=0;   ++x||++y||++z;   printf(“%d,%d,%d\n”,x,y,z);  }  A、1，1，1       B、1，0，0               C、1，1，0       D、1，0，1
+以下程序的运行结果是  A) 运行后报错     B) 6 6     C) 6 12     D) 5 5  #include "stdio.h"  main( )  {    int a[ ]={1，2，3，4，5，6，7，8，9，10，11，12，}；    int *p=a+5， *q=NULL；    * q=*(p+5)；    printf("%d %d \n"，*p，*q)；  }
+以下程序段的输出结果是  int x=3;  do { printf("%3d",x-=2);} while(!(--x));  A) 1     B) 3 0     C) 1-2     D) 死循环
+以下程序段给数组所有的元素输入数据，请选择正确答案填入______。   #include<stdio.h>  main()  { int a[10],i=0;    while(i<10) scanf("%d",________ );   ┇  }   A) a+(i++)     B) &a[i+1]   C) a+i            D) &a[++i]
+以下程序调用findmax函数返回数组中的最大值   findmax(int  *a,int  n)  { int   *p,*s;    for(p=a,s=a;  p-a<n;  p++)    if (______)  s=p;    return(*s);  }   main()  { int  x[5]={12,21,13,6,18};    printf("%d\n",findmax(x,5));  }   在下划线处应填入的是  A) p>s               B) *p>*s  
+以下程序运行后，如果从键盘上输入：          book<回车>          book<空格><回车>        则输出结果是     A)*8      B)#9         C)#6        D)*9        #include         main()        {  char a1[80]，a2[80]，*s1=a1，*s2=a2;           gets(s1);   gets(s2);           if(!strcmp(s1，s2))   p
+以下程序运行后,输出结果是   A)1000    B)10010    C)00110    D)10100   main ()   { int y=18,i=0,j,a[8];     do     { a[i]=y%2;i++;       y=y/2;     } while(y>=1);     for(j=i-1>0;j--)printf(%d",a[j]);     printf("h\n");   }
+以下程序运行后,输出结果是 ______。   A、ABCDEFG        B、CDG           C、abcdefgh            D、abCDefGh   main()   { siatic char a[]="ABCDEFGH",b[]="abCDefGh";     char *p1,*p2;     int k;     p1=a; p2=b;     for(k=0;k<=7;k++)     if (*(p1+k)==*(p2+k))     printf("%",*
+以下程序运行后,输出结果是 ______。   A 49.5     B 9.5     C 22.0     D 45.0   #include   #define PT 5.5   #difine s(x) pt*x*x   main()   { int a=1,b=2;     print ("%4.lf/n",S(a+b));   }
+以下程序运行后,输出结果是 ______。   A)6385 B)22 C)33 D)693825   main()   { char ch[2][5]={"693","825"},*p[2];     int i,j,s=0;     for (i=0;i<2;i++) p[i]=ch[i];     for (i=0;i<2;i++)     for (j=0;p[i][j]>='0' && p[i][j]<='9';j+=2)     s=10*s+p[i][j]-'0';     printf("
+以下程序运行后,输出结果是 ______。   A)84     B)99     C)95     D)44    int d=1;  fun (int p)   { int d=5;     d+=p++;     printf("%d",d);   }   main()   {     int a=3;     fun(a);     d+=a++;     printf("%d\n",d);   }
+以下程序运行后,输出结果是 ______。   A、cde                           B、字符c的ASCLL码值   C、字符C的地址         D、出错    main( )   { char *s="abcde";     s+=2;     print("%ld \n",s);   }
+以下程序运行后,输出结果是 main () { int y=18,i=0,j,a[8];    do    { a[i]=y%2;i++;      y=y/2;     } while(y>=1);     for(j=i-1>0;j--)printf(%d,a[j]);     printf(h\n);  } A.1000       B.10010       C.00110     D.10100
+以下程序运行后,输出结果是_____       A) 8,15        B) 8,16        C) 8,17       D) 8,8   func (int a,int b)  { int m=0 ,i=2;     i+=m+1;     m=i+a+b ;     return(m);   }   main()   {    int k=4,m=1,p;     p=func (k,m);printf("%d,",p);     p=func (k,m);printf("%d\n",
+以下程序执行后sum的值是______。   A)15     B)14     C) 不确定     D）0  main()  { int i , sum;    for(i=1;i<6;i++) sum+=i;    printf("%d\n",sum);  }
+以下程序中，while循环的循环次数是 main() { int  i=0;   while(i<10)   {   if(i<1)  continue;        if(i==5. break;        i++;    }    …… } A.1      B.10      C.6        D.死循环，不能确定次数
+以下对C语言函数的描述中，正确的是（  ）    A：C程序由一个或一个以上的函数组成。    B：C函数既可以嵌套定义又可以递归调用。    C：函数必须有返回值，否则不能使用函数。    D：C程序中调用关系的所有函数必须放在同一个程序文件中。
+以下对C语言函数的有关描述中，正确的是______。   A) 在C中，调用函数时，只能把实参的值传送给形参，形参的值不能传送给实参  B) C函数既可以嵌套定义又可以递归调用  C) 函数必须有返回值，否则不能使用函数  D) C程序中有调用关系的所有函数必须放在同一个源程序文件中
+以下对结构体类型变量的定义中，不正确的是____。   A) typedef struct aa B) #define AA struct aa  { int n; AA            { int n;    float m;               float m;  }AA;                   }td1;                          AA td1;   C) struct            D) struct  { int n;         
+以下函数调用语句： fun(x+y,x-y);中实际参数的个数是(    )。 A) 1   B) 2  C) 4  D)5
+以下函数值的类型是 fun ( float x ) {    float y;   y= 3*x-4;   return y; } A.int    B.不确定   C.void   D.float
+以下合法的赋值语句是 A.x=y=100           B.d--;                 C.x+y;                 D.c=int(a+b);
+以下结果为整型的表达式（设有int i; char c; float f;）是（    ）。   A)i+f         B)i*c        C)c+f           D)i+c+f
+以下每个选项都代表一个常量,其中不正确的实型常量是(    )。    A)2.607E-1   B)0.8103e  2   C)-77.77        D)45.6e-2
+以下每个选项都代表一个常量,其中正确的整型常量是(     )。 A)1.2         B)-20         C)1,000       D)4  5  6
+以下说法中不正确的是(  ). A）主函数中定义的变量只在主函数内部有效 B）形式参数是局部变量 C）在函数内部定义的变量只在本函数范围内有效 D）当全局变量与局部变量同名时，局部变量不起作用
+以下说法中正确的是(     ) 在C语言中 A）实参与其对应的形参各占用独立的存储单元 B）实参与其对应的形参占用同一个存储单元 C）只有当实参与形参同名时才占用同一个存储单元 D）实参占用存储单元，但形参是虚拟的，不占用存储单元
+以下说法中正确的是(   ). A）形参是全局变量，其作用范围仅限于函数内部 B）形参是全局变量，其作用范围从定义之处到文件结束。 C）形参是局部变量，其作用范围仅限于函数内部 D）形参是局部变量，其作用范围从定义之处到文件结束。
+以下说法中正确的是(  ). A）一个函数在它的函数体内调用它自身称为嵌套调用。 B）一个函数在它的函数体内调用它自身称为递归调用。这种函数称为递归函数。 C）一个函数在它的函数体内调用其它函数称为递归调用。这种函数称为递归函数。 D）一个函数在它的函数体内不能调用自身
+以下说法中正确的是____   A) #define和printf都是C语句   B) #define是C语句，而printf不是  C) printf是C语句，但#define不是  D) #define和printf都不是C语句
+以下说法中正确的是______。   A) C语言程序总是从第一个的函数开始执行  B) 在C语言程序中,要调用的函数必须在main()函数中定义  C) C语言程序总是从main()函数开始执行  D) C语言程序中的main()函数必须放在程序的开始部分
+以下所列的各函数首部中，正确的是____。   A) void play(var a:integer,var b:integer)  B) void play(int a,b)  C) void play(int a,int b)  D) sub play(a as integer,b as integer)
+以下叙述正确的是____。  A) 可以把define和if定义为用户标识符 B) 可以把define定义为用户标识符，但不能把if定义为用户标识符 C) 可以把if定义为用户标识符，但不能把define定义为用户标识符 D) define和if都不能定义为用户标识符
+以下叙述中不正确的是____ A.在不同的函数中可以使用相同名字的变量 B.函数中的形式参数是局部变量 C.在一个函数内定义的变量只在本函数范围内有效 D.在一个函数内的复合语句中定义的变量在本函数范围内有效
+以下叙述中不正确的是____   A) 在不同的函数中可以使用相同名字的变量  B) 函数中的形式参数是局部变量  C) 在一个函数内定义的变量只在本函数范围内有效  D) 在一个函数内的复合语句中定义的变量在本函数范围内有效
+以下叙述中正确的是(     )。 A．a是实型变量,C语言允许进行以下赋值a=10,因此可以这样说：实型变量中允许存放整型值 B．在赋值表达式中,赋值号右边即可以是变量也可以是任意表达式 C．执行表达式a=b后,在内存中a和b存储单元中的原有值都将被改变,a的值已由原值改变为b的值,b的值由原值变为0 D．已有a=3,b=5当执行了表达式a=b,b=a之后,已使a中的值为5,b中的值为3
+以下选项中，不能正确赋值的是______。   A) char s1[10];s1="Ctest";                      B) char s2[]={'C', 't', 'e', 's', 't'};  C) char s3[20]="Ctest";                          D) char *s4="Ctest\n"
+以下选项中，非法的字符常量是______。   A) '\t' B) '\17' C）"n" D) '\xaa'
+以下选项中合法的字符常量是_______. A.B        B.'\010'       C.68     D.D
+以下选项中正确的常量是(   )。 A) 012      B) -20      C) 1，000      D) 4 5 6
+以下循环体的执行次数是 main() { int i,j;   for(i=0,j=1; i<=j+1; i+=2, j--.printf(%d \n,I); } A.3     B.2     C.1      D.0
+以下正确的函数定义是(     ). A）double  fun(int x,int y)       {z=x+y; return z；} B) double  fun(int x,int y);       {int z;      z=x+y; return z；} C)   fun(int x,y)     {int  z; return z；} D)  double  fun(int x,int y)     {double  z;          z=x+y; return z；}
+以下正确的函数声明形式是(   ). A） double  fun(int  x,int y) B)   double  fun(int  x;int y) C)   double  fun(int  ,int ) D)   double  fun(int  ,int );
+以下只有在使用时才为该类型变量分配内存的存储类说明是____。   A) auto和 static          B) auto和 register  C) register和 static     D) extern和 register
+用十进制形式输入有符号整数时，在scanf函数语句里格式字符为(    )。 A）d            B）i            C）n            D）u
+用数组名做函数的参数，实际上传递给形参的是( A  ). A) 数组元素的首地址   B) 数组的第一个元素的值       C) 每一个数组元素     D)整个数组的个数
+有int a=3，b=4，c=5，x，y；，则以下表达式的值为【 】 !(x=a)&&(y=b)&&c
+有关下述语句输出的判断中，正确的是____。   char x='\xe2';  printf("%d",x);  A) 赋值非法          B) 输出值不确定                C) 输出值为-30    D) 输出值为65526
+有如下程序   main()  { int x=23;    do    { printf("%d",x--);}    while(!x);  }  该程序的执行结果是  A) 321    B) 23    C) 不输出任何内容     D) 陷入死循环
+有如下程序   main0  { float x=2.0,y;    if(x<0.0) y=0.0;    else if(x<10.0) y=1.0/x;    else y=1.0;    printf("%f\n",y);  }  该程序的输出结果是  A) 0.000000     B) 0.250000     C) 0.500000     D) 1.000000
+有如下程序 long fib(int n) { if(n>2)return(fib(n-1)+fib(n-2));   else return(2); } main() { printf(%d\n,fib(3)); } 该程序的输出结果是 A.2     B.4    C.6    D.8
+有如下程序 main() { char s[]=ABCD, *p; for(p=s+1; p<s+4; p++.printf(%s\n,p); } 该程序的输出结果是 A.ABCD    BCD   CD   D B.A    B   C   D C.B    C    D D.BCD   CD   D
+有如下程序 main() { int i,sum;   for(i=1;i<=3;sum++.sum+=i;   printf(%d\n,sum); } 该程序的执行结果是 A.6      B.3     C.死循环      D.0
+有如下程序  int runc(int a,int b)  { return(a+b);}  main()  { int x=2,y=5,z=8,r;    r=func(func(x,y),z);    printf("%\d\n",r);  }  该程序的输出的结果是A) 12 B) 13 C) 14 D) 15
+有如下程序  main() { int a[3][3]={{1,2},{3,4},{5,6}},I,j,s=0;    for(I=1;I<3;I++)    for(j=0;j<=I;j++) s+=a[I][j]    printf("%d\n",s);  }  该程序的输出结果是  A) 18 B) 19 C) 20 D) 21
+有如下程序  main0  { int x=1,a=0,b=0;    switch(x){    case 0: b++;    case 1: a++    case 2: a++;b++    }    printf("a=%d,b=%d\n",a,b);  }  该程序的输出结果是  A) a=2,b=1 B) a=1,b=1 C) a=1,b=0 D) a=2,b=2
+有如下程序段  int a=14,b=15,x;  char c='A';  x=(a&&b)&&(c<'B');  执行该程序段后，x的值为____。   A) ture B) false C) 0 D) 1
+有如下定义  struct person{char name[9]; int age;};  strict person class[10]={"Johu", 17,  "Paul", 19  "Mary", 18,  "Adam 16,};  根据上述定义，能输出字母M的语句是  A) prinft("%c\n",class[3].mane);  B) pfintf("%c\n",class[3].name[1]);  C) prinft("%c\n",class[2].name[1]);  D) pr
+有以下程序  #include "stdio.h"  main()  { int a,b,c=246;    a=c/100%9;    b=(-1)&&(-1);    printf("%d,%d\n",a,b);  }  输出结果是  A) 2,1 B) 3,2 C) 4,3 D) 2,-1
+有以下程序  int fun(int x,int y,int *cp,int *dp)  { *cp=x+y; *dp=x-y; }  main()  { int a, b, c, d;    a=30; b=50;    fun(a,b,&c,&d);     printf("%d,%d\n", c, d);  }  输出结果是  A) 50,30 B) 30,J50 C) 80,-20 D) 80,20
+有以下程序  main()  { char a[]="programming", b[]="language";    char *p1,*p2;     int i;    p1=a; p2=b;    for(i=0;i<7;i++)    if(*(p1+i)==*(p2+i)) printf("％c",*(p1+i));  }  输出结果是  A) gm B) rg C) or D) ga
+有以下程序  main()  { int i, j;    for(j=10;j<11;j++)    { for(i=9;i=j-1)printf("%d",j);    }  }  输出结果是  A) 11 B) 10 C) 9 D) 10 11
+有以下程序______。    #include "stdio.h"  struct stu  { int num;    char name[10];    int age;  };  void fun(struct stu *p)  { printf("%s\n",(*p).name); }  main()  {    struct stu students[3]={ {9801,"Zhang",20},                             {9802,"Wang",19},   
+有以下程序段  int k=0  while(k=1)k++;  while 循环执行的次数是____    A) 无限次       B) 有语法错，不能执行     C) 一次也不执行 D) 执行1次
+有语句char str1[10],str2[10]={"china"};则能将字符串china赋给数组str1的正确语句是________。   A、str1={"china"};             B、strcpy(str1,str2);  C、str1=str2;                     D、strcpy(str2,str1);
+与 y=(x>0?1:x<0?-1:0);的功能相同的if语句是 A.if (x>0)y=1;   else if(x<0)y=-1;  else y=0;   B.if(x)     if(x>0)y=1;     else if(x<0)y=-1;           else y=0; C.y=-1      if(x)       if(x>0)y=1;        else if(x==0)y=0;               else y=-1; D.y=0   if(x>=0)      
+与 y=(x>0?1:x<0?-1:0);的功能相同的if语句是______。   A) if (x>0) y=1;          B) if(x)      else if(x<0)y=-1;            if(x>0)y=1;           else y=0;                   else if(x<0)y=-1;                                                  else y=0;  C) y=-1         
+语句  x=23;  do{printf("%2d",x--);} while(!x);  的执行结果是________。   A、321                           B、23  C、不打印任何内容    D、陷入死循环
+语句char s='/092';的作用是____。      A:使s包含一个字符　　　　Ｂ：说明不合法，s的值不定     C:使s包含四个字符　　　　Ｄ：使s包含三个字符
+语句printf("%d\n"，12&012)；的输出结果是_____。   A) 12 B) 8 C) 6 D) 012
+阅读下面程序,该程序被编译连接成invert.exe,在执行了下面的命令之后,请写出f2.txt中的内容。     invert f1.txt f2.txt  程序源码如下:  #include<stdio.h>  int invert(char *infile,char *outfile);  main(argc,argv)  int argc;  char **argv;  {    if(argc<3)      {        puts("\nWhich or Where to invert?"
+阅读下面的程序,并写出运行结果。  #include<stdio.h>  #define MAXLEN 100  char *D_TO_B(int Dec);  main()  {    int dec;    dec=38;    printf("\nDecimal%d To Binary %s!",dec,               D_TO_B(dec));     dec=-9;    printf("\nDecimal%d To Binary %s!",dec,               D
+在16位C编译系统上，若定义long a; ，则能给a赋40000的正确语句是 A.a=20000+20000；     B.a=4000*10；   C.a=30000+10000;       D.a=4000L*10L;
+在C语言程序中，____。       A：函数的定义可以嵌套，但函数的调用不可以嵌套      B：函数的定义不可以嵌套，但函数的调用可以嵌套      C：函数的定义和调用均不可以嵌套      D：函数的定义和调用增色可以嵌套
+在C语言程序中，当do-while语句构成的循环中的条件为______时，结束循环。 A.0       B.1     C.true      D.非0
+在C语言程序中，当while语句构成的循环中的条件为______时，结束循环。   A、0       B、1           C、true    D、非0
+在C语言程序中，当函数调用时 （    ）     A) 实参和形参各占一个独立的存储单元     B) 形参和实参共用存储单元     C) 可以由用户指定形参和实参是否共用存储单元     D) 由系统自动确定形参和实参是否共用存储单元
+在C语言程序中，可以用做变量名的是____  A) 1e5        B) a1            C) int        D) *p
+在C语言的函数中，(  )。 A）必须有形参                             B）形参必须是变量名 C）可以有也可以没有形参         D）数组名不能作形参
+在C语言中, int、char和short三种类型数据在内存中所占用的字节数(     )。 A)由用户自己定义            B)均为2个字节 C)是任意的                        D)由所用机器的机器字长决定
+在C语言中,char型数据在内存中的存储形式是(    )。 A) 补码         B) 反码         C) 原码          D) ASCII码
+在C语言中，fclose()函数返回____时， 表示关闭不成功   (A) 0             (B) -1         (C）? EOF       (D) 非零值
+在C语言中，表示逻辑"真"值用【  】。
+在C语言中，表示逻辑"真"值用【 】。
+在C语言中，不正确的int类型的常数是____   A) 32768    B) 0         C) 037      D) 0xAF
+在C语言中，合法的字符常量是____。   A) '\084'     B) '\x43'     C) 'ab'     D) "\0"
+在C语言中，逻辑值“真”用什么表示？    A、true         B、正数            C、1            D、非0的数
+在C语言中，若需一变量只在本文件中所有函数使用，则该变量的存储类别是________   A、extern         B、register              C、auto          D、static
+在C语言中，文件的存取是以________为单位。         A、记录      B、结构           C、字符      D、字节
+在C语言中，形参的缺省存储类是____   A) auto        B) register     C) static       D) extern
+在C语言中，要求运算数必须是整型的运算符是____。   A) %     B) /     C) <     D) !
+在C语言中能代表逻辑真的是________    A.  YES       B.Not            C.  非0的数   D．等于0的数
+在C中，形式参数只是局限于所在函数。
+在for循环结构中____  for (x=0,y=0;(y!=123)&&(x<4);x++)   A) 是无限循环   B) 循环次数不定             C) 执行4次      D) 执行3次
+在printf函数中，格式字符"%5c"可用来输出【  】个字符。
+在printf函数中，格式字符s的意义是：【  】。
+在printf函数中，输出表列的各输出项之间可用冒号分隔。
+在scanf("%d，%*d，%d",&a,&b)函数中，当输入为1，2，3时，将1赋给a，将2赋给b。 
+在scanf("%d,%d",&a,&b)函数中，可以使用一个或多个空格作为两个输入数之间的间隔。 
+在scanf函数语句中可用的修饰符有(   )。 A）*       B）h            C）l            D）宽度
+在变量说明中给变量赋初值的方法是：int a=b=c=10; 
+在宏定义 #define PI 3.14159中，用宏名PI代替一个____   A) 单精度数 B) 双精度数 C) 常量 D) 字符串
+在输入字符数据时，若"格式控制字符串"中没有非格式字符，则认为所有输入的字符均为【     】字符。
+在说明语句：int *f();中,标识符f代表的是____ A.一个用于指向整型数据的指针变量 B.一个用于指向一维数组的行指针 C.一个用于指向函数的指针变量 D.一个返回值为指针型的函数名
+在调用函数时，以下描述中不正确的是_______。   A、调用函数时，实参可以是表达式  B、调用函数时，将为形参分配内存单元  C、调用函数时，实参与形参的原型必须一致  D、调用函数时，实参与形参可以用内存单元
+在下列C语言程序中，可以用做变量名的是(     )。 A) 1    B) a1    C) int    D) *p
+在下列选项中，不正确的赋值语句是____ A.++t;      B.n1=(n2=(n3=0));        C.k=i==j;   D.a=b+c=1;
+在下列选项中,没有构成死循环的程序值是____。    A int i =100;      while(1)      { i=i%100+1;         if (i>100)break;       }   B for (;;);   C int k=1000;      do {++k;} while(k>=1000);   D int s=36;     while (s);--s;
+在下列用于printf函数的控制字符常量中,代表"回车"的字符常量是____。      A:\v   B:\n   C:\ r  D:\t
+在以下定义中，正确的说明语句为____      A) int a['a']     B)int a[3,4]        C)int a[ ][ ]   D)int *a[10]
+在以下一组运算符中，优先级最高的运算符是____。   A)<=     B)=     C)%     D)&&
+在语句中，给变量赋值时，赋值语句必须以【   】结尾。
+在执行以下程序后,b的值是_______。   int x=240,y=15;  char z='A';  int b;  b=((240&15)&&(z<'a'));   A、0       B、1          C、TRUE    D、FALSE
+在执行以下程序时，如果从键盘上输入：ABCdef〈回车〉，则输出为   # include  main() { char ch;    while((ch=getchar())!='\n')           if(ch>='A'&& ch<='Z')ch=ch+32;} A.ABCdef          B.abcdef            C.abc      D.DEF
+整型变量x和y的值相等、且为非0值，则以下选项中，结果为零的表达式是____。   A) x || y     B) x | y     C) x & y     D) x ^ y
+执行完下列语句段后, i值为(  )。  int i;  int f(int x)  {  int k = x+1;     int t;     t=k;  k=x; x=t;     return x;  }  i=f(f(1)); A) 1 B) 2  C) 3  D) 以上都错
+执行下列程序后, 变量 i 的值应为(    ).  int ma(int x,int y)   { return x*y;  }  main()  {  int i;      i = 5;      i = ma(i,i-1)-7;  } A) 13    B) 17   C) 19            D) 以上都错
+执行下列程序后, 变量a的值应为(   ).   int f(int x,int y)    {return x*y;}   main()    {int a=2;    a=f(f(a,a*a),f(a+a,a/3));   } A) 0    B) 2    C) 8     D) 16
+执行下列程序时输入:123<空格>456<空格>789<回车>,输出结果是 main() { char s[100]; int c, i;   scanf(%c,&c.; scanf(%d,&i); scanf(%s,s);   printf(%c,%d,%s \n,c,i,s); } A.123,456,789           B.1,456,789          C.1,23,456,789         D.1,23,456
+执行下列语句后，程序的运行结果为(  ).  int a=10;  f( )     {  int a;         a=12;     }     main()  {  f();        printf("%d",a);      } A) 10     B) 12      C) 0     D) 不确定
+执行下面程序片段的结果是____。   int x=23;  do   { printf("%2d",x--);}    while(!x);   A) 打印出321        B) 打印出23       C) 不打印任何内容   D) 陷入死循环
+执行下面程序中的输出语句，a的值是____。   A) 65 B) 20 C) 15 D) 10  main()  { int a;    printf("%d\n",(a=3*5,a*4,a+5));}
+执行下面的程序段  int x=35;  char z='A';  int b;  B=((x&15)&&(z<'a'));  后，B的值为  A) 0 B) 1 C) 2 D) 3
+执行下面语句后的输出结果为_____。      int i=-1     if (i<=0) printf("* * * *\n")     else printf("% % % \n")     A) * * * *         B) % % % %      C) % % % %    D) 有语法错误，不能正确执行
+执行以下程序段后,m的值为____。 int a[2][3]={ {1,2,3},{4,5,6} };  int m,*p;  p=&a[0][0];  m=(*p)*(*(p+2))*(*(p+4));  A) 15 B) 14 C) 13 D) 12
+执行以下程序后,y的值是  main ( )  { int a[]={2,4,6,8,10};    int y=1,x,*p;    p=&a[1];    for(x=0;x<3;x++) y + = * (p + x);    printf("%d\n",y); }  A) 17 B) 18 C) 19 D) 20
+执行语句: for (i=1;i++<4;);后,变量i的值是  A.3     B.4     C.5    D.不定
+字符'0'的ASCII码的十进制数为48,且数组的第0个元素在低位,则以下程序的输出结果是______。   #include<stdio.h>  main( )  { union { int i[2]; long k; char c[4]; }r,*s=&r;    s->i[0]=0x39;    s->i[1]=0x38;    printf("%c\n",s->c[0]) }  A) 39 B) 9 C) 38 D) 8
+C语言表达式!(3<6)||(4<9)的值是______.
+设a,b,t 为整型变量,初值为a=7,b=9,执行完语句t=(a>b)?a:b后,t 的值是______.
+执行下列语句后,z 的值是______.int x=4,y=25,z=5; z=y/x*z;
+已知 i=5,写出语句 a=i++; 执行后整型变量a的值是______.
+设 x 的值为15,n 的值为2,则表达式 x%=(n+3) 运算后 x 的值是______.
+已知 i=5;写出语句 i+=012; 执行后整型变量 i 的十进制值是______.
+已知 i=5.6;写出语句 a=(int)i; 执行后变量 i 的值是______.
+已知 i=5,写出语句 i*=i+1; 执行后整型变量 i 的值是______.
+已知 i=5,写出语句  i-=0x12; 执行后整型变量 i 的值是______.
+已知 i=5,写出语句 a=(a=i+1,a+2,a+3); 执行后整型变量 a 的值是______.
+写出语句 b=(a=6,a*3); 执行后整型变量b的值是______.
+写出表达式 1.234&&5.982 的值是______.
+输入整型变量a的值.   int a; scanf("%d",______);
+表达式 a+=b 相当于表达式______.
+表达式 i++ 相当于表达式______.
+C语言中的字符变量用保留字______来说明.
+已知a=13,b=6,  a/b的十进制数值为______.
+已知a=13,b=6,  a%b的十进制数值为______.
+已知a=13,b=6,  a&b的十进制数值为______.
+已知a=13,b=6,  a^b的十进制数值为______.
+已知a=13,b=6,  !a的十进制数值为______.
+已知a=13,b=6,  a>>2的十进制数值为______.
+已知a=13,b=6,  a||b的十进制数值为______.
+已知a=13,b=6,  a|b的十进制数值为______.
+已知a=13, a<<2的十进制数值为______.
+int a=1,b=2,c=3;  执行语句a=b=c;后a的值是______.
+int a=1,b=2,c=3;  表达式(a&b)||(a|b) 的值是______.
+int a=1,b=2,c=3;  执行语句a += b *= c;后a的值是______.
+表达式18 && 53 的值是______.
+下面程序段的输出结果是______.   int a=12; a=a&0377;pritnf("%d\n",a);
+下面程序段的输出结果是______.   int a=12;a=a&052;printf("%d\n",a);
+下面程序段的输出结果是______.   int a=12; a=a&0377;pritnf("%o\n",a);
+getchar()函数只能接收一个______.
+C语言的三种基本结构是______结构、选择结构、循环结构.
+为了避免嵌套条件语句的二义性,C语言规定else与其前面最近的______语句配对.
+当a=1,b=2,c=3时,执行以下程序段后b=______.      if (a>c)  b=a;      a=c;      c=b;
+当a=3,b=2,c=1;时,执行以下程序段后 b=______.      if(a>b)  a=b;    if(b>c) b=c;   else c=b;   c=a;
+若所用变量均已正确定义,则执行下面程序段后的 值是______.      for(i=0 ; i<2 ; i++ )  printf("YES"); printf("\n");
+以下程序段要求从键盘输入字符,当输入字母为'Y' 时,执行循环体,则括号内应填写______.         ch=getchar();    while(ch ____ 'Y')/*在括号中填写*/   ch=getchar();   
+执行语句char str[81]="abcdef";后,字符串str结束标志存储在str[______]   (在括号内填写下标值)中.
+C语言中,数组元素的下标下限为______.
+C语言中,数组名是一个不可变的______量,不能对它进行加减和赋值运算.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3   该数组可用的最小下标值是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3   该数组可用的最大下标值是______.   
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3   该数组中下标最大的元素的值是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3   该数组的元素中,数值最小的元素的下标值是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3   该数组的元素中,数值最大的元素的下标值是______.
+C语言中,二维数组在内存中的存放方式为按______优先存放.
+定义int a[2][3];表示数组a中的元素个数是______个.
+字符串的结束标志是______.
+求字符串长度的库函数是______,只写函数名即可.
+复制字符串的库函数是______,只写函数名即可.
+合并字符串的库函数是______,只写函数名即可.
+函数调用时的实参和形参之间的数据是单向的______传递.
+预处理命令行都必须以______号开始.
+如果函数不要求带回值,可用______来定义函数返回值为空.
+结构体是不同数据类型的数据集合,作为数据类型,   必须先说明结构体______,再说明结构体变量.
+执行下列语句后,*(p+1)的值是______.   char  s[3]="ab",*p;   p=s;
+将函数funl 的入口地址赋给指针变量p的语句是______.
+调用 fopen 函数打开一文本文件,在"使用方式"这一项中,   为输出而打开需填入______.
+调用 fopen 函数打开一文本文件,在"使用方式"这一项中,   为输入而打开需填入______.
+C语言中调用______函数来打开文件.
+C语言中调用______函数来关闭文件.
+C语言把文件看作是一个______的序列.
+若有定义:char s[ ]="china";   则Turbo C系统为数组s开辟______个字节的内存单元.
+函数的______调用是一个函数直接或间接地调用它自身.
+函数调用语句func((e1,e2),(e3,e4,e5))中含有______个实参.
+C语言源程序的基本单位是______.
+设x和y均为int型变量,且x=1,y=2,则表达式1.0+x/y的值为______.
+语句:x++; ++x; x=x+1; x=l+x;   执行后都使变量x中的值增1,请写出一条同一功能的赋值语句______.
+程序段int k=10; while(k=0)  k=k-1循环体语句执行______次.
+函数的定义不可以嵌套,但函数的调用______嵌套.
+设a取二进制数00101101,若想通过a^b运算使a的高4位取反,低4位不变,则b的   二进制数是______.
+设char a,b;若想通过a&& b运算保留a的第1位和第6位的值,则b的二进制数是______.
+若 char w,int x,float y,double z;则表达式w*x+z-y的结果为______类型.
+若int x=6;则x+=x-=x*x表达式最后x的值是______.
+设i,j,k均为int型变量,则执行完下面的for循环后,k的值为______.   for(i=0,j=10;i<=j;i++,j--)   k=i+j;
+设有以下定义的语句:   int a[3][2]={10,20,30,40,50,60}, (*p)[2];   p=a;   则 *(*(p+2)+1)值为______.
+若输入字符串:abcde<回车>,则以下while循环体将执行 ______ 次.   While((ch=getchar())=='e') printf("*");
+设有以下结构类型说明和变量定义,则变量a在内存所占字节数是 ______ .   Struct stud   { char num[6];   int s[4];   double ave;   } a,*p;
+设c语言中,int类型数据占2个字节,则long类型数据占______个字节,   short类型数据占______个字节.
+执行下面两个语句,输出的结果是______,char c1=97,c2=98;printf("%d %c",c1,c2);
+执行下列语句的结果是______,a=3;printf("%d,",++a);printf("%d",a++);
+已知x=3,y=2,则表达式x*=y+8的值为______.
+设x=2.5,a=7,y=4.7,算术表达式x+a%3*(int)(x+y)%2/4的值为______.
+假设所有变量都为整型,表达式(a=2,b=5,a>b?a++:b++,a+b)的值是______.
+下列程序的输出是______,   main(){int a=011;printf("%d\n",++a);}
+以下程序的输出结果为______,   #include "stdio.h" main(){int a=010,j=10;printf("%d,%d\n",++a,j--);}
+以下程序的输出结果为______,   #include "stdio.h" main(){int a;for(a=0;a<10;a++);printf("%d",a);}
+假设有条件 int x=1,y=2,z=3;则表达式z+=x>y?++x:++y的值是______.
+设a=3,b=4,c=5,则表达式!(a+b)+c-1&&b+c/2的值为______.
+设a=3,b=4,c=4,则表达式a+b>c&&b==c&&a||b+c&&b==c的值为______.
+下列程序的运行结果是______,main(){unsigned x1; int b=-1;x1=b;printf("%u",x1);}
+c语言表达式5>2>7>8的值是______.
+设a,b,c,t为整型变量,初值为a=3,b=4,c=5,执行完语句t=!(a+b)+c-1&&b+c/2   后,t的值是______.
+下列语句输出的结果是______,unsigned int b=65535;printf("%d",b);
+下列语句输出的结果是______,int a=-1;printf("%x",a);
+设x的值为15,n的值为2,则表达式x%=(n+=3)运算后x的值是______.
+c语言程序的三种基本结构是:顺序结构,选择结构,______结构.
+执行语句char s[3]="ab",*p;p=3;*(p+2)的值是______.
+在c程序中,只能给指针赋NULL值和______值.
+在c程序中,可以通过三种运算方式为指针变量赋地址值,它们是______,=,malloc.
+在c语言中,格式输入操作是由库函数在C语言中,格式输入操作是由库函数   ______完成的,格式输出操作是由库函数______完成的.
+一个C源程序中至少应包括一个______函数.
+若a,b和c均是int型变量,则计算表达式 a=(b=4)+(c=2) 后,a值为______,   b值为______,c值为______.
+若a是int型变量,且a的初值为6,则计算表达式 a+=a-=a*a 后a的值为______.
+若a是int型变量,则计算表达式 a=25/3%3 后a的值为______.
+若有以下定义,则计算表达式y+=y-=m*=y后的y值是______.   int m=5,y=2;
+若s是int型变量,且s=6,则下面表达式的值是______.   s%2+(s+1)%2   
+在C语言中,文件的存取是以______为单位的,这种文件被称为______文件.
+在C程序中,数据可以用二进制和______两种代码形式存放.
+feof(fp)函数用来判断文件是否结束,如果遇到文件结束,函数值为______,   否则为______.
+设a、b、c为整型数, 且a=2、b=3、c=4, 则执行完以下语句:   a*=16+(b++)-(++c);   后,a的值是 ______.
+以下do-while语句中循环体的执行次数是______.          a=10;          b=0;          do { b+=2; a-=2+b; } while (a>=0);      
+设x和y均为int型变量,则以下for循环中的scanf语句最多可执行的次数是______.       for (x=0,y=0;y!=123&&x<3;x++)            scanf ("%d",&y);
+若有以下定义和语句:          int a[4]={0,1,2,3},*p;          p=&a[2];          则*--p的值是______.
+执行以下程序段后, s的值是______int a[]={5,3,7,2,1,5,3,10},s=0,k;      for(k=0;k<8;k+=2)        s+=*(a+k);
+在C语言中,最小整型数是______.
+若有定义:int a[3][2]={2,4,6,8,10,12};,则*(a[1]+1)的值是______.
+若有以下定义和语句:    int a[5]={1,3,5,7,9},*p;   p=&a[2];    则++(*p)的值是______.
+表达式 i++ 相当于表达式i=______.
+已知a=13,b=6,a/b的十进制数值为______.
+已知a=13,b=6, !a的十进制数值为______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3    该数组中下标最小的元素名字是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3    该数组中下标最大的元素的值是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3    该数组的元素中,数值最大的元素的下标值是______.
+已知x=2,y=2 则表达式x*=y+8的值为______.
+设 x 的值为15,n 的值为2,则表达式 x*=n+3 运算后 x 的值是______.
+设x=5>1+2,x的值 为______.
+设x=4<4-!0,x的值为______.
+设x=2,表达式x>=60==1的值为______.
+设k=(a=2,b=3,a*b),则k 的值为______.
+设(k=a=5,b=3,a*b),则k值为______.
+设w=5;w+= -2;则w的值为______.
+设 int x=1/4;则x的值为______.
+int x;  x=-3+4*5-6,  则x的值为______.
+int x;  x=-3+4%5-6,  则x的值为______.
+int x;  x=3*4%-5/6,  则x的值为______.
+int x;  x=-3+4%-5*3,  则x的值为______.
+int x;  x=(3+4)%5-6,  则x的值为______.
+int x=2;x*=y=z=4; 则x的值为______.
+int x=2;z=x++-1; 则z的值为______.
+int x=2;z=x++-1; 则x的值为______.
+int x=2;z=-x+++1; 则x的值为______.
+int x=2;z=++x+1; 则z的值为______.
+int x=2;z=++x+1; 则x的值为______.
+int x=y=z=2;x=y==z; 则x的值为______.
+int x=y=4,z=2;x=y==z; 则x的值为______.
+int x=4,y=z=2;x=x==(y=z); 则x的值为______.
+int x=4,y=z=2;z=x==(y=z); 则z的值为______.
+int x=2,y=3,z=4; 则表达式x+y>z的值为______.
+int x=2,y=3,z=4; 则表达式x+y>z&&y==z的值为______.
+int x=2,y=3,z=4; 则表达式x+y&&z的值为______.
+int x=2,y=3,z=4; 则表达式x||y+z的值为______.
+int x=2,y=3,z=4; 则表达式!(x+y)>z的值为______.
+int x=2,y=3,z=4; 则表达式!x+y>z的值为______.
+int x=2,y=2,z=0; 则表达式x==y>z的值为______.
+int x=2,y=3,z=4; 则表达式x+y>!z的值为______.
+int x=2,y=3,z=4; 则表达式x+(y>!z)的值为______.
+已知 a=10,b=15,c=1,d=2,e=0,则表达式  a*b&&c  的值为______.
+已知 a=10,b=15,c=1,d=2,e=0,则表达式c==b>e的值为______.
+已知 a=10,b=15,c=1,d=2,e=0,则表达式!a<e的值为______.
+已知 a=10,b=15,c=1,d=2,e=0,则表达式a++&&e++&&c++的值为______.
+已知 a=10,b=15,c=1,d=2,e=10,则表达式a++&&e++&&c++的值为______.
+表达式!10 的值是______.(填数字)
+已知:int i=8,j=10,m,n;m=++i;n=j++;问语句执行后m=______,n=______。
+表示"x≥y≥z"的C表达式是______
+从函数的形式上看,函数分为无参函数和______两种类型.
+表达式3&&0 的值是______
+C语言中一个函数由函数首部和______两部分组成.
+若在程序中用到"strlen()"函数时,应在程序开头写上包含命令# include  "______".
+C语言源程序文件的后缀是.C，经过编译之后，生成后缀为.OBJ的______文件，经连接生成后缀.EXE的可执行文件。
+逗号表达式(a=3*5，a*4)，a+5的值为______。
+设有int x＝11,则表达式（x++ * 1/3）的值是______。
+计算机中内存储器的最小存储单位是______。
+变量的本质是代表内存中的一个存储单元的______。
+程序的功能是：输出x，y，z三个数中的最大数。 #include <stdio.h> void main() {int x=4,y=5,z=6,max;  max=x;  if(______) max=y;  if(______) max=z;  printf("max=______",max); }
+程序的功能是：输出小于1000的所有“完数”。（一个数如果恰好等于小于它的因子和则称为“完数”，例如：28的因子为：1、2、4、7、14，28=1+2+4+7+14。） #include <stdio.h> void main() {int m,n,s;  for(m=2;m<1000;m++)    {______;     for(n=1;n<=m/2;n++)       if(______)         s+=n;       if(______)      printf("%d\n", m)
+程序的功能是：求s=a+aa+aaa+…+aa……a之值。其中a是一位数字，a、n由键盘输入。例如：a=2,n=5时，s＝2+22+222+2222+22222。 #include <stdio.h> void main() {int a,n,i=1,s=0,t=0;  scanf("%d%d",&a,&n);  t=______;  for(i=1;______;i++)    {s=s+t;     t=______+a;    }  printf("%d\n",s); }
+程序的功能是：求字符串的长度。 #include <stdio.h> #include <string.h> void main() {int n=______;  char str[30],*p;  gets(str);  p=______;  while(*p!=______)    {p++;     n++;     }   printf("strlen=%d\n",n); }
+程序的功能是：在数组a中查找与值x相同的元素所在的位置。（假设没有相同的数据） #include <stdio.h> void main() {int a[11],x,i;  printf("Enter 10 integers :\n");  for(i=1;i<=10;i++)    scanf("%d",______);  printf("Enter x :");  scanf("%d",&x);  a[0]=x;  i=10;  while(x!=a[i])    i--;  if(______) 
+程序的功能是：求两个数的最大公约数。 #include <stdio.h> void main() {int r,m,n;  scanf("%d%d",______,&n);  r=m%n;  while(______!=0)   {m=n;    n=______;    r=m%n;}  printf("%d\n",n); }
+程序的功能是: 计算1到10之间的奇数之和及偶数之和。 #include "stdio.h" void main() {int a,b,c,______;  a=c=______;  for(i=0;i<=10;i+=2)    {a=a+i;    ______;     c=c+b;    }  printf(" ou shu he =%d\n",a);  printf(" ji shu he =%d\n",c-11); }
+程序的功能是：输出100以内能被3整除且个位数为6的所有整数。 #include <stdio.h> void main() {______ i,j;  for(i=0;______;i++)    {j=i*10+6;     if(______)       continue;     printf("%d",j);    } }
+程序的功能是：从键盘上输入若干个学生的成绩，统计并输出最高成绩和最低成绩，当输入负数时结束输入。 #include <stdio.h> void main() {______ x,amax,amin;  scanf("%d",&x);  amax=x;  amin=x;  while(______)    {if(x>amax)       amax=x;     if(______)       amin=x;     scanf("%f",&x);    }  printf("\n amax=%f \
+函数fun()的功能是：计算s=1+1/2!+1/3!+……+1/n!。 ______fun(int n) {double s=______,fac=1.0;  int i;  for(i=1;i<=n;i++)    {fac=fac______;     s=s+fac;    }  return s; }
+程序的功能是：用函数invert()对一个字符串进行倒置。例如：输入为：1234，输出为：4321。 #include <stdio.h> void invert(char str[]) {int i,j;  char k;  for(i=0,j=strlen(str)______;i<j;i++,j--)    {k=______;     str[i]=str[j];     str[j]=k;    } } void main() {char c[10];  gets(c); ______;  pu
+函数fun()的功能是：将形参x的值转换成二进制数，所得二进制数的每一位数放在一维数组中返回，最低位放在下标为0的元素中，其它依次类推，二进制数的位数由函数值返回。 int fun(int x,int b[]) {int k=0,______;  do     {r=x%______;     b[k]=r;     k++;     x/=______;    }while(x);  return(k); }
+程序的功能是：通过函数average()计算数组中各元素的平均值。 #include <stdio.h> float average(int *pa,int n) {int i;  float avg=0.0;  for(i=0;i<n;i++)    avg=avg+______;  avg=______;  return avg; }  void main() {int i,a[5]={2,4,6,8,10};  float mean;  mean=average(a,5);  printf("mea
+函数fun()的功能是：根据以下公式计算s，计算结果通过形参指针sn传回，n通过形参传入，n的值大于等于0。 s=1-1/3+1/5-1/7+...1/(2n+1) void  fun(float *sn,int n) {float s=______,w,f=-1.0;  int i=0;  for(i=0;i<=n;i++)    {f=______*f;     w=f/(2*i+1);     s+=w;    }  *sn=______; }
+程序的功能是：用函数invert()按逆序重新放置数组a中元素的值。 #include<stdio.h> #define N 10 void invert(int *s,int i,int j) {int t;  if(i<j)    {t=*(s+i);     *(s+i)=______;     *(s+j)=t;     invert(s,______,j-1);    } } void main() {int a[N],i;  for(i=0;i<N;i++)    scanf("%d",___
+程序的功能是：将一个磁盘文件中的信息复制到另一个磁盘文件中。 #include <stdio.h> void main() {FILE *in,*out;  char infile[10],outfile[10];  printf("Enter the infile name:\n");  scanf("%s",infile);  printf("Enter the outfile name:\n");  scanf("%s",outfile);  if((in=fopen(infile,______))
+程序的功能是：从键盘输入若干个学生的成绩，统计并输出最高成绩和最低成绩，当输入负数时结束输入。 #include <stdio.h> void main() {float x,amax,amin;  scanf("%f",&x);  ______;  amin=x;  while(______)    {if(x>amax)       amax=x;     if(x<amin)      ______;     scanf("%f",&x);    }  printf("\namx=%f\namin=
+程序的功能是：对输入的两个数按升序输出。 #include <stdio.h> void main() {void swap(int *p1,int *p2);  int a,b;  int *pp1,*pp2;  scanf("%d,%d",&a,&b);  ______;  pp2=&b;  if(______)    swap(pp1,pp2);  printf("%d,%d\n",a,b); } void swap(int *p1,int *p2) {int temp;  temp=*p1;  _
+程序的功能是：求两个正整数的最大公约数。 # include <stdio.h> void main() {int r,m,n;  scanf("%d%d",&m,&n);  r=m%n;  while(r)   {m=n;   ______=r;    r=______;   }  printf("%d\n",______); }
+程序的功能是：用选择排序法从小到大输出一组数。 # include <stdio.h> void main() {int a[5]={-3,-9,0,9,1},i,j,k,t;  for(j=0;j<4;j++)    {k=______;     for(i=j+1;i<5;i++)       if(a[i]<a[k])         k=______;     t=a[j];     a[j]=a[k];     a[k]=______;    }  for(i=0;i<5;i++)    pri
+程序的功能是：判断素数。 #include <stdio.h> void main() {int x,i;  scanf("%d",______);  for(i=2;i<x;i++)     if(______)break;  if(______)    printf("Not.");   else    printf("Yes."); }
+程序的功能是：用冒泡法对10个整数从小到大排序。  void sort(int *x,int n) {int i,j,k,t;  for(i=0;i<n-1;i++)    for(j=0;j<n-1-i;j++)     if(x[j]______x[j+1])     {t=x[j];      x[j]=x[j+1];      x[j+1]=______;     } } void main() {int i,n,a[100];  printf("please input the length o
+程序的功能是：用fun()函数求出以下分数序列的前n项之和。2/1+3/2+5/3+8/5+13/8+21/13  ……。 #include <stdio.h> ______ fun(int n) {int a,b,c,k;  double s=______;  a=2;  b=1;  for(k=1;k<=n;k++)     {s=s+(double)a/b;     c=a;      a=a+b;      b=______;    } return s; } void main( ) {int 
+程序的功能是：有5个人坐在一起，问第五个人多少岁？他说比第4个人大2岁。问第4个人岁数，他说比第3个人大2岁。依次类推。最后问第一个人，他说是10岁。请问第五个人多大？ #include <stdio.h> ______ age(int n) {int c;  if(______)    c=10;  else    c=______+2;  return c; } void main() {  printf("%d",age(5)); }
+程序的功能是：用函数fun()计算两个整数的最小公倍数。 #include <stdio.h> int fun(int m,int n) {int i;  if(m<n)    {i=m;     m=n;     n=i;    }  for(i=m;i<=m*n;i+=m)    if(i%n______)      return i; } void main() {int m,n,q;  scanf("%d,%d",&m,______);  q=______;  printf("fun(%d,%d)
+程序的功能是：求出1*1+2*2+......+n*n<=1000中满足条件的最大的n。 #include <stdio.h> void main() {int n,s;  s=______;  n=0;  while(______)    {++n;     s+=n*n;    }  printf("n=%d\n",______); }
+程序的功能是：求100以内（包括100）的偶数之和。 #include <stdio.h> void main() {int i,sum=______;  for(i=2;i<=100;______)     sum+=i;  printf(" sum= ______\n",sum); }
+程序的功能是：读取7个1到50之间的整数送入变量a。每读一个数，就输出a个*。 #include <stdio.h> void main() {int i,a,n=1;  ______(n<8)    {do{        scanf("%d",______);       }while(a>50______a<1);     for(i=1;i<=a;i++)        printf("*");     printf("\n");     n++;    } }
+程序的功能是：判断两个指针所指存储单元中的值的符号是否相同；若相同函数返回1，否则返回0。这两个存储单元中的值都不为0。 #include <stdio.h> int fun(double *a,double______) {if((*a)*(*b)______)     return 1;  else     return 0; }  void main( ) {double n,m;  printf("Enter n , m: ");  scanf("%lf%lf",&n,&m);  printf("
+程序的功能是：模拟袖珍计算器的加、减、乘、除四则运算。 #include<stdio.h> void main() {float x,y;  ______ operate1;  printf("Arithmetic expression\n");  scanf("%f",&x);  while((operate1=getchar())!='=')    {printf("result=");     scanf("%f",&y);     switch(______)       {case '+':x+
+程序的功能是：求1到20的阶乘的和。 #include <stdio.h> float fun() {int n,j;  float s=______,t;  for(n=1;n<=20;n++)    {t=1.0;     for(j=1;j<=n;j++)        t=j*t;     s=t+s;    }  ______s; } void main() {  printf(" resualt is ______",fun()); }
+程序的功能是：进行两个字符串的连接。 #include <stdio.h> void scat (char s1[],char s2[]) {int i=0,j=0;  while(s1[i]______'\0')    i++;  while(s2[j]!='\0')    {s1[i]=s2[j];     i++;     j++;    }  ______='\0'; } void main() {______ s1[80],s2[80];  gets(s1);  gets(s2);  scat(
+程序的功能是：找出一数组内的最小数并把它和数组中最前面的元素互换位置。 #include <stdio.h> void main() {int i,a[10],min,k=0;  for(i=0;i<10;i++)     scanf("%d",______);  min=a[0];  for(i=1;i<10;i++)     if(min>a[i])      {min=a[i];       ______=i;      }  a[k]=a[0];  a[0]=______;  printf("\n
+程序的功能是：构成一个周边元素为5，其它元素为1的3*3的二维数组。 #include <stdio.h> ______ fun(int arr[][3]) {int i,j;  ______(i=0;i<3;i++)     for(j=0;j<3;j++)       if(i==0||j==0||i==2||j==______)          arr[i][j]=5;       else          arr[i][j]=1; } void main() {int a[3][3],i,j;
+程序的功能是：给一个不多于5位的正整数，要求：一、求它是几位数，二、逆序打印出各位数字。 #include <stdio.h> void main( ) {long a,b,c,d,e,x;  scanf("%ld",______);  a=x/10000;  b=x%10000/1000;  c=x%1000/100;  d=x%100/10;  e=______;  if(______)     printf("there are 5, %ld %ld %ld %ld %ld\n",e,d,c,b,a
+程序的功能是：函数fun用来在w数组中插入x,w数组中的字符已按由大到小存放,n所指向的存储单元中存放数组中数据的个数。插入后数组中的数仍有序。 #include <stdio.h> #include <string.h> void fun (char *w,char x,int *n) { int i,p;   p=0;   w[*n]=x;   while (x<w[p])______;    for (i=*n;i>p;i--) w[i]=______;   w[p]=x;   ++*n; } vo
+程序的功能是:将无符号八进制数字构成的字符串转换为十进制整数。例如,输入的字符串为 556,则输出十进制数 366。   #include <stdio.h>   void main()   { char ______p,s[6];     int n;     p=s;     gets(p);     n=*p-'0';       while( ______!='\0') n=n*8+*p-'0';       printf("%d\n",______);   }
+程序的功能是:将数组中的字符串逆置存放。 #include <stdio.h> #include <string.h> void main( ) {char s[20],*p,*q,ctemp;   int n;  scanf("%s",______);  n=strlen(s);  for(p=s,______;p<q;p++,q--)    {ctemp=*p;*p=*q;______=ctemp;}  printf("%s\n",s); } 
+程序的功能是:将指定n个数据在数组中逆序存放. #include <stdio.h> #define N 30 void main( ) {int s[N],temp,*p;   int i,n;  scanf("%d",&n);  for(i=0;i<n;i++)    scanf("%d",&s[i]);  for(i=0;i______n/2;i++)    {temp=s[i];s[i]=s[n-i-1];s[n-i-1]=temp;}  for(p=s;p<______;p++)    prin
+程序的功能是：利用公式求 e=1+1/1!+1/2!+1/3!+…+1/n!   n由用户输入指定。 #include <stdio.h> void main() {   float e=______;  float i,j,k;  int n;  scanf("%d",&n);  for(i=1;i<=n;i++)  {k=1;   for(j=1;______;j++)     k=k*j;   e=e+______;  }  printf("e=%f\n",e); } 
+程序运行的结果是______.      main()   {int a=3,b=4;   printf("%d\n",(a<b) ? a : b);   }
+程序运行的结果是______.        #include "stdio.h"    main()    {char c;    c = 'B' ;    putchar ( c ) ;    }
+设c语言中,int类型数据占2个字节,则   short类型数据占______个字节.
+设c语言中,int类型数据占2个字节,则long类型数据占______个字节.
+输入整型变量a的值.    int a; scanf("%d",______);
+在c语言中,格式输入操作是由库函数______完成的,格式输出操作是由库函数printf完成的.
+在c语言中,格式输入操作是由库函数scanf完成的,格式输出操作是由库函数______完成的.
+已知a=13,b=6,  !a 的值为______.
+表示"整数x的绝对值大于5"时值为"真"的C语言表达式是______.
+若有定义:int  a=10,b=9,c=8;接着顺序执行下列语句后,变量b中的值是______ .  c=(a-=(b-5));  c=(a%11)+(b=3);  
+设有以下变量定义,并已赋确定的值            char  w;  int  x;  float  y;  double  z;      则表达式:w*x+z-y所求得的数据类型为______.  
+程序运行的结果是______.        main()    {int a=3,b=4;    printf("%d\n",(a<b) ? a : b);    }
+若x和n均是int型变量,且x和n的初值均为5,则计算表达式 x+=n++ 后n的值为______.
+设y是int型变量,请写出判断y为奇数的关系表达式______.
+下列程序的运行结果为______.      #include "stdio.h"   main()   {int x=2,y=4,z=40;   x*=3+2;   x=y=z;   pritnf("%d\n",x);   }
+下列程序的运行结果为______.        #include "stdio.h"    main()    {int x=2,y=4,z=40;    x*=3+2;    x=y=z;    pritnf("%d\n",x);    }
+以下程序的输出结果是 ______ .   main()   { int a=1, b=2;   a=a+b; b=a-b; a=a-b;   printf("%d,%d\n", a, b );    }
+以下程序的输出结果是______.   main()   { int a=0;   a+=(a=8);   printf("%d\n",a);   }
+以下程序运行后的输出结果是______.   main()   {       char m ;       m = 'B' + 32 ;        printf ( "%c\n" , m ) ;   }
+用户输入字母"a"时,下列程序运行结果是______.        #include < stdio.h >    main()    {char ch;    ch= getchar( );    (ch>='a' && ch<='z') ?  putchar(ch+'A'-'a') : putchar(ch);    }
+下面程序段的输出结果是______.    int a=12; a=a&0377;pritnf("%d\n",a);
+以下程序计算数n的阶乘.        main()    {int i,n;  long np;    scanf("%d",&n);    np=______;    for(i=2;i<=n;i++)    np=np*i;    printf(("n=%d,n!=%ld\n",n,np);    }
+下面程序的输出是 ______.   main()   { int arr[10],i,k=0;   for( i=0; i<10; i++)   arr[i]=i;   for( i=1; i<4; i++)   k+=arr[i]=i;   printf( "%d\n", k);}
+当输入m,n值分别是49,21时,下列程序的执行结果是______.      main()   {int m,n,r;   printf("please type in two positive integers\n");   scanf("%d%d",&m,&n);   while(n)   {   r=m%n;   m=n;   n=r;   }   printf("%d\n",m);   }
+若所用变量都已经正确定义,请填写以下程序段的输出结果______.      s=7;   while ( --s );   s -= 2;   printf("%d\n",s);
+若所用变量均已正确定义,则执行下面程序段后x的值是______.      x=100;a=10;b=20;k1=5;k2=0;   if(a<b)   if(b!=15)   if(!k1)   x=1;   else if(k2) x=10;   x=-1;
+设i,j,k均为int型变量,则执行完for循环      for(i=0,j=10;i<=j;i++,j--) k=i+j;      后,k的值为______.
+下列程序段的输出结果是 ______.   int n='c';   switch(n++)   { default: printf("error");break;   case 'a':case 'A':case 'b':case 'B':printf("good");break;   case 'c':case 'C':printf("pass");   case 'd':case 'D':printf("warn");   }
+以下程序的输出结果是______.   main()    {int s,i;   for(s=0,i=1;i<3;i++,s+=i);   printf("%d\n",s);   }   
+以下程序的输出结果为______,   #include "stdio.h"   main()  {int a;   for(a=0;a<10;a++);   printf("%d",a);  }
+以下程序运行后的输出结果是______.    main()   {       int i=10, j=0;       do       { j=j+i; i--; }       while(i>2);       printf("%d\n",j);   }
+有以下程序   main( )   { int t=1,i=5;    for(;i>=0;i--)  t*=i;    printf("%d\n",t);   }   执行后输出结果是______.
+执行以下程序后,输出'#'号的个数是 ______.   #include <stdio.h>   main()    { int i,j;      for(i=1; i<5; i++)         for(j=2; j<=i; j++) putchar('#');    }
+C语言中,数组名是一个不可变的______常量,不能对它进行加减和赋值运算.
+数组char a[2]中的所有元素是a[1]和______.
+程序运行后的输出结果是______.   main()   {        int i,n[]={0,0,0,0,0};       for(i=1;i<=4;i++)       {            n[i]=n[i-1]*2+1;           printf("%d ",n[i]);       }   }
+读程序,填运行结果.______     main()     {char c[10]={'I',' ','a','m',' ','a',' ','b','o','y'};     int i;     for(i=0;i<10;i++)        printf("%c",c[i]);     printf("\n");    }
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3    该数组的元素中,数值最小的元素的下标值是______.
+若有以下数组a,数组元素:a[0]~a[9],其值为    9  4  12  8  2  10  7  5  1  3    该数组可用的最小下标值是______.
+下列程序段的输出结果是 ______ .   main()   { char b[]="Hello,you";   b[5]=0;   printf("%s \n", b );    }
+静态变量和外部变量的初始化是在编译阶段完成的,而自动变量的赋值是   在______时进行的.
+下面程序的输出是______.   #define MAX 5   int a[MAX],k;   main()   { fun1();fun3(); fun2(); fun3();   printf("\n"); }   fun1()   { for(k=0;k<MAX;k++) a[k]=k+k; }   fun2()   { int a[MAX],k;   for(k=0;k<5;k++) a[k]=k; }   fun3()   { int k;    for(k=0;k<MAX;k++) pri
+下面程序的输出是______.   long fun5(int n)   { long s;   if((n==1)||(n==2))   s=2;   else   s=n+fun5(n-1);   return(s);}   main()   { long x;   x=fun5(4);   printf("%ld\n",x);}
+下列程序的输出结果是 ______.   int t(int x,int y,int cp,int dp)   { cp=x*x+y*y;   dp=x*x-y*y;   }   main( )   { int a=4,b=3,c=5,d=6;   t(a,b,c,d);   printf("%d%d \n",c,d);   }
+下列程序的输出结果是______.   int max_value(int array[][4])  {int i,j,max;  max=array[0][0];  for(i=0;i<3;i++)  for(j=0;j<4;j++)  if(array[i][j]>max)  max=array[i][j];  return(max);  }  main()  {static int a[3][4]={{1,3,5,7},{2,4,6,8},{15,17,34,12}};  printf("%d\n"
+以下程序的输出结果是______ .   void fun()   { static int a=0;   a+=2; printf("%d",a);   }   main()   { int cc;   for(cc=1;cc<4;cc++) fun()   printf("\n");   }
+若输入1,2时,下列程序运行结果为______.   #define SWAP(a,b)  t=b;b=a;a=t   main()   {int a,b,t;   scanf("%d,%d",&a,&b);   SWAP(a,b);   printf("%d\n",a);   }
+下列程序运行结果为______.   #define  PI  3.14   #define  S(r)  PI * r * r   main()   {float a,area;   a=2;   area=S(a);   printf("%5.2f\n",area);   }
+以下程序的运行结果是______.      #define GZ  30   main()   {int num,total,gz;   gz=40;   num=10;   total=num*GZ;   pritnf("%d\n",total);   }
+下列程序的输出结果是______.        #define A 3    #define   B(a)   ((A+1)*a)    main()    {int x;    x=3*(A+B(7));    printf("%d\n",x);    }
+若输入60和13,下列程序运行结果为______.    #define   SURPLUS(a,b)    ((a)%(b))    main()    {int a,b;    scanf("%d,%d",&a,&b);    printf("%d\n",SURPLUS(a,b));    }    
+以下程序的输出结果是______.    #define MCRA(m) 2*m    #define MCRB(n,m) 2*MCRA(n)+m    main()    { int i=2,j=3;     printf("%d\n",MCRB(j,MCRA(i)));    }
+以下程序的输出结果为______.     #define ADD(x)  x*x       main( )    { int a=4,b=6,c=7,d=ADD(a+b)*c;      printf("d=%d",d);    }
+以下程序运行后n的值是______.    #define COUNT(n) n--   void main(void)   {    int x=6,n=0;   while(COUNT(x)) n++;   printf("%d\n",n);   }
+执行语句char s[3]="ab",*p;p=s;*(p+2)的值是______.
+若输入2,2,下列程序运行结果是______.      main()   {int i,j,(*p)[4];   static int a[3][4]={1,2,3,4,5,6,7,8,9,10,11,12};   p=a;   scanf("%d,%d",&i,&j);   printf("%d\n",*(*(p+i)+j));   }
+若有五个连续的int类型的存储单元并赋值:a[0]=22,a[1]=33,a[2]=44,a[3]=55,a[4]=66,  a[0]的地址小于a[4]的地址.p和s是基类型为int的指针变量,若p已指向存储单元a[1].  通过指针p,给s赋值,使s指向最后一个存储单元a[4]的语句是______.  
+下列程序的运行结果为______.   main()   {int x,*p,**q;   x=10;   p=&x;   q=&p;   printf( "%d\n" , * *q );   }
+以下程序的输出结果是 ______ .   main()   { int arr[ ]={30,25,20,15,10,5}, *p=arr;   p++;   printf("%d\n",*(p+3));   }
+阅读程序:    main()   {   char str1[]="how do you do",str2[10];   char *p1=str1,*p2=str2;   scanf("%s",p2);   printf("%s",p2);   printf("%s\n",p1);   }     运行上面的程序,输入字符串 HOW DO YOU DO 则程序的输出结果是______.
+设有以下程序:   main()   { int a,b,k=4,m=6, *p1=&k, *p2=&m;   a=p1==&m;   b=(*p1)/(*p2)+7;   printf("a=%d\n",a);   printf("b=%d\n",b);   }   执行该程序后,a的值为______.
+以下程序运行后的输出结果是______.   main()   { char s[]="9876",*p;   for ( p=s ; p<s+2 ; p++) printf("%s", p);   }
+程序运行的结果是______.   main()   {    union example      {         int a;         int b;      }e;   e.a=1;e.b=2;   printf( "%d\n" , e.a);   }
+程序段   enum color {                 red,                yellow,                blue=4,                green,                white               } c1;       c1=yellow;       c1=white;       枚举变量c1的值是______.
+程序运行时若依次输入25,3,40,则输出结果是______.   main()   {int *p1,*p2,*p3;   int i,j,k,t;   scanf("%d%d%d",&i,&j,&k);   p1=&i;   p2=&j;   p3=&k;   if(*p1<*p2){t=*p1;*p1=*p2;*p2=t;}   if(*p1<*p3){t=*p1;p1=*p3;*p3=t;}   if(*p2<*p3){t=*p2;*p2=*p3;*p3=t;}   printf("%d\n",*
+程序执行后输出的结果是______.   #include "stdio.h"   main()   {int i,j,t;   static int a[]={70,1,0,4,8,12,65,-76,100,-45,35};   for(i=0;i<=9;i++)   if(a[i]>a[i+1])   {t=a[i];a[i]=a[i+1];a[i+1]=t;}   printf("%d",a[i]);   }
+若有以下的说明?定义和语句,则输出结果为______.   main()   {union un   {int a;   char c[2];   }w;   w.c[0]='A';w.c[1]='a';   printf("%o\n",w.a);   }
+若有以下的说明和语句,已知int类型占两个字节,则以下的输出结果为______.        main()    {struct st    {char a[10];    int b;    double c;    };    printf("%d\n",sizeof(struct st));    }
+若有以下的说明和语句,已知int类型占两个字节,则以下的输出结果为______.        main()    {union un    {int i;    double y;    };    struct st    {char a[10];    union un b;    };    printf("%d\n",sizeof(struct st));    }
+以下程序输出结果是______.      #include "stdio.h"   union pw   {int i;   char ch[2];   }a;   main()   {a.ch[0]=13;   a.ch[1]=0;   printf("%d\n",a.i);   }
+在C语言中,文件的存取是以字符为单位的,这种文件被称为______文件.
+若有定义和语句：  int a;char c;float f;scanf("%d,%c,%f",&a,&c,&f);  若通过键盘输入：  10,A,12.5,则a=10,c='A',f=12.5. 
+若有宏定义：#define S(a,b) t=a;a=b;b=t由于变量t没定义，  所以此宏定义是错误的。 
+在Turbo C中，下面的定义和语句是合法的：  file *fp;fp=fopen("a.txt","r"); 
+若有定义和语句：  int a[3][3]={{3,5},{8,9},{12,35}},i,sum=0;  for(i=0;i<3;i++) sum+=a[i][2-i];则sum=21. 
+在程序中定义了一个结构体类型后，可以多次用它来定义具有  该类型的变量。 
+在C 语言中，此定义和语句是合法的：  enum aa{ a=5,b,c}bb;bb=(enum aa)5; 
+在Turbo C中，整型数据在内存中占2个字节。 
+int i=20;switch(i/10){case 2:printf("A");  case 1:printf("B");}的输出结果为A。 
+函数strlen("ASDFG\n")的值是7。 
+通过return语句，函数可以带回一个或一个以上的返回值。 
+结构体类型只有一种。 
+char *p="girl";的含义是定义字符型指针变量p，p的值是字符串"girl"。 
+用fopen("file","r+");打开的文件"file"可以进行修改。 
+整数 -32100可以赋值给int型和long int型变量。 
+a=(b=4)+(c=6) 是一个合法的赋值表达式。 
+C语言本身不提供输入输出语句，输入和输出操作是由函数来  实现的。 
+语句 printf("%f%%",1.0/3);输出为 0.333333。 
+语句scanf("%7.2f",&a);是一个合法的scanf函数。 
+关系运算符<= 与 == 的优先级相同。 
+若 a=3,b=2,c=1 则关系表达式"(a>b)==c" 的值为"真"。 
+C语言中只能逐个引用数组元素而不能一次引用整个数组。 
+如果想使一个数组中全部元素的值为0，可以写成   int a[10]={0*10}; 
+int a[3][4]={{1},{5},{9}}; 它的作用是将数组各行第一列  的元素赋初值，其余元素值为0。 
+char c[]="Very Good"; 是一个合法的为字符串数组赋值的语句。 
+如果函数值的类型和return语句中表达式的值不一致，则以  函数类型为准。 
+进行宏定义时，宏名必须使用大写字母表示。 
+若有#define S(a,b) a*b 则语句 area=S(3,2); area的值为6。 
+共同体变量所占的内存长度等于最长的成员的长度。 
+若有说明int c;则while(c=getchar());是正确的C语句。 
+若有int ⅰ=10, j=0;则执行完语句  if (j=0)ⅰ+ +; else ⅰ- -; ⅰ的值为11。 
+若有 int i=10,j=2;则执行完i*=j+8;后ⅰ的值为28。 
+C程序中有调用关系的所有函数必须放在同一个源程序文件中。 
+设有数组定义: char array [ ]="hello"; 则数组 array所占的空间为5. 
+函数调用语句:func(rec1,rec2+rec3,(rec4,rec5));中,含有的实参个数是5. 
+C语言中"%"运算符的运算对象必须是整型.
+循环结构中的continue语句是使整个循环终止执行 
+while和do…while循环不论什么条件下它们的结果都是相同的. 
+十进制数15的二进制数是1111. 
+假设有int a[10],  *p;则p=&a[0]与p=a等价 
+在C程序中 , 函数既可以嵌套定义 , 也可以嵌套调用 
+C语言所有函数都是外部函数. 
+表达式 (j=3, j++) 的值是4. 
+C语言的函数可以嵌套定义. 
+C语言的switch语句中case后可为常量或表达式或有确定值的变量及表达式. 
+有如下说明:int  a[10]={1,2,3,4,5,6,7,8,9,10},*p=a; 则数值为9的表达式是 *(P+8). 
+两个字符串中的字符个数相同时才能进行字符串大小的比较 
+c程序总是从程序的第一条语句开始执行. 
+字符处理函数strcpy(str1,str2)的功能是把字符串1接到字符串2的后面. 
+如果被调用函数的定义出现在主调函数之前,可以不必加以声明. 
+C语言中，不能在变量名、函数名、关键字中插入空格和空行。
+C语言中，为了区别一般的变量，符号常量必须用大写字母表示。
+C语言中，变量必须先定义后使用。
+程序中的“=”是赋值号，与数学中等号的功能相同。
+C语言中，用char只能定义字符变量，不能定义字符串变量。
+字符数据在内存以ASCII码存储，占2个字节，用7位二进制表示。
+增1（或自增）、减1（或自减）运算符都是双目运算符。
+C语言中，当把一个实型数据赋给整型变量时系统将自动截掉小数部分。
+C语言中，putchar函数的功能是把一字节代码输出到标准输出设备。
+C语言中，字符数据用格式说明“%c”来输出， 字符串数据用格式说明“%s”来输出。
+C语言中，格式说明“%10.4f”中10表示数据输出的最小宽度， 4表示小数位数。
+C语言中，输入数据的个数和类型必须与scanf函数中的说明符一一对应。
+用float定义的实型变量(按ANSI标准)在内存占8个字节，  输入/输出格式符是%f。
+字符数据与整型数据可互相赋值。
+二元运算符均可以和赋值运算符构成复合的赋值运算符。
+执行语句++i ; i=3;后变量i的值为4。
+使用（int）a；将float型变量a强制转换成int型，  以后a的数据类型为int型。
+C语言规定，else总是与它上面最近的if配对。
+switch后面园括号内的表达式的值和case后面的 常量表达式的值都必须是整型或字符型，不允许是浮点型。
+逻辑运算符的运算优先级低于算术运算符的运算优先级。
+语句int a＝2；if（a＝3）b＝1；执行后b的值是1。
+由float  x＝3e-6,y=3e-6;可得x＝＝y的逻辑值为真。
+执行a=0；if（0）；a＝3；后a的值为3。
+if（表达式）语句1 else 语句2 结构中，  如表达式为a>10,则else的条件隐含为a<10。
+switch语句的结束发生在break,或者是switch语句的“}”处。
+可以用swicth结构实现的程序都可以使用if语句来实现。
+C语言中，do-while语句构成的循环只能用break语句退出。
+从语法角度看，for（表达式1；表达式2；表达式3） 语句中的3个表达式均可省略。
+for、while和do while循环结构的循环体均为紧接其后的 第一个语句（含复合语句）。
+由i=-1；while（i< 10）i+=2;i++;   可知此while循环的循环体执行次数为6次。
+循环for（；；）的循环条件始终为真。
+do…while语句的循环体至少执行1次，while和for循环的 循环体可能一次也执行不到。
+break；语句执行时退出到包含该break；语句的所有循环外。
+for循环、while循环和do while循环结构之间可以相互转化。
+C语言中，数组元素的下标是从1开始的，下标不能越界。
+C语言中，数组元素在内存中是顺序存放的，它们的地址是连续的。
+C语言中，字符串以'\0'为结束标志。
+C语言中，用格式符“%s”输入字符数组时，数组名前不能加&。
+一个数组中的所有元素可以具有不相同的数据类型。
+在数组定义后，可以使用语句如iSum[ ]={1,2,3};给数组初始化。
+仅仅对存放字符串的数组才可以一次引用整个数组， 其余均不能一次引用整个数组。
+定义数组时可以同时给数组赋初值，初值的个数可以超过数组的长度， 多余的被忽略。
+二维及多维数组在定义的同时给数组赋初值时，可以省略数组的各维长度。
+对于字符数组str1和str2,已知字符数组str1的初值为“China”，  则语句str2＝str1；执行后字符数组str2也存放字符串“China”。
+使用字符串处理函数strcmp需要包含头文件string.h。
+设有int a;char abc[5]="abcd";则a＝strlen（"abc"）；执行后a的值为4。
+C语言中，实参的个数、类型和位置必须与形参的定义一一对应。
+C语言中，函数间数据传递的方式有三种，即用返回值、参数、全局变量。
+所有的函数调用前都必须进行函数原型说明。
+函数原型说明中，省略形参变量或者将形参变量写成其它名称不影响程序的正确性。
+实参向形参进行数值传递时，数值传递的方向时单向的， 即形参变量值的改变不影响实参变量的值。
+不论使用何种参数传递方式，形参变量值的改变都不影响实参变量的值。
+数组名作为函数的参数时，实参数组和形参数组共用相同的内存单元。
+函数可以嵌套定义，也可以嵌套调用。
+函数的形参只能在函数内部使用。
+宏展开不作语法检查，展开时不替换关键字和常量。
+枚举类型是一种基本的数据类型。
+将整数值赋给枚举变量时不需要作强制类型转换。
+结构体数组不可以在定义时进行初始化。
+结构体变量作参数时是地址传递。
+共用体所有成员共用的内存单元的大小为各成员需要占用内存大小之和。
+结构体和共用体成员的应用都只能引用最低一级的成员。
+表达式*p++的运算顺序为先自增后取值。
+C语言中，只能用下标来引用数组元素。
+一个指针变量的值是一个地址值。
+int a=5,*p;p=&a;则p的值为5。
+指针作函数的参数时是地址传递方式。
+两个指针相加没有意义。
+语句*－－p；执行之后p指向的内存单元被改变。
+链表的插入和删除和数组元素一样需要移动插入或删除点后的元素。
+指针、数组名、函数名都是地址。
+void 类型的指针不指向某种类型的数据，所以没有意义。
+命令行参数是指在操作系统状态下执行命令程序时允许带的参数。
+表达式 c=fgetc(fp)!=eof的功能是从fp指向的文件中读取字符， 并判断文件是否结束。
+c语言通过文件指针对它所指向的文件进行操作。
+文件正常关闭时返回1。
+当以参数w打开文件时，若指定路径下已有同名文件，则覆盖原有文件。
+rewind函数的作用是位置指针返回移动前的位置。
+fseek函数中的第二个参数代表的位移量是相对于的文件的开始来说的。
+在c语言中将文件视为无结构的字节流。
+使用fwrite向文件中写入数据之前，该文件必须是以wb方式打开。
+我们可以使用ftell获得文件的当前读写位置。
+为了提高读写效率，我们进行读写操作后不应关闭文件以便下次再进行读写。
+“a”和‘a’均是占用1个字节的内存空间 的数据
+语句while(E);中的条件E等价于E!=0。
+若有for(　;　;　){……}，是指循环体执行0次。
+程序有死循环的时候，上机编译不能通过。
+执行for(I=0;I<3;I++);后I的值为2。
+所有类型的循环都可以进行嵌套使用。
+利用break语句可以提前终止循环的执行。
+利用continue语句可以提前终止循环的执行。
+break语句和continue语句不可以同时出现在同一个循环体内。
+switch语句中，每一个case的冒号后面都必须至少跟有一条语句
+关于if语句中，条件表达式只能是关系表达式或逻辑表达式
+for循环表达式的括号内的3个表达式均不可以省略。
+用1作while循环的判断条件，则循环一次也不执行。
+在C语言中，参加算术（+，-，*，/，%）运算的数据可以是任何类型的数据。
+若有定义和语句：int a；char c;scanf("%d,%c",&a,&c);当通过键盘输入：  10,‘A’之后，则变量a中存放的是10,变量c中存放的是‘A’。
+C语言中，变量名只能是小写字母表示，符号常量名可用大写表示
+在C语言中，变量可以不要定义，直接使用
+程序段：i=8,j=10;printf("%d,%d,%d,%d\n",i,j,++i,j++);其结果9,10,9,10.
+while循环的循环体可能一次也不会执行。
+表达式j=-i++和j=-(i++)不相等
+以下常数：'101'，e3，’\78’，12e2.5都是不合法的。
+变量说明语句int a=b=c=23;是正确的。
+C语句：3*x*x+4*x+1+6sin(x)=y是可以允许的。
+字符型数据不可以和整数数据一起进行算术运算。
+C语言是严格区分大写和小写的，因次主函数不能写成main()以外的其他形式。
+C语言对其数据在内存中所占用的实际字节数是有明确规定的。
+如果strcmp(s1,s2)的返回值为一个负数，则表明字符串s1一定小于字符串s2
+用scanf函数输入的字符串不可以带空格。
+用gets函数输入的字符串可以带空格。
+实现两个字符串的复制可以使用str1=str2；语句。
+使用strcpy函数可以实现两个字符串的复制。
+使用strcat函数可以实现两个字符串的连接。
+引用数组元素时，其数组下标的数据类型允许的是：整型常量或整型表达式。
+一个一维数组，它的每一个元素也是类型相同的一维数组时，便构成二维数组
+在C语言中，允许用字符串来直接初始化字符数组。
+如有定义char a[]="student";则数组a的长度为7
+如有定义char a[20]；则可以通过a=“I am a boy”;给a赋值。
+如有定义int a[2][3];则数组a的最后一个元素为a[1][2]。
+如有定义int a[3][4]＝｛0｝; 则数组a的所有元素初值均为0
+构成数组的各个元素可以有不同的数据类型。
+若有说明:int a[10];，则可以用a[10]引用数组a的第10个元素。
+函数的形参为一个数组，则调用此函数时将数组名作为对应的实参。
+do...while的循环体可能一次也不会执行。
+char  *p[10]；定义了一个指向字符数组的指针变量。
+数组名实际上是此数组的首地址，所以数组名相当于一个指针变量。
+使用文件前必须先打开文件
+如果文件以二进制形式打开，用fread和fwrite函数就可以读写任何类型的信息（ ）。
+当文件操作完成后必须使用fclose命令关闭文件 (  )。
+C语言中，文件都是以二进制形式存储。
+使用指针技术，可以通过修改形参变量的值达到修改实参变量的值的目的。
+C语言中，认为键盘是标准输入文件stdin
+C语言中，文件是以记录（record）组成。
+fopen(“c:\test.dat”,”r”)的作用是打开一个磁盘文件，此文件可以被执行写操作
+fopen(“test.txt”,”r”)表示为写操作打开一个二进制文件
+预处理命令行必须以＃开头，且最后要用分号结尾。
+在赋值表达式中，赋值号左边的变量和右边的表达式之值的数据类型可以不相同。
+*p++等价于*p(++)。
+函数定义void max(int a,int b)表示该函数的返回值不确定。
+在C语言中，函数体中变量的隐含存储类别是自动变量auto。
+return语句作为函数的出口，在一个函数体内只能有一个。
+在C程序中，函数不能嵌套定义，但可以嵌套调用。
+在C函数中，形参可以是变量、常量或表达式。
+在C语言中，一个函数一般由两个部分组成，它们是函数首部和函数体。
+C语言程序中的main( )函数必须放在程序的开始部分。
+外部类型的变量作用范围大，编程中应多用外部变量。
+当函数实参中使用指针变量时，形参变量也必须使用指针变量。
+在C语言中，每一个变量在内存里占用的单元数都是相同的。
+指针变量里存放的是地址值，因此指针变量只能是int型的。
+一个变量的指针就是该变量的地址。
+一个指针变量加1表示将该指针变量的原值(地址)加1。
+有如下程序段：int i, j = 2, k, *p = &i;k = *p + j;这里出现的两个“*”号，含义是一样的。
+通过指针变量，就能间接地得到它所指向的变量的值
+说明语句：int *p, p1, p2;只说明了一个能指向int型变量的指针。
+数组元素可以是不同数据类型的。
+如果初值表中的初值个数少于数组长度，那么C语言编译程序会自动把剩余的元素初始化为初值表中的最后一个值。
+主调函数把单个数组元素传递给修改该元素值的被调函数时，主调函数就能够得到修改后的值。
+设p是指向数组a的指针变量，则a[i]和p[i]等价。
+在C语言中，所谓指针型数据，即指该数据是一个地址。
+有一个一维数组a[10]，那么a与&a[0]等价。
+如有说明：int b[10], *p = b;表明在使用时b与p就完全等价了。
+数组中的每一个元素相当于一个变量。若要让一个指针变量指向它，必须用“&数组元素”的方法向该指针变量赋值。
+在C语言中，各种类型的整型数据在内存中都占2个字节。
+表达式?(j=3,?j++)?的值是4
+格式字符%e以指数形式输出实数数字部分小数位数7位.
+char?c[6]="abcde";?printf("%3s",?c)表示输出的字段的宽度为3位,如果被输出的数据的位数大于3,只输出3位数.
+设d=1,e=2,f=3,则逻辑表达?式!(d+e)+f&&e+f*2的值为0.
+已知a=3,b=4,c=5.则逻辑表达式a+b>c?&&?b==c值为0?.
+do-while循环由do开始,while结束,循环体可能一次也不做。
+对于for(表达式1;表达式2;表达式3)语句来说,continue语句意味着转去执行表达式2.?
+在do-while循环中,任何情况下都不能省略while.
+数组名作为函数调用时的实参,实际上传递给形参的是数组第一个元素的值.?
+for循环的三个表达式都可以省略.
+1.什么是常量？什么是变量？作出简要说明（觉得少的自己去网上再找找，自己补充） 常量是指在程序执行过程中值不能改变、具有固定值的量。常量可以分为直接常量、符号常量两种。 
+3.从变量生命周期分为哪两种，分别作简要说明 分为静态变量和自动变量 
+if语句中的条件表达式可以是任意合法的表达式吗？ switch语句中break的作用是什么？
+三种循环结构中的条件是循环进行的条件还是循环结束的条件？循环结构中break语句和continue语句的作用是什么，二者有何区别？
+结构体类型与我们前面学过的基本类型有哪些区别？
+将二进制数1011010对应的八进制数和十六进制数分别表示为 
+给定说明语句int a[10],b[3][4]；其说明的数组分别是
+语句：printf(“%d”,(a=2)&&(b=-2));的输出结果是
+已知：int x=1,y=2,z;则执行：z=x>y?++x:++y,z的值为 
+设a=2,b=3,x=3.5,y=2.5则（float）(a+b)/2+(int)x%(int)y=
+给定说明语句，int a[10],d[4][5]；其说明的数组名分别是
+请写一个C表达式，如果整型数a的个位数字是5，则表达式的值为非0，否则为0
+以下程序运行时输出结果是  (7)  。       #include <stdio.h>         main()           {char a=256：            int d=a；            prinff("%d"，d+1)；           }    
+以下程序运行时输出结果的第一行是___(11)_______，第三行是______(12)__________           #include<stdio．h>             void mat_change(int b[4][4])           {int i，j，m，n，k，c[6][6]；           for(i=0；i<6；i++)             for(j=0；j<6；j++) c[i][j]=1；       for(i=1；i<5；i++)              for(j=1；j<5；j++)  c[i][j]=b[i-1][j-1]；           for(i=1；i<5；i++)             for(j=1；j<5；j++)             {if(c[i][j]==0)               {k=0；                 for(m=-1；m<=1；m++)                   for(n=-1；n<=1；n++)                        if(!(m==O&&n==O))k=k+c[i+m][j+n]；                 if(k==8)c[i][j]=1；               }              }           for(i=1；i<5；i++)             for(j=1；j<5；j++)                b[i-1][j-1]=c[i][j]；           }           main()           {int i,j，a[4][4]={{0，1}，{1，1，1，l}，{0，1，0，1}，{0，1，1，1}}；           mat_change(a)；           for(i=0；i<4；i++)    ．            {for(j=0;j<4；j++)printf("%d"，a[i][j])；            printf("\n")；            }           } 
+以下程序运行时输出结果是(13)  。           #include<stdio．h>           void f(int a[]，int n，int x，int *c)；           main()           {int a[10]={1,3,5，2，3，5，3，7，4，1}，t=0；              f(a，10，5，&t)；printf("%d"，t)；           }           void f(int a[]，int n，int X，int *c)           {if(n==0)return；            if(a[O]>=x)(*c)++；            f(a+1，n-1，x，c)；           } 
+计算∑  ∑n!的值，即求(1!)+(1!+2!)+(1!+2!+3!)+…+(1!+2!+3!+…+20!)               i=1 n=1           main()          {int i，n；double s=0，t；           for(i=1；i<=20；i++)           {  ________(21)__________ ；             for(n=1；_____(22)___________  ；n++)             {  t=t*n；s=s+t；}           }             printf("1!+(1!+2!)+…+(1!+2!+…+20 !)=%e\n"，s)；           }    ． 
+设某链表上每个结点的数据结构为           typedef struct node           {int d；               struct node *next；           }NODE；           函数NODE *invert(NODE *head)的功能是：将head指向的单链表逆置，即原链表最后一       个结点变为第一个结点，原来倒数第二个结点变成第二个结点，以此类推。在逆置过程中不建       立新的链表。           NODE *invert(NODE *head)           {NODE *P，*q，*r；            if(head==0||  (      (27)    )              return head；            P=head；            q=P->next；            while(q!=0)            {r=    (       28        )  ；             q->next=p；p=q；q=r；            }           (    29      )    =O；           head=  (           30         )  ；           return head；           } 
+以下程序运行时输出结果是(  6  )  。           #define PT 3．14             #define S(x)  PT*x*x           main()    ’           {int a=2；             printf("%4.1f",6.28/S(a))；           } 
+已知int型变量的存储字节数为2，以下程序运行时输出结果是( 7  )。           #include<stdio．h>           main()           {int a=3，b=2，c=7，d=6，e=8；            long f=a*10000+b*1000+c*100+d*10+e；            printf("%ld"，f)；           } 
+以下程序运行时输出结果是(  8  )  。           #include<stdio．h>           main()           {char *P="student"；           if(P=="student")             printf("yes")；             else             printf("no")；           }    
+以下程序运行时输出结果是(  9  )。           #include<ctype.h>           #include<stdio.h>           main()           {char *s="23a4"；            int k=0，a=0，b=0；           do           {if(isdigit(s[k]))             {if(s[k]%2==0)              {a=a+s[k]-'0'；               continue；              }              a=a+s[k]-'0'；b=b+s[k]-'0'；           }           }while(s[k+1]&&++k)；             printf("%d，%d，%d\n"，k，a，b)；           } 
+以下程序运行时输出结果的第一行是  (  14  )  ，第二行是  ( 15 )  ，第三行是(16 )         提示：函数int toupper(int ch)的功能是：将小写字母字符转换为对应的大写字母字符。           #include<stdio.h>           #include<ctype.h>                   long fun(char *s)           {long n，sign，base=10，t；            for(；isspace(*s)；s++)；            sign=(*s=='-')?-1：1；            if(*s=='+'||*s=='-')s++；           if(*s=='0'&&s++)            {if(*s=='x||*s=='X')              {base=16；S++；}             else               base=8;            }             for(n=0，t=1；t&&(isdigit(*s)||isalpha(*s))；s++)           switch(base)             {case 10：if(isdigit(*s)) n=n*base+*s-'0'；                       else t=0;                       break：               case 8：if(*s>='0'&&*s<='7')n=n*base+*s-'0'；                       else t=0：                       break；               default：if(isdigit(*s))n=n*base+*s-'0'；                        else                         if(toupper(*s)>='A'&&toupper(*s)<='F')                n=n*base+toupper(*s)-'A'+lO；                  else t=0;           }           return sign*n：           }           main()           {char c1[]="0x1f"，c2[]="0409"，c3[]="-33a"；            printf("%ld\n%ld\n%ld"，fun(c1),fun(c2)，fun(c3))；             } 
+以下程序运行后输出____(6)____           #include<stdio.h>           int f(char *sl,char *s2)           {static int nl,n2;           while(*s1++)n1++;           while(*s2++)n2++;              return n1-n2;           }           main()       {printf("%d",f("c:\\program","\12a\t34\n"));} 
+下列程序执行后，x的值为____(7)______          main()           {int x,y;           for(x=1,y=1;x<=100;x++)             {if(y>=20)break;           if(y%3==1){y+=3;continue;}           y-=5;           }           printf("%d\n",x);           } 
+以下程序中函数encode完成一个字符串的加密功能，将s1字符串中的字符经过变换后保存到s2指向的字符数组中，二维数组cs保存了一个明码密码对照表，第一行是明码字符，第二行是对应的密码字符，加密方法如下：从s1字符串中每取一个字符，均在cs表第一行中查找有无该明码字符，若找到则将对应的密码字符放入s2中，否则将s1中原来的字符放入s2中。       #include <string.h>       #include <stdio.h>       char cs[2][10]={“aceghjlnp”,”fonptiude”};               void encode(char *s1, char *s2)       {         int n,i,j;         for(n=0;s1[n]!=’\0’;n++)         {       for(i=0;i<10&&s1[n]!=cs[0][i];_______(13)____)            if(i<10)  s2[n]=______(14)_____;            else s2[n]=______（15）_______;         }         s2[n]=’\0’;       }               main()       {         char ts[80]=”jntwrnwt”, td[80];         encode(ts,td);         puts(td);       } 
+以下函数的功能是以十进制字符形式打印出任一int函数           #include "stdio.h"                   void f(int n)               {int i;            if(n<0)            {putchar('-');____(20)____;}             if((_____(21)______)!=0)f(i);             putchar(____(22)_______+'0');           } 
+以下程序检查地名登记表，使每个地名只登记一次，并输出登记表内容。改错时，可以修改语句中的一部分内容，调整语句次序，增加少量的变量说明或编译，3.改正后的源程序(文件名myfl．c)必须放在考试软盘的根目录下，供阅卷用，否则不         予评分。            预处理命令，但不能增加其他语句，也不能删去整条语句。        函数del_line删除s指向的n行字符串中重复出现的字符串，只保留第一次出现的字符串       若程序正确，运行后输出结果应为:shanghai beijing nanjing       含有错误的源程序如下：       #include <stdio.h>       #include <string.h>               int del_line(char s[10][ ],int n)       {         int i,j,k;         for(i=0;i<n;i++)         {j=i;          while(j<n)            if(strcmp(s[i],s[j])==0)            {for(k=j;k<n;k++) s[k]=s[k+1];              s[k][0]=0;n--;            }            else j++;         }         return n;       }               main()       {         char line[10][10]={“shanghai”,”beijing”,”nanjing”,”shanghai”,”nanjing”};         int k,n=5;         n=del_line(line,n);         for(k=0;k<n;k++)  puts(line);       }       将上述程序录入到文件myf1.c中，然后根据题目的要求以及程序中语句之间的逻辑关系对程序中的错误进行修改。 
+以下程序的输出结果是 。 main( ) { float a； a=1/100000000； printf("%g"，a)； } 
+下面程序的输出结果是____。 #include <stdio.h> 　　main( ) { int x=10； { int x=20； printf ("%d，", x)； } printf("%d\n", x)； } 
+以下程序的输出结果是____。 main() { unsigned int n； int i=-521； n=i； printf("n=%u\n",n)； } 
+以下程序的输出结果是____。 main() { int n=1； printf("%d %d %d\n",n,n++,n--)； } 
+以下程序的输出结果是____。main() { int x=0x02ff,y=0x0ff00； printf("%d\n",(x&y)>>4|0x005f)； } 
+以下程序的输出结果是____。 main() { int a=1； char c='a'； float f=2.0； printf("%d\n",(!(a==0),f!=0&&c=='A'))； } 
+下面程序的输出结果是____。 main() { int a=1，i=a+1； do { a++ ； }while( !~i++ > 3)；  printf("%d\n",a)； } 
+下面程序的输出结果是____。 main() { char s[12]= "a book"； printf("%.4s",s)； } 
+下面程序的输出结果是____。 main() { int a,b； scanf("%2d%3d",&a,&b)； printf("a=%d b=%d\n",a,b)； } 
+以下程序段的输出结果是 。 int a=10,b=50,c=30； if(a>b) a=b； b=c； c=a； printf("a=%d b=%d c=%d\n",a,b,c)； 
+下面程序的输出结果为 。 main() { int a=1,b=0； switch(a) { case 1: switch (b) { case 0: printf("**0**")； break； case 1: printf("**1**")； break； } case 2: printf("**2**")； break； } } 
+下面程序的输出是 。 main() { int x=1,y=0,a=0,b=0； switch(x) { case 1: switch(y) { case 0: a++；break； case 1: b++；break； } case 2: a++；b++；break； } printf("a=%d,b=%d\n",a,b)； } 
+下面程序的输出是____。 main() { int num=0； while(num<=2) { num++； printf("%d\n",num)； } } 
+下面程序的输出结果是____。 main() { int a=1,b=0； do { switch(a) { case 1: b=1；break； case 2: b=2；break； default : b=0； } b=a+b； }while(!b)； printf("a=%d,b=%d",a,b)； } 
+#include <stdio.h> main() { int c； while((c=getchar())!='\n') switch(c -'2') { case 0: case 1: putchar(c+4)； case 2: putchar(c+4)；break； case 3: putchar(c+3)； default: putchar(c+2)；break； } printf("\n")； } 
+下面程序的输出结果是____。 main() { int x,i； for(i=1；i<=100；i++) { x=i； if(++x%2==0) if(++x%3==0) if(++x%7==0) printf("%d ",x)； } } 
+下面程序的输出结果是____。 #include <stdio.h> main( ) { int i,k,a[10],p[3]； k=5； for(i=0；i<10；i++) a[i]=i； for(i=0；i<3；i++) p[i]=a[i*(i+1)]； for(i=0；i<3；i++) k+=p[i]*2； printf("%d\n",k)； } 
+假定从键盘上输入"3.6,2.4<回车>",下面程序的输出是____。 #include <math.h> main() { float x,y,z； scanf("%f,%f",&x,&y)； z=x/y； while(1) { if(fabs(z)>1.0) { x=y； y=z； z=x/y； } else break； } printf("%f\n",y)； }  
+下面程序的输出结果是____。 main() { int i,j,x=0； for(i=0；i<2；i++) { x++； for(j=0；j<-3；j++) { if(j%2) continue； x++； } x++； } printf("x=%d\n",x)； } 
+下面程序的输出结果是____。 #include <stdio.h> main( ) { int n[3][3], i, j； for(i=0；i<3；i++ ) for(j=0；j<3；j++ ) n[i][j]=i+j； for(i=0；i<2；i++ ) for(j=0；j<2；j++ ) n[i+1][j+1]+=n[i][j]； printf("%d\n", n[i][j])； } 
+下面程序的输出结果是____。 #include <stdio.h> main( ) { int a[4][5]={1,2,4,-4,5,-9,3,6,-3,2,7,8,4}； int i,j,n； n=9； i=n/5； j=n-i*5-1； printf("a[%d][%d]=%d\n", i,j,a[i][j])； } 
+下面程序的输出结果是____。 int m[3][3]={ {1}, {2}, {3} }； int n[3][3]={ 1, 2, 3 }； main( )  { printf("%d\n", m[1][0]+n[0][0] )； /* ① */ printf("%d\n", m[0][1]+n[1][0] )； /* ② */ }  
+下面程序的输出结果是____。 #include <stdio.h> main( ) { char s1[50]={"some string *"},s2[]={"test"}； printf("%s\n", strcat(s1,s2))； } 
+下面程序的输出结果是____。 #include <stdio.h> f(char *s) { char *p=s； while(*p!='\0') p++； return(p-s)； } main() { printf("%d\n",f("ABCDEF"))； } 
+下面程序的输出结果是____。 #include <stdio.h> int k=1； main( ) { int i=4； fun(i)； printf ("\n%d，%d"，i，k)； /* ① */ } fun(int m) { m+=k；k+=m； { char k='B'； printf("\n%d"，k-'A')； /* ② */ } printf("\n%d，%d"，m，k)； /* ③ */ } 
+下面程序的输出结果是____。 #include <stdio.h> fun(int n, int *s) { int f1, f2； if(n==1||n==2) *s=1； else { fun(n-1, &f1)； fun(n-2, &f2)； *s=f1+f2； } } main() { int x； fun(6, &x)； printf("%d\n", x)； } 
+下面程序的输出结果是____。 #include <stdio.h> void num() { extern int x,y； int a=15,b=10； x=a-b； y=a+b； } int x,y； main() { int a=7,b=5； x=a-b； y=a+b； num()； printf("%d,%d\n",x,y)； } 
+下面程序的输出结果是____。 main() { int a=2,i； for(i=0；i<3；i++) printf("%4d",f(a))； } f(int a) { int b=0； static int c=3； b++； c++； return(a+b+c)； } 
+下面程序的输出结果是____。 #include <stdio.h> try( ) { static int x=3； x++； return(x)； } main( ) { int i, x； for(i=0； i<=2； i++ ) x=try( )； printf("%d\n", x)； } 
+下面程序的输出结果是____。 #include <stdio.h> main( ) { int x=1；  　　 　void f1( ), f2( )； 　　 f1( )； f2(x)；  printf("%d\n", x)； } void f1(void) { int x=3；  printf("%d ", x)； }  void f2( x ) int x； { printf("%d ", ++x)；  } 
+下面程序的输出结果是____。 #include <stdio.h> #define SUB(X,Y) (X)*Y main() { int a=3,b=4； printf("%d\n",SUB(a++,b++))； } 
+下面程序的输出结果是____。 main() { int a[]={1,2,3,4,5,6}； int *p； p=a； printf("%d ",*p)； printf("%d ",*(++p))； printf("%d ",*++p)； printf("%d ",*(p--))；  p+=3； printf("%d %d ",*p,*(a+3))；  }  
+下面程序的输出结果是____。 #define FMT "%X\n" #include <stdio.h> main( ) { static int a[ ][4] = { 1,2,3,4,5,6,7,8,9,10,11,12 }； printf( FMT, a[2][2])； /* ① */ printf( FMT, *(*(a+1)+1) )； /* ② */ } 
+下面程序的输出结果是____。 #include <stdio.h> main ( ) { int a[]={1, 2, 3, 4, 5} ； int x, y, *p； p=&a[0]； x=*(p+2)； y=*(p+4)； printf("%d,%d,%d\n", *p, x, y)； } 
+下面程序的输出结果是____。 void ive(x,n) int x[],n； { int t,*p； p=x+n-1； while(x<p) { t=*x； *x++=*p； *p--=t； } return； } main() { int i,a[]={1,2,3,4,5,6,7,8,9,0}； ive(a,10)； for(i=0；i<10；i++) printf("%d ",a[i])； printf("\n")； }  
+下面程序的输出结果是____。 #include <stdio.h> char *p = "abcdefghijklmnopq" ； main( ) { int i=0； while( *p++!='e' )； printf("%c\n", *p)；  } 
+下面程序的输出结果是____。 #include <stdio.h> f(int x, int y) { return (y-x)； } main( ) { int a=5, b=6, c； int f(), (*g)()=f； printf("%d\n", (*g)(a,b) )； } 
+下面程序的输出结果是____。 #include <stdio.h> main( ) { int a=1,*p,**pp； pp=&p；  p=&a； a++； printf ("%d,%d,%d\n", a,*p, **pp)； } 
+下面程序的输出结果是____。 main() { char *alpha[7]={"ABCD","EFGH","IJKL","MNOP","QRST","UVWX","YZ"}； char **p； int i； p=alpha； for(i=0；i<4；i++) printf("%c",*(p[i]))； printf("\n")； } 
+下面程序的输出结果是____。 #include "stdio.h" struct str1 { char c[5]； char *s； }； main( ) { struct str1 s1[2]={ {"ABCD""EFGH"}，{"IJK"，"LMN"} }； struct str2 { struct str1 sr； int d； }s2={"OPQ"，"RST"，32767}； struct str1 *p[2]； p[0]=&s1[0]； p[1]=&s1[1]； printf("%s"，++p[1]->s)； /* ① */ printf("%c"，s2.sr.c[2])； /* ② */ } 
+以下程序的输出结果是____。 #include <stdio.h> main() { union EXAMPLE { struct { int x,y； }in； int a,b； }e； e.a=1；e.b=2； e.in.x=e.a*e.b； e.in.y=e.a+e.b； printf("%d,%d\n",e.in.x,e.in.y)； } 
+以下程序运行时输出结果为____________________(2007秋)       #include <stdio.h>       void main()       { int i,sum=0;        for(i=0;i<5;i++)        {switch(i)         {case 0:          case 1:sum++;          case 3:sum++;          case 4: sum--;break;         }       }       printf(“%d\n”,sum);       } 
+以下程序运行后输出结果的第一行为____________,第二行为_______________(2007春)       #include  “stdio.h”       void main()       { int i=5;         do         {switch(i%2)       { case 0:i--;break;         case 1:i--;break;       }       i--;printf(“%d\n”,i);         }while(i>0);       } 
+以下程序运行时输出的结果是______       main()       {         int s=1,n=235;         do{       s*=n%10;       n/=10;         }while(n);         printf(“%d\n”,s);       } 
+下列程序运行后的输出结果，第一行是____       #include <stdio.h>       main()       {         int i,a=0,c=2;         switch(++a,a*c)         {case 1: printf(“1”);          case 2: printf(“2”);          case 3:printf(“3\n”);break;          default:printf(“other\n”);}       } 
+下面程序的功能是:输出100以内(不含100)能被3整除且个位数为6的所有整数,请填空:              #include <stdio.h>              #include <stdlib.h>             main()  {                int i;                int j;                for(i=0;_____________;i++) {                   j=i*10+6;                   if(_____________) continue;                   else printf(“%d\n”, j); }             } 
+设有语句”for(int i=5,sum=0;i<10,sum++;i++)        sum+=i;”,则for()语句的执行情况是____ 
+有如下程序:              void main()              {                  int i,sum=0;                  for(i=1;i<=3;i++)  sum+=i;                  printf(“%d\n”,sum);              }        该程序的执行结果是____ 
+设整型变量x的当前值为3,执行以下循环语句后，输出结果为____          do       {            x-=2;               printf(“%d\n”,x);          }while(!(--x)); 
+以下程序输出的第一行是____________,第二行是______________           #include <stdio.h>           void main(void)           {              int x=6;              do              {                 x-=2;                   printf(“%d\n”,x);              }while(--x);            } 
+执行以下程序段后，变量i的值是___________        int i=10;        switch(i)       {           case 9: i+=1           case 10: i+=1;           case 11: i+=1;           default: i+=1;       } 
+某一门课程考试之后，需要统计考生（10人）的平均成绩，并找出其中的最高分和最低分。
+从键盘输入两个正整数，输出这两个整数的商，要求商的小数点后保留5位。例如输入355和113，输出3.14159。
+用while循环结构编写程序打印ASCII码为33－127的字符。
+用do-while,for循环结构编写程序打印ASCII码为33－127的字符。
+用for循环结构编写程序打印ASCII码为33－127字符。
+在1－500中，找出能同时满足用3除余2，用5除余3，用7除余4的所有整数，用循环结构。
+输入一个整数将其倒着输出，如54321——12345。
+从键盘输入一整数n，计算1*1+2*2+...+n*n的值。
+用 while 循环计算1+2+……+100的和。
+用 for 循环计算1+2+……+100的和。
+输入一个小于等于10的整数n ，计算n!。
+用循环语句，计算100－200之间的所有7的倍数之和。
+输入一行字符，分别统计出其中英文字母，空格，数字和其他字符的个数。
+输入一个整数，统计它有几位数。如输入367，则该数有3位数。
+编写程序,输出1到50中间所有能被3整除的正整数。
+把100~200之间不能被3整除的输出。
+编程Y=1+3+5+7+...111。
+编程y=1*1/2*1/3*1/4*1/5*1/6*...前十项之积。
+求1到100偶数和。
+编程求200以内所有质数（素数）。
+从键盘输入一个整数，求该数的绝对值。
+从键盘输入＋、－、*、/中的任一个，输出对应的英文单词：plus、minus、mutiply、divide，如输入的不是这4个字符中的任一个，则输出“sorry，you are wrong”。
+求解一元二次方程ax2＋bx＋c＝0的跟（a不等于0），a，b，c均为实数，其值由键盘输入。
+输入一个整数，判断它能否被3，5，7整除。
+用整数1~12依次表示1~12月，由键盘输入一个月份数，输出对应的季节英文名称（12~2月为冬季；3~5月为春季；6~8月为夏季；9~11月为秋季。要求用if嵌套实现）。
+编程实现：输入4个整数，要求按由小到大输出。
+给出一百分制成绩，要求输出成绩等级’A’,’B’,’C’,’D’,’E’。90分以上为’A’,80-89分为’B’,70-79分为’C’，60－69分为’D’，60分以下为’E’。
+给出一个不多于5位的正整数，分别打印出每一位数字。
+从键盘输入三个正整数，判断这三个数能否构成三角形。
+编写输入两个整数a和b，若a≥b时，求其积c并显示，若a<b时，求其商c并显示的程序。
+ 编程实现:从键盘输入三个正整数，判断它们是否构成直角三角形。
+ 编程实现:从键盘输入三个正整数，判断它们是否构成等腰三角形。
+ 从键盘输入一个整数，判断其是否素数。
+ 编写程序，在屏幕上输出阶梯形式的乘法口诀表。
+求不超过1000的回文素数。
+自守数是指一个数的平方的尾数等于该数自身的自然数。如：762=5776，求出2000000以内的自守数。
+从键盘上输入若干个学生的成绩，当成绩小于等于0时结束输入。计算出平均成绩，并输出不及格的成绩和人数。
+编一函数，将一个字符串的字符反向输出到屏幕。
+编一函数，从键盘输入一个正整数n，求Xn
+输入1行字符（不超过80个字符）。编一函数，统计该行字符中数字的个数。
+输入一个5行、6列的整数数组，先以5行6列的格式输出该数组；从键盘输入一个整数，然后编一函数，查找该数是否在数组中。
+Fibonacci数列的组成规律为：0，1，1，2，3，5，8，13，21，…。编写程序，求Fibonacci数列第i项的值(0≤i≤40)。
+编写程序，通过调用函数double area(double r)，计算园的面积，要求圆的半径r从键盘输入。
+编写程序，通过调用函数double area(double r, double h)，计算园柱的表面积，要求圆柱的半径r及高h的值从键盘输入。
+编写一个函数，计算并返回一个整数的立方。
+设计一个函数，交换数组a和数组b的对应元素。
+设有两个整型数组a,b,试比较这两个数组统计出这两个数组中对应元素相等与不相等的个数。
+编写程序，将字符串str中的所有字符k删除。
+若有说明：int a[2][3]={{1,2,3},{4,5,6}};，现要将a的行和列的元素互换后存到另一个二维数组b中，试编程。
+求Sn=a+aa+aaa+…+aaa…a的值。例如当a=2,n=4时，Sn=2+22+222+2222。a和n由键盘输入。(用函数调用实现)
+求两个正整数的最大公约数 (用函数调用实现)。
+计算1！+2！+3！+…+n!的值，n值由键盘输入（要注意n!的有效性）。
+编写程序，用冒泡法对20个整数排序。
+编写程序，将一个数插入到有序的数列中去，插入后的数列仍然有序。
+输入1行字符（不超过80个字符）。编一函数，统计该行字符中空格的个数。
+输入一个5行、6列的数组，先以5行6列的格式输出该数组，然后编一函数，找出该数组中值最小的元素，输出该元素及其两个下标。
+输入1行字符（不超过80个字符）。编一函数，统计该行字符中字母的个数。
+编写程序，对10个从键盘任意输入的字符排序后输出。
+编程模拟字符串连接函数strcat。要求：不能调用系统函数，使用自定义函数实现。
+从键盘输入5个整数，保存于数组中。编程找出其中最大值和最小值，把二者位置对调，然后输出调整后的数组。要求：使用自定义函数实现对调。
+编写一个函数，该函数可以统计一个长度为2的字符串在另一个字符串中出现的次数。
+请编一个函数fun(char *s)，函数的功能是把字符串中所有的字母改写成该字母的下一个字母，最后一个字母z改写成字母a：大写字母仍为大写字母，小写字母仍为小写字母，其他的字符不变。
+请编写一个函数void fun(char a[],int k,int n)，其功能是：删除字符串中指定下标开始的n 个字符：其中，a指向字符串，k中存放指定的下标。
+请编一个函数fun(int *a,int n,int *odd,int *even)，函数的功能是分别求出数组中所有奇数之和以及所有偶数之和：形参n给了数组中数据的个数：利用指针odd返回奇数之和，利用指针even返回偶偶数之和。
+请编一函数void fun(int tt[M][N],int pp[N])，tt指向一个M行N列的二维数组，求出二维数组每列中最小元素，并依次放入pp所指一维数组中，二维数组中的数已在主函数中赋予。
+编写程序，将字符串S1插入到字符串S2的第n个字符之后。
+编写一个程序输入一行字符，统计其中有多少个单词，单词之间用一个或多个空格分开。
+求二维数组的鞍点（即该位置上的元素在该行上最大，在该列上最小，也可能没有安点），输出其行、列下标。
+编写程序，从键盘上输入两个字符串a和b，要求不用strcat( )函数把串b的前五个字符连接到串a中，如果b的长度小于5，则把b的所有元素都连接到a中。
+ 用结构体类型编写程序，从键盘输入学生3门课程的考试成绩，计算并输出该学生的平均成绩。
+ 编写程序，从键盘输入一整数，用位运算的方法输出该整数的二进制表示。
+编写程序，将你正写编写的程序源代码前10行显示在屏幕上。（提示：程序的源代码可视为文本文件）
+编写程序，将你正写编写的程序源代码奇数行显示在屏幕上。（提示：程序的源代码可视为文本文件）
+编写程序，统计你正写编写的程序源代码的行数。
+编写程序，统计你正写编写的程序源代码中字符i出现的次数。
+编写程序，将从键盘输入的英文字符分4行添加到文本文件myfile.txt中，要求每行的字符数不大于10个。
+编写程序，从键盘输入整数（整数值的大小范围在65~122之间），将该整数所代表的字符输出到文件myfile.txt中，每个字符之间用逗号分隔。
+编写程序，从键盘输入一串字符，将该字符的ASCII码输出到文件myfile.txt中，每个ASCII码之间用空格分隔。
+编写程序，从键盘输入10个字符，将输入的字符及字符的ASCII码输出到文件myfile.txt中，每个字符与其ASCII码之间用空格分隔，每个字符占一行。
+编写程序，从键盘输入整数（整数值的大小范围在65~122之间），将该整数所代表的字符输出到文件myfile.txt中，每个字符之间用空格分隔。
+编写程序，从键盘输入10个整数（整数值的大小范围在65~122之间），将该整数及其所代表的字符输出到文件myfile.txt中，每个字符之间用空格分隔，每个数占一行。
+编写程序，从键盘输入一正整数，将该整数的八进制数保存到文本文件myfile.txt中。
+编写程序，从键盘输入一正整数，将该整数的十六进制数保存到文本文件myfile.txt中。
+编程：要求输入整数a和b，若a*a+b*b大于100，则输出a*a+b*b百位以上的数字，否则输出两数之和a+b。
+编程：输入三个正整数x,y,z，将这三个数由小到大输出。
+编程：从键盘输入一个年号，判断该年号是否为闰年，并输出结果。闰年是能被4整除但不能被100整除；或能被100整除且能被400整除的年号。
+编程：已知分段函数：当x>10时，y=2*x+1;当1<x<=10时，y=5*(x+1)*(x-2);当x<=1时，y=1-2*x;从键盘输入x的值，计算y的值。
+编程：输入3个正整数，判断能否组成三角形，如果能够组成三角形，则输出三角形的面积，否则输出错误。三角形面积公式：area=sqrt(s(s-a)(s-b)(s-c))，其中s=1/2(a+b+c)。（提示：sqrt(x)属于math.h）
+编程：已知分段函数，当x<=0时，y=3*x;当0<x<=10时，y= (x+1)*(x-2);当x>10时，y=2*x*x;从键盘输入x的值，计算y的值。
+编程：判定用户输入一个不大于999的正整数是否为一个回文数。回文数是指正读和反读都相同的数。
+编程：从键盘输入一个两位数的正整数a，将其转换形成一个整数b并输出b。转换的方式是：将a中较大的数码作为b的十位，剩余的数码作为b的个位。例如，当输入a＝49，则结果b=94。
+计算一个3*3矩阵的所有元素之和以及所有元素中的最大元素的值。要求初始化矩阵，输出计算结果并输出该矩阵。
+编程计算一个a[3][4]数组的最小值所在位置，输出该位置以及a[3][4]矩阵。要求初始化矩阵。
+初始化一矩阵a[4][4],计算每列的最大元素值，要求输出原始矩阵以及每列的最大元素值。
+编程计算a[3][4]数组的最大值所在位置，输出该位置以及a[3][4]矩阵。要求初始化矩阵。
+编程实现：计算矩阵a[3][4]每行元素的和。要求输出原始矩阵以及每行元素的和值。要求初始化矩阵。
+编程实现：计算矩阵a[3][4]每列元素的和。要求输出原始矩阵以及每列元素的和值。要求初始化矩阵。
+一维数组中存放任意10个整数，从第四个数据开始直到最后一个数据，依次向右移动一个位置。输出原始数据和移动后的结果。要求初始化数组。 例如：原始数据为：6  10  2  9  8  7  17 18  23  45， 输出结果为：6  10  2  9  9  8  7  17  18  23  45。
+编程实现：在任意字符串a中将与字符c相同的所有元素的下标值分别存放在数组b中，输出字符串a和数组b。要求初始化数组a。
+初始化一个存放10个整数的数组，删除其中所有的小于0的数据。例如：当前的数据为1 –1 –6 8 9 6 6 –5 6 9 ，则输出结果为1 8 9 6 6 6 9。
+已知4X4矩阵，求行下标和列下标均为偶数的元素之和, 要求输出原始矩阵以及和值。提示：例如A[0][0]、A[0][2]的行下标和列下标均为偶数。要求初始化矩阵。
+已知4X4矩阵，求行下标和列下标均为奇数的元素之和, 要求输出原始矩阵以及和值。例如A[1][1]、A[1][3]的行下标和列下标均为偶数。要求初始化矩阵。
+函数void fun（int a[]，int n，int * big，int * small），该函数的功能是分别求出数组a中所有偶数项中的最小值与所有奇数项中的最大值，形参n给出数组中数据的个数；利用指针small返回偶数项中的最小值，利用指针big返回奇数项中的最大值。要求：在主调函数中初始化一个一维数组，并在主调函数中调用函数fun后在主调函数中输出结果。
+编写函数void new（char str []），该函数将字符串str中下标值为偶数的字符删除，串中剩余字符形成一个新串。编写函数void strstoc（char str []）将新字符串中的小写字母转换为大写字母。编写一个程序，调用上述各个函数。要求：在main()函数中初始化字符串str并输出原字符串str，调用各个函数后在主函数中输出处理后的新字符串str。要求：不允许使用字符串库函数。
+编写函数void revstr (char *str)，其功能是把字符串str反序。例如字符串str为”abcde”时，则处理后为”edcba”， 要求：在main()函数中初始化字符串str并输出原字符串str，调用函数后在主函数中输出处理后的新字符串str。要求：不允许使用字符串库函数。
+编写函数int strfun(char str[], char a)，其功能是计算str所指定字符串中，出现指定字符的个数，并返回此值。例如：若字符串：123412132，输入字符为：1，则返回：3。要求在main()函数中初始化字符串str并输出原字符串str，调用函数strfun()后在主函数中输出处理后的返回值。要求：不允许使用字符串库函数。
+将一个正整数分解质因数。例如：输入90,打印出90=2*3*3*5。
+设有一分数列：2/1，3/2，5/3，8/5,13/8，21/13，…… 试编程求出这个数列的前十项之和。
+编一程序，打印出所有的“水仙花数”。 （“水仙花数”是指一个三位数，其各个位数字的立方和等于该数本身。例如，153是一个“水仙花数”，因为153=1*1*1+5*5*5+3*3*3）
+编写程序：找出不超过1000的十位数字为1，个位数字为3或7的所有数。例如：13、17、113、317等。
+有1、2、3、4、5、6个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
+输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数。
+一个数如果恰好等于它的因子之和，这个数就称为“完数”。例如6=1＋2＋3。编程找出1000以内的所有完数。
+求一个3*3矩阵两条对角线元素之和。要求初始化该数组元素。
+编程将一个数组中的最大的元素与第一个元素交换，最小的元素与最后一个元素交换，输出数组。要求初始化数组。
+编写一个函数sum，输入n为偶数时，调用函数求1/2+1/4+…+1/n,当输入n为奇数时，调用函数  1/1+1/3+…+1/n
+编写函数void new（char str[]）的功能是：将字符串str中下标为奇数的字符删除，串中剩余字符形成一个新串，计算新串的长度。在main()函数中初始化字符串str1并输出原字符串str1，调用函数后输出处理后的字符串str1及其长度。 例如：当str1所指字符串为：”chinachina”时，则函数调用后的str1为”ciahn”。长度为5。
+编写一个函数string，其功能是将字符串中所有小写字母全部转换成大写字母，在主函数中，初始化一个字符串，调用函数string后，输出转换后的字符串。
+编写一个函数sum，输入n为偶数时，调用函数求1/2+1/4+…+1/n,当输入n为奇数时，调用函数 1/1+1/3+…+1/n
+编写一个函数stringcat,其功能是完成两个字符串连接，要求：在主函数中初始化两个字符串，调用stringcat进行连接，并在主函数中输出连接后字符串（注意不允许使用库函数）。
+编写一个函数substring，其功能是计算字符串中子串出现的次数。要求在主函数中初始化字符串和子串，调用函数substring后，在主函数中输出计算的结果。
+编写函数void sort（char str []），该函数把str字符串按照ASCII码从小到大排序。在main()函数中初始化字符串str，调用函数后输出处理后的字符串str。例如：如果str为”main”, 则函数调用后str为”aimn”。
+ 从键盘输入一个整数，判断其为正数、负数还是零。如果为正数输出1，如果为负数输出-1，如果为零输出0。
+ 初始化一个5X5的二维矩阵，计算主对角线上的元素之和。要求输出此矩阵，并输出主对角线之和。提示a[0][0],a[1][1]之类的元素为主对角线元素。
+ 已知数组int A[10]={1,2,3,4,5,4,3,3,6,7}，编制函数int MyFun(int *pA)实现将数组中的所有值为3的元素删除。
+计算分段函数的值。当x>=10时，y=x*x+0.65；当x<10且x>0时，y=x+1；当x<=0时，y=2*x+2;要求输出结果保留2位小数。
+将一维数组中的10个元素对调。即第一个元素变为最后一个元素，最后一个元素变为第一个元素，第二个元素和第八个元素对调…。
+编制函数ITOA(int a, char *Text)，将正数a转换为一个字符串。提示：需要把整数a的各个权位上的数求出，然后分别转换为字符，保存到数组中，例如123的各个权位数字为1,2,3然后转换为字符为’1’ ‘2’ ‘3’，对应的字符串为”123”。要求主函数输入一个正整数，输出转换后的字符串。
+求矩阵的所有靠内侧的各元素值之和。要求初始化矩阵(4行5列),输出原始的矩阵和内侧的各元素值之和,必须用循环实现。    例如,矩阵为：         3  1  2  3         2  5  7  3         1  1  4  2    则所有靠内侧的各元素值之和为5＋7=12。  提示：相当于循环计算时，数组a[i][j]中的i，j不为0或n－1。
+实现两个数的乘法和除法运算。如输入3,4,*,输出12;输入3,4,/,输出0.75;提示:注意除数为0的情况，c语言中3/4=0,所以变量要用float或double类型。
+求矩阵的所有靠外侧的各元素值之积。要求初始化矩阵(4行5列),输出原始的矩阵和外侧的各元素值之积,必须用循环实现。    例如,矩阵为：         3  1  2  3         2  5  7  3         1  1  4  2    则所有靠外侧的各元素值之积为3×1×2×3×2×3×1×1×4×2=328。
+实现两个数的加法和减法运算。如输入3,4,+,输出7;输入3,4,-,输出-1。
+求矩阵的所有靠外侧的各元素值之和。要求初始化矩阵(4行5列),输出原始的矩阵和外侧的各元素值之和,用循环实现。    例如,矩阵为：         3  0  0  3         2  5  7  3         1  0  4  2    则所有靠外侧的各元素值之和为3+0+0+3+2+3+1+0+4+2=18。
+ 输入某年某月某日，判断这一天是这一年的第几天？
+ 用*号输出字母c的图案。
+ 输出9*9口诀。
+ 判断101-200之间有多少个素数，并输出所有素数。
+ 打印出所有的“水仙花数”，所谓“水仙花数”是指一个三位数，其各位数字立方和等于该数 　　　本身。例如：153是一个“水仙花数”，因为153=1的三次方＋5的三次方＋3的三次方。
+ 利用条件运算符的嵌套来完成此题：学习成绩>=90分的同学用a表示，60-89分之间的用b表示， 　　　60分以下的用c表示。
+ 输入两个正整数m和n，求其最大公约数和最小公倍数。
+ 求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。例如2+22+222+2222+22222(此时 　　　共有5个数相加)，几个数相加有键盘控制。
+ 有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和。
+ 有5个人坐在一起，问第五个人多少岁？他说比第4个人大2岁。问第4个人岁数，他说比第 　　　3个人大2岁。问第三个人，又说比第2人大两岁。问第2个人，说比第一个人大两岁。最后 　　　问第一个人，他说是10岁。请问第五个人多大？
+ 一个5位数，判断它是不是回文数。即12321是回文数，个位与万位相同，十位与千位相同。
+ 请输入星期几的第一个字母来判断一下是星期几，如果第一个字母一样，则继续 　　　判断第二个字母。
+ 求一个3*3矩阵对角线元素之和
+ 有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中。
+ 将一个数组逆序输出。
+ 学习使用auto定义变量的用法
+ 学习使用register定义变量的方法。
+ 宏#define命令练习一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？ 1.程序分析：在10万以内判断，先将该数加上100后再开方，再将该数加上268后再开方，如果开方后 　　　　　　的结果满足如下条件，即是结果。
+ 取一个整数a从右端开始的4～7位。
+ 写一个函数，求一个字符串的长度，在main函数中输入字符串，并输出其长度。
+ 编写input()和output()函数输入，输出5个学生的数据记录。
+ 连接两个链表。
+ 编写一个函数，输入n为偶数时，调用函数求1/2+1/4+...+1/n,当输入n为奇数时，调用函数 　　　1/1+1/3+...+1/n(利用指针函数)
+ 海滩上有一堆桃子，五只猴子来分。第一只猴子把这堆桃子凭据分为五份，多了一个，这只 　　　猴子把多的一个扔入海中，拿走了一份。第二只猴子把剩下的桃子又平均分成五份，又多了 　　　一个，它同样把多的一个扔入海中，拿走了一份，第三、第四、第五只猴子都是这样做的， 　　　问海滩上原来最少有多少个桃子？
+ 八进制转换为十进制
+ 求0—7所能组成的奇数个数。
+ 判断一个素数能被几个9整除
+ 两个字符串连接程序
+ 某个公司采用公用电话传递数据，数据是四位的整数，在传递过程中是加密的，加密规则如下： 　　　每位数字都加上5,然后用和除以10的余数代替该数字，再将第一位和第四位交换，第二位和第三位交换。
+ 从键盘输入一个字符串，将小写字母全部转换成大写字母，然后输出到一个磁盘文件“test”中保存。 　　　输入的字符串以！结束。
+ 有两个磁盘文件a和b,各存放一行字母，要求把这两个文件中的信息合并（按字母顺序排列）， 　　　输出到一个新文件c中。
+有五个学生，每个学生有3门课的成绩，从键盘输入以上数据（包括学生号，姓名，三门课成绩），计算出 　　　平均成绩，况原有的数据和计算出的平均分数存放在磁盘文件"stud"中。
+ 把一张一元钞票,换成一分、二分和五分硬币,每种至少8枚,问有多少种方案?
+  把一张一元钞票,换成一分、二分和五分硬币,每种至少11枚,问有多少种方案? 
+ 除1和它本身外，不能被其它整数整除的正整数称为素数（注：1不是素数，2是素数）。若两素数之差为2 ，则称两素数为双胞胎数，问[31,601]之间有多少对双胞胎数。
+若两个素数之差为2，则称这两个素数为双胞胎数。求出[200，1000]之内有多少对双胞胎数。 
+ 若两个连续的自然数的乘积减1后是素数，则称此两个连续自然数为友数对，该素数称为友素数。例如，由于 8*9-1=71， 因此，8与9是友数对，71是友素数。求[100，200]之间的第10个友素数对所对应的友素数的值（按由小到大排列）。
+一个素数，依次从个位开始去掉一位，二位.....，所得的各数仍然是素数，称为超级素数。求[100,999]之内超级素数的个数。
+ A,B,C是三个小于或等于100正整数，当满足1/A^2+1/B^2=1/C^2关系时，称为倒勾股数。求130<A+B+C<150且A>B>C的倒勾股数有多少组。
+ 当m的值为50时，计算下列公式的值： T=1-1/2-1/3-1/4-…-1/m 要求：按四舍五入的方式精确到小数点后第四位。 
+ 当m的值为50时，计算下列公式之值: t=1+1/2^2+1/3^2+…+1/m^2 (按四舍五入的方式精确到小数点后第四位)。 
+ 当m的值为50时，计算下列公式之值：t=1-1/(2*2)-1/(3*3)-…-1/(m*m) 要求：按四舍五入的方式精确到小数点后第四位。 
+ 当n的值为25时，计算下列公式的值:  s=1+1/1!+1/2!+1/3!+…+1/n! 要求：按四舍五入的方式精确到小数点后第四位。 
+ 某些分数的分子和分母都是二位正整数的真分数具有下列特点：如果将该分数的分子的两位数字相加作分子，而将该分数的分母的两位数字相加作分母，得到的新分子跟原分子相等。例如，63/84=（6+3）/（8+4）。试求所有具有这种特点的真分子（非约简真分数）的分子与分母之和的和。
+ 求1/(1*2)+1/(2*3)+1/(3*4)+....+1/(N*(N+1))的值,N=20, 要求：按四舍五入的方式精确到小数点后第二位。
+ 求500以内（含500）能被5或9整除的所有自然数的倒数之和。按四舍五入的方式精确到小数点后第二位。
+ 求S=1/2+2/3+3/5+5/8+……的前30项的和（注：该级数从第二项开始，其分子是前一项的分母，其分母是前一项的分子与分母的和）。要求：按四舍五入的方式精确到小数点后第二位。
+ 求符合下列条件的四位完全平方数(某个正整数A是另一个正整数B的平方,则称A为完全平方数)，它的千位数字与十位数字之和等于百位数字与个位数字之积，例如，3136=56^2, 且3+3=1*6 故3136是所求的四位完全平方数. 求其中最大的一个数。
+ 求数学式1-1/2+1/3-1/4+1/5-1/6+…+1/99-1/100的值。   （按四舍五入方式精确到小数点后4位） 
+ 求在[10，1000]之间的所有完数之和。各真因子之和（不包括自身）等于其本身的正整数称为完数。例如：6=1+2+3，6是完数。
+ 若一个四位正整数是另一个正整数的平方，且各位数字的和是一个平方数，则称该四位正整数是“四位双平方数”。例如： 由于7396=86^2，且7+3+9+6=25=5^2，则称7396是“四位双平方数”。求所有“四位双平方数”之和。
+ 设S(n)=1-1/3+1/5-1/7+…1/(2n-1)，求S（100）的值，要求S(100)按四舍五入方式精确到小数点后4位。
+ 设某四位数的千位数字平方与十位数字的平方之和等于百位数字的立方与个位数字的立方之和，例如，对于四位数：3201， 3^2+0^2=2^3+1^3，试问所有这样的四位数之和是多少？ 
+ 设有十进制数字a,b,c,d和e，它们满足下列式子：abcd*e=bcde (a不等于0， e不等于0或1)，求满足上述条件的所有四位数abcd的和。
+ 已知 f(0)=1,f(1)=2,f(2)=3;f(n)=f(n-1)+2f(n-2)-5f(n-3),f(0)=1,f(1)=2,f(2)=3,求f(0)+f(1)+…f(30)。
+ 已知：非等腰三角形最长边是60，其它两边的长度都是正整数，且三边之和能被3整除，试编程求取这类三角形的个数（注意：两边的长度交换构成的三角形算作同一个三角形，如：其它两边的长度为30和40的三角形与长度为40和30的三角形视为同一个三角形）。
+ 已知Fibonacci数列：1,1,2,3,5,8,……,它可由下面公式表述：           F(1)=1                   if n=1           F(2)=1                   if n=2           F(n)=F(n-1)+F(n-2)       if n>2       试求F(2)+F(4)+F(6)+……+F(50)值。          提示： 最好使用递推法求解，因为使用递归调用很可能超出某些语言的递归深度。
+ 已知Fibonacci数列：1,1,2,3,5,8,……,它可由下面公式表述：           F(1)=1                   if n=1           F(2)=1                   if n=2           F(n)=F(n-1)+F(n-2)       if n>2       试求F(50)值。          提示： 最好使用递推法求解，因为使用递归调用很可能超出某些语言的递归深度。
+ 有一个三位数满足下列条件: (1)此三位数的三位数字各不相同; (2)此三位数等于它的各位数字的立方和。试求所有这样的三位数中最大的一个是多少？ 
+ 有一个三位数满足下列条件: (1)此三位数的三位数字各不相同; (2)此三位数等于它的各位数字的立方和。试求这种三位数共有多少个？  
+ 自然数对是指两个自然数的和与差都是平方数，如8和17的和8+17=25与其差17-8=9都是平方数，则称8和17是自然数对（8，17）。假定（A，B）与（B，A）是同一个自然数对且假定A>=B，求所有小于或等于100（即：A<=100,B<=100，A<>B,A和B均不为0）的自然数对中B之和。
+50元的整币兑换成5元、2元和1元币值（要求三种币值均有）的方法有多少种。
+当n=50时，求下列级数和：S=1/（1*2）+1/（2*3）+…+1/(n*(n+1)) 要求：按四舍五入的方式精确到小数点后第四位。
+勾股弦数是满足公式： A^2+B^2=C^2 (假定A<B<C)的一组正整数（A，B，C），例如，（3，4，5）是勾股弦数，因为：3^2+4^2=5^2。求A，B，C均小于或等于100的勾股弦数中A+B+C的最大值。
+某一正整数，进行递减，每次将该数减半后再减一，当对该数进行第10次减半时发现该数只剩下1不能再减了，求该数。
+求[2，400]中相差为10的相邻素数对的对数。
+求[200,300]之间第二大有奇数个不同因子的整数(在计算因子个数时,包括该数本身)。
+求Y=1-1/2+1/3-1/4+1/5… 前30项之和。要求：按四舍五入的方式精确到小数点后第二位。
+求数列：2/1，3/2，5/3，8/5，13/8，21/13，…… 前50项之和(注：此数列从第二项开始，其分子是前一项的分子与分母之和，其分母是前一项的分子)。（按四舍五入的方式精确到小数点后第二位）
+求五位数各位数字的平方和为100的最大的五位数。
+求在[2，1000]之间的所有同构数之和（某正整数的平方，其低位与该数本身相同，则称该数为同构数。例如25^2=625，625的低位25与原数相同，则称25为同构数）。
+若某正整数平方等于某两个正整数平方之和,称该正整数为弦数。例如：由于3^2+4^2=5^2，则5为弦数，求[131，200]之间最小的弦数。
+若一个四位正整数是另一个正整数的平方，且各位数字的和是一个平方数，则称该四位正整数是“四位双平方数”。例如： 由于7396=86^2，且7+3+9+6=25=5^2，则称7396是“四位双平方数”。若把所有“四位双平方数”按升序排列，求前10个“四位双平方数”的和。
+设有6个十进制数字a,b,c,d, e，f ,求满足abcdf×e=fdcba条件的五位数abcdf(a≠0,e≠0,e≠1)的个数。 
+设有十进制数字a,b,c,d和e，它们满足下列式子：abcd*e=bcde (a不等于0， e不等于0或1)，求满足上述条件的四位数abcd的个数。
+已知 S=1+1/(1+2)+1/(1+2+3)+…+1/(1+2+3+…+N) ，当N的值为50时，求S的值。 要求：按四舍五入的方式精确到小数点后第四位。 
+已知   f(0)=f(1)=1   f(2)=0   f(n)=f(n-1)-2*f(n-2)+f(n-3)      (n>2)   求f(0)到f(50)中的最小值
+已知   f(0)=f(1)=1   f(2)=0   f(n)=f(n-1)-2f(n-2)+f(n-3)     ( n>2 )   求f(0)到f(50)的所有51个值中的最大值
+已知：A1=1, A2=1/(1+A1), A3=1/(1+A2), A4=1/(1+A3), ……, 求A50.（按四舍五入的方式精确到小数点后第三位）。
+已知：Sn=2/1+3/2+4/3+…+(n+1)/n, 求Sn不超过50的最大值（按四舍五入的方式精确到小数点后第三位）。
+已知A，B为正整数, A<B, A*B=716699且要求A+B取最小值，求满足上述条件的A值。 
+已知Fibonacci数列：1,1,2,3,5,8,……,它可由下面公式表述：           F(1)=1                   if n=1           F(2)=1                   if n=2           F(n)=F(n-1)+F(n-2)       if n>2       试求F(1)+F(3)+F(5)+……+F(49)值。          提示： 最好使用递推法求解，因为使用递归调用很可能超出某些语言的递归深度。
+已知一个数列的前三项为0，0，1，以后各项都是其相邻的前三项之和，求该数列前30项之和。
+有十进制数字a,b,c,d和e，它们满足下列式子：abcd*e=bcde (a不等于0， e不等于0或1)，求满足上述条件的所有四位数bcde的和。
+有一个三位数满足下列条件: (1)此三位数的三位数字各不相同; (2)此三位数等于它的各位数字的立方和。试求所有这样的三位数之和。
+ 已知 f(n)=f(n-1)+2f(n-2)-5f(n-3),f(0)=1,f(1)=2,f(2)=3,求f(0)+f(1)+…f(30)。
+编写一个简单计算器程序，输入格式为：data1 op data2。其中data1和data2是参加运算的两个数，op为运算符，它的取值只能是+、-、*、/。
+编写程序，读入一个整数N；若N为非负数，则计算N到2×N之间的整数和；若N为一个负数，则求2×N到N之间的整数和。
+有一条长阶梯，若每步跨2阶，则最后剩余1阶，若每步跨3阶，则最后剩2阶，若每步跨5阶，则最后剩4阶，若每步跨6阶则最后剩5阶，若每步跨7阶，最后才正好一阶不剩。编写程序求出这条阶梯共有多少阶? 
+一个自然数被8除余1，所得的商被8除也余1，再将第二次的商被8除后余7，最后得到一个商为A。又知这个自然数被17除余4，所得的商被17除余15，最后得到一个商是A的2倍。编写程序求这个自然数。
+若一个口袋中放有12个球，其中有3个红的，3个白的和6个黑的，每次从中任取8个球，编写程序求出共有多少种不同的颜色搭配（输出格式如下：共有   种组合，分别是：红 红 红 白白白黑黑  …….）。
+设N是一个四位数，它的9倍恰好是其反序数（例如：123的反序数是321），求N的值。
+如果一个正整数等于其各个数字的立方和，则称该数为阿姆斯特朗数（亦称为自恋性数）。如407=4^3+0^3+7^3就是一个阿姆斯特朗数。编写程序求1000以内的所有阿姆斯特朗数。
+编写程序求出1000!后有多少个零。
+输入5×5的数组，编写程序实现： (1)求出对角线上各元素的和； (2)求出对角线上行、列下标均为偶数的各元素的积； (3)找出对角线上其值最大的元素和它在数组中的位置。
+编写程序，输入一个十进制整数，将其变换为二进制后储存在一个字符数组中，则输出提醒语句。
+求这样一个三位数，该三位数等于其每位数字的阶乘之和。即：　abc = a!+ b! + c!
+找出一个二维数组中的鞍点，即该位置上的元素是该行上的最大值，是该列上的最小值。二维数组也可能没有鞍点。
+编写函数，将输入的字符串按反序输出。
+编写函数，将任一整数转换为二进制形式。
+编写程序，读入一个以符号"."结束的长度小于20字节的英文句子，检查其是否为回文（即正读和反读都是一样的，不考虑空格和标点符号）。例如：读入句子：MADAM  I'M  ADAM. 它是回文，所以输出：YES；读入句子：ABCDBA). 它不是回文，所以输出：NO
+编写程序，其中包括一个函数，此函数的功能是：对一个长度为N 的字符串从其第K个字符起，删去M个字符，组成长度为N-M的新字符串(其中N、M<=80,K<=N)。例如输入字符串"We are poor students."，利用此函数进行删除"poor"的处理，输出处理后的字符串是"We are students."。
+编写一个函数insert(s1,s2,ch)，实现在字符串s1中的指定字符ch位置处插入字符串s2。
+编写程序，输入字符串，分别统计字符串中所包含的各个不同的字符及其各自字符的数量。如：输入字符串： abcedabcdcd,则输出：a=2  b=2  c=3  d=3  e=1。
+编写程序，从键盘输入的10个数，去掉一个最大数和一个最小数，求剩余数的平均值。
+从键盘输入一个字符串a,并在a串中的最大元素后边插入字符串b(b[ ]="ab")，试编程
+输入若干个整数，其值均在1至4的范围内，用-1作为输入结束标志，请编写程序，统计每个整数的出现的次数
+
