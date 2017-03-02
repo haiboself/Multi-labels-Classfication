@@ -125,4 +125,13 @@ public class WordSegmentation {
 		
 		return str;
 	}
+	
+	public HashMap<String,Integer> getTermMap(){
+		//if(termMap == null) throw new NullPointerException();
+		return termMap; 
+	}
+	public File getTargetFile(){
+		//if(termMap == null) throw new NullPointerException();
+		return targetFile;
+	}
 }
