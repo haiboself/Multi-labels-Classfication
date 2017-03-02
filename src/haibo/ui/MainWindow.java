@@ -116,9 +116,9 @@ public class MainWindow extends JFrame implements ActionListener{
 	//用于获取训练所需要的文件路径
 	private void showTrainDialog() {
 		//对话框面板内容
-		FileSelect content 		= new FileSelect("Content");	//训练文件内容
-		FileSelect annotation   = new FileSelect("Annotation"); //训练文件内容的标注信息
-		FileSelect labels 		= new FileSelect("Labels");	 	//训练文件的标签集信息
+		FileSelect content 		= new FileSelect("Content","./data/exercise_content.txt");	//训练文件内容
+		FileSelect annotation   = new FileSelect("Annotation","./data/exercise_annotation.txt"); //训练文件内容的标注信息
+		FileSelect labels 		= new FileSelect("Labels","./data/labels.txt");	 	//训练文件的标签集信息
 		JButton    submit 		= new JButton("Submit");		//确认按钮
 		
 		JPanel p = new JPanel();

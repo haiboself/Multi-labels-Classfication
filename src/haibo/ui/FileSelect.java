@@ -20,7 +20,8 @@ public final class FileSelect extends JPanel{
 	private JFileChooser chooser;
 	private String path;	//文件路径
 	
-	public FileSelect(String s){
+	public FileSelect(String s,String pa){
+		
 		name = new JLabel(s);
 		content = new JTextField(20);
 		selectFile = new JButton("File");
@@ -31,6 +32,8 @@ public final class FileSelect extends JPanel{
 		add(selectFile,BorderLayout.EAST);
 		
 		this.setVisible(true);
+		content.setText(pa);
+		this.path = pa;
 		
 		selectFile.addActionListener(new ActionListener() {
 			
