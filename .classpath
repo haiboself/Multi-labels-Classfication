@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="/home/haiboself/GraduateProject/tools/IK-Analyzer-2012FF/dist/IKAnalyzer2012_FF.jar"/>
+	<classpathentry kind="lib" path="/home/haiboself/Codes/workspace/MutilLabelsAnnoation/lib/weka.jar"/>
+	<classpathentry kind="lib" path="/home/haiboself/Codes/workspace/MutilLabelsAnnoation/lib/mulan.jar"/>
+	<classpathentry kind="lib" path="/home/haiboself/Codes/workspace/MutilLabelsAnnoation/lib/IKAnalyzer2012_FF.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

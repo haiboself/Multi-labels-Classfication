@@ -1,6 +1,8 @@
 package haibo.alogrithm;
 
 import java.io.File;
+import java.io.PrintWriter;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,77 +14,42 @@ import java.util.Scanner;
  *
  */
 public class SelectTerms {
-	
-	private File segMents;		//分词结果
-	private File annotation;	//内容对应标注
-	private File labels;		//标签集
 
 	private HashMap<String, Integer> termMap;	//保存特征和包含其的实例数量
 	private HashMap<Integer, Integer> labelMap;	//每个标签所标记的实例数量(标签编号：标记实例数)
 	
 	//算法需要的数据结构
-	private HashSet<Term> IGS;
-	private HashSet<Term> S;
-	private HashSet<Term> IGZ;
+	private ArrayList<Term> IGS;
+	private ArrayList<Term> S;
+	private ArrayList<Term> IGZ; //存储最终选择的特征向量
 	
 	//将训练集直接存入内存，便于提升读写效率
 	private ArrayList<HashSet<Integer>> annotationFile;
-	private ArrayList<HashSet<String>> segmentFIle;	
+	private ArrayList<HashMap<String,Integer>> segmentFile;	
 	
 	public SelectTerms(HashMap<String, Integer> termMap, HashMap<Integer, Integer> labelMap,
-			File segments,File annotation,File labels) {
+			ArrayList<HashSet<Integer>> annotationFile,ArrayList<HashMap<String,Integer>> segmentFile) {
 		
 		this.termMap = termMap;
 		this.labelMap = labelMap;
-		this.segMents = segments;
-		this.annotation = annotation;
-		this.labels = labels;
 		
-		annotationFile = new ArrayList<HashSet<Integer>>();
-		segmentFIle	   = new ArrayList<HashSet<String>>();
+		this.annotationFile = annotationFile;
+		this.segmentFile	= segmentFile;
 		
-		loadFileInMemory();
 	}
 
-	private void loadFileInMemory() {
-		try{
-			Scanner inAnno = new Scanner(annotation);
-			Scanner inCont = new Scanner(segMents);
-			
-			while(inAnno.hasNextLine()){
-				HashSet<Integer> annoSet = new HashSet<>();
-				String[] tags = inAnno.nextLine().split(" | *");
-				for(String tag : tags)
-					annoSet.add(Integer.parseInt(tag));
-				annotationFile.add(annoSet);
-			}
-			inAnno.close();
-			
-			while(inCont.hasNextLine()){
-				HashSet<String> segSet = new HashSet<>();
-				String[] words = inCont.nextLine().split(" | *");
-				for(String word : words)
-					segSet.add(word);
-				segmentFIle.add(segSet);
-			}
-			
-			inCont.close();
-		}catch (Exception e) {
-			// TODO: handle exception
-		}
-	}
-
+	//特征选择算法
 	public void MLFSIE(){
-		IGS = new HashSet<>();
+		IGS = new ArrayList<>();
 		
 		for(String x : termMap.keySet()){
-			S = new HashSet<>();
+			S = new ArrayList<>();
 			for(int l : labelMap.keySet()){
-				//计算IG(li|xi) 公式：IG (B|A) = H(A) + H(B) - H(AB)
+				//计算IG(li|xi) 公式：IG (l|x) = H(l) + H(x) - H(xl)
 				double IG_lx = H(x) + H(l) - H(x,l);
 				//进行归一化
 				double SU_lx = (IG_lx/(H(l)+H(x)))*2;
-				S.add(new Term(x,SU_lx));
+				if(SU_lx != 0) S.add(new Term(x,SU_lx));
 			}
 			
 			//计算IGSi
@@ -92,56 +59,112 @@ public class SelectTerms {
 			IGS.add(new Term(x,IGSi));
 		}
 		
-		IGZ = new HashSet<>();
+		double u = average(IGS);
+		double c = getStarC(IGS,u);//标准差
+		
 		for(Term ele : IGS){
 			ele.num = (ele.num-u)/c;
 		}
+		IGZ = new ArrayList<>();
 		
 		//计算阈值
-		int doorValue = caculate();
+		double doorValue = caculate(IGS);
 		
 		//筛选特征
+		try{
+			File saveTermsSelect = new File("./data/termsSelected.txt");
+			if(!saveTermsSelect.exists()) saveTermsSelect.createNewFile();
+			PrintWriter out = new PrintWriter(saveTermsSelect);
+			
+			for(Term ele : IGS)
+				if(Math.abs(ele.num)>= doorValue){
+					IGZ.add(ele);
+					out.println(ele.name+"   "+ele.num);
+					System.out.println(ele.name);
+				}
+			
+			out.close();
+			Util.TERMSELECTEDNUM = IGZ.size();
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 	
+	//计算阈值
+	private double caculate(ArrayList<Term> set) {
+		double value = 0.0;
+		for(Term ele : set)
+			value += Math.abs(ele.num);
+		
+		return value/set.size();
+	}
+
+	private double getStarC(ArrayList<Term> set,double aver) {
+		double result = 0.0;
+		for(Term ele : set)
+			result += (ele.num-aver)*(ele.num-aver);
+		
+		result = Math.sqrt(result/set.size());
+		
+		return result;
+	}
+
+	private double average(ArrayList<Term> set) {
+		double result = 0.0;
+		for(Term ele : set)
+			result += ele.num;
+		
+		return result/set.size();
+	}
+
 	//计算熵值
 	public double H(String x){
 		double K = termMap.get(x).intValue();
 		double M = Util.INSANENUM;
 		
-		return -1* K/M * (Math.log(K/M)/Math.log(2.0)) - ((M-K)/M * (Math.log((M-K)/M)/Math.log(2.0)));
+		double rs = -1* K/M * (Math.log(K/M)/Math.log(2.0)) - ((M-K)/M * (Math.log((M-K)/M)/Math.log(2.0)));
+		return rs;
 	}
 	public double H(int l){
 		double K = labelMap.get(l).intValue();
 		double M = Util.INSANENUM;
 		
-		return -1* K/M * (Math.log(K/M)/Math.log(2.0)) - ((M-K)/M * (Math.log((M-K)/M)/Math.log(2.0)));
+		double rs = -1* K/M * (Math.log(K/M)/Math.log(2.0)) - ((M-K)/M * (Math.log((M-K)/M)/Math.log(2.0)));
+		return rs;
 	}
-	//计算联合熵
+	//计算联合熵 H(xl) = H(x)+H(l | x);
 	public double H(String x,int l){
-		double ll=0,oo=0,lo=0,ol=0;
 		int M = Util.INSANENUM;
+		double bi_x = 0,bi_nox=0,bi_xl=0,bi_xnol=0,bi_noxl=0,bi_noxnol=0;
 		
-		for(int j=0;j<Util.INSANENUM;j++){
-			if(annotationFile.get(j).contains(l) && segmentFIle.get(j).contains(x))
-				ll++;
-			else if(annotationFile.get(j).contains(l) && !segmentFIle.get(j).contains(x))
-				lo++;
-			else if(!annotationFile.get(j).contains(l) && segmentFIle.get(j).contains(x))
-				ol++;
-			else oo++;
+		for(int i=0;i<Util.INSANENUM;i++){
+			if(segmentFile.get(i).containsKey(x)){
+				bi_x++;
+				if(annotationFile.get(i).contains(l)) bi_xl++;
+				else bi_xnol++;
+				
+			}else{
+				bi_nox++;
+				if(annotationFile.get(i).contains(l)) bi_noxl++;
+				else bi_noxnol++;
+			}
 		}
 		
-		return  -1*ll/M * (Math.log(ll/M)/Math.log(2.0)) - lo/M * (Math.log(lo/M)/Math.log(2.0)) -
-				 ol/M * (Math.log(ol/M)/Math.log(2.0)) -  oo/M * (Math.log(oo/M)/Math.log(2.0));
+		double lx=0,lnox=0,nolx=0,nolnox=0;
+		//计算条件熵
+		if(bi_xl > 0) lx =  (bi_xl/bi_x)*(Math.log(bi_xl/bi_x)/Math.log(2.0));
+		if(bi_xnol > 0) nolx = (bi_xnol/bi_x)*(Math.log(bi_xnol/bi_x)/Math.log(2.0));
+		
+		if(bi_noxl > 0) lnox = (bi_noxl/bi_nox)*(Math.log(bi_noxl/bi_nox)/Math.log(2.0));
+		if(bi_noxnol > 0) nolnox = (bi_noxnol/bi_nox)*(Math.log(bi_noxnol/bi_nox)/Math.log(2.0));
+		
+		double rs = -1.0 * (bi_x/M)*(lx+nolx) + -1.0 * (bi_nox/M)*(lnox+nolnox);
+		
+		return rs;
 	}
 	
-	class Term{
-		String name;
-		double num;
-		
-		public Term(String s,double n){
-			name = s;
-			num = n;
-		}
+	public ArrayList<Term> getIGZ(){
+		return IGZ;
 	}
 }

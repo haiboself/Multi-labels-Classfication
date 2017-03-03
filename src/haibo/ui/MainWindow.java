@@ -37,12 +37,12 @@ public class MainWindow extends JFrame implements ActionListener{
 	private JButton saveResult;    //保存标注结果
 	private JTextArea rawDataJtx;  //显示未标注的文件内容
 	private JTextArea resultJtx;   //显示标注的结果
-	
+
 	private JDialog set;	//用于获取训练所需要的文件路径
 	private JFileChooser chooser;  //用于保存和打开文件
-	
+
 	private Train train;
-	
+
 	private MainWindow(){
 		chooser 	= new JFileChooser();
 		//按钮布局
@@ -50,36 +50,36 @@ public class MainWindow extends JFrame implements ActionListener{
 		annotateJbt = new JButton("Annotation");
 		openRawData = new JButton("Open File");
 		saveResult  = new JButton("Save");
-		
+
 		JPanel menu = new JPanel();
 		menu.setLayout(new GridLayout(0,4));
-		
+
 		menu.add(trainJbt);
 		menu.add(annotateJbt);
 		menu.add(openRawData);
 		menu.add(saveResult);
-		
+
 		add(menu,BorderLayout.NORTH);
-		
+
 		//文本显示区域布局
 		rawDataJtx = new JTextArea("这里显示未标记数据");
 		resultJtx  = new JTextArea("这里显示标记结果");
 		rawDataJtx.setBorder(BorderFactory.createLineBorder(Color.GREEN,3));
 		resultJtx.setBorder(BorderFactory.createLineBorder(Color.ORANGE,3));
-		
+
 		JPanel display = new JPanel();
 		display.setLayout(new GridLayout(0,2));
 		display.add(new JScrollPane(rawDataJtx));
 		display.add(new JScrollPane(resultJtx));
-		
+
 		add(display,BorderLayout.CENTER);
-		
+
 		//窗口总体属性设置
 		this.setSize(800,600);
 		this.setTitle("Mutil-Label Classfication");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
-		
+
 		//添加事件监听
 		trainJbt.addActionListener(this);
 		annotateJbt.addActionListener(this);
@@ -87,7 +87,7 @@ public class MainWindow extends JFrame implements ActionListener{
 		saveResult.addActionListener(this);
 
 	}
-	
+
 	public static void main(String[] args) {
 		MainWindow display = new MainWindow();
 	}
@@ -106,13 +106,13 @@ public class MainWindow extends JFrame implements ActionListener{
 		}
 		if(e.getSource() == openRawData ){
 			int returnVal = chooser.showOpenDialog(getParent());
-		    
+
 			if(returnVal == JFileChooser.APPROVE_OPTION) {
-			       rawDataJtx.setText("hhj");
+				rawDataJtx.setText("hhj");
 			}
 		}
 	}
-	
+
 	//用于获取训练所需要的文件路径
 	private void showTrainDialog() {
 		//对话框面板内容
@@ -120,21 +120,21 @@ public class MainWindow extends JFrame implements ActionListener{
 		FileSelect annotation   = new FileSelect("Annotation","./data/exercise_annotation.txt"); //训练文件内容的标注信息
 		FileSelect labels 		= new FileSelect("Labels","./data/labels.txt");	 	//训练文件的标签集信息
 		JButton    submit 		= new JButton("Submit");		//确认按钮
-		
+
 		JPanel p = new JPanel();
 		p.setLayout(new GridLayout(4, 0));
 		p.add(content);
 		p.add(annotation);
 		p.add(labels);
 		p.add(submit);
-		
+
 		submit.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				train = new Train(content.getPath(),annotation.getPath(),labels.getPath());
 				set.setVisible(false);
 			}
-	    });
+		});
 
 		//对话框属性
 		set = new JDialog(this,true);

@@ -32,6 +32,8 @@ public class WordSegmentation {
 	
 	private HashMap<String,Integer> termMap;	//保存特征和包含其的实例数量
 	
+	private int insaneNum = 0;
+	
 	public WordSegmentation(File sourceFile){
 		this.sourceFile = sourceFile;
 		targetFile 		= new File("./data/wordSegRes.txt");
@@ -56,6 +58,7 @@ public class WordSegmentation {
 
 		while(in.hasNextLine()){
 			String text = in.nextLine(); 	//读取一条实例的内容
+			insaneNum++;
 			
 			//独立Lucene实现
 			StringBuffer strbuf = new StringBuffer();
@@ -85,11 +88,13 @@ public class WordSegmentation {
 				}
 				
 				out.println(strbuf);
-				System.out.println(strbuf);
+				//System.out.println(strbuf);
 			}catch (Exception e) {
 			}
 		}	
 		
+		Util.INSANENUM = insaneNum-1;
+		Util.TERMSNUM = termMap.size();
 		saveMap();
 		in.close();
 		out.close();	
