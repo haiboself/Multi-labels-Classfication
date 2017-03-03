@@ -1,21 +1,22 @@
 package haibo.alogrithm;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Scanner;
 
-import javax.swing.text.StyleContext.SmallAttributeSet;
-
-import org.omg.CORBA.DataOutputStream;
+import mulan.classifier.lazy.MLkNN;
+import mulan.classifier.meta.RAkEL;
+import mulan.classifier.transformation.LabelPowerset;
+import mulan.data.InvalidDataFormatException;
+import mulan.data.MultiLabelInstances;
+import mulan.evaluation.Evaluator;
+import mulan.evaluation.MultipleEvaluation;
+import weka.classifiers.trees.J48;
 
 /**
  * 
@@ -200,8 +201,26 @@ public class Train {
 	}
 
 	private void train() {
-		// TODO Auto-generated method stub
 
+        MultiLabelInstances dataset = null;
+		try {
+			dataset = new MultiLabelInstances(arffFile.getPath(), xmlFile.getPath());
+		} catch (InvalidDataFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
+        MLkNN learner2 = new MLkNN();
+
+        Evaluator eval = new Evaluator();
+        MultipleEvaluation results;
+
+        int numFolds = 10;
+        results = eval.crossValidate(learner1, dataset, numFolds);
+        System.out.println(results);
+        results = eval.crossValidate(learner2, dataset, numFolds);
+        System.out.println(results);
 	}
 	
 	private void loadFileInMemory() {
