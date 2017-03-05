@@ -20,7 +20,7 @@ public class SelectTerms {
 	
 	//算法需要的数据结构
 	private ArrayList<Term> IGS;
-	private ArrayList<Term> S;
+	private ArrayList<Double> S;
 	private ArrayList<Term> IGZ; //存储最终选择的特征向量
 	
 	//将训练集直接存入内存，便于提升读写效率
@@ -49,17 +49,17 @@ public class SelectTerms {
 				double IG_lx = H(x) + H(l) - H(x,l);
 				//进行归一化
 				double SU_lx = (IG_lx/(H(l)+H(x)))*2;
-				if(SU_lx != 0) S.add(new Term(x,SU_lx));
+				if(SU_lx != 0) S.add(SU_lx);
 			}
 			
 			//计算IGSi
 			double IGSi = 0;
-			for(Term ele : S)
-				IGSi += ele.num;
+			for(double ele : S)
+				IGSi += ele;
 			IGS.add(new Term(x,IGSi));
 		}
 		
-		double u = average(IGS);
+		double u = average(IGS);	//平均值
 		double c = getStarC(IGS,u);//标准差
 		
 		for(Term ele : IGS){
@@ -72,7 +72,7 @@ public class SelectTerms {
 		
 		//筛选特征
 		try{
-			File saveTermsSelect = new File("./data/termsSelected.txt");
+			File saveTermsSelect = new File(Util.EXESELETERMS);
 			if(!saveTermsSelect.exists()) saveTermsSelect.createNewFile();
 			PrintWriter out = new PrintWriter(saveTermsSelect);
 			
@@ -80,7 +80,7 @@ public class SelectTerms {
 				if(Math.abs(ele.num)>= doorValue){
 					IGZ.add(ele);
 					out.println(ele.name+"   "+ele.num);
-					System.out.println(ele.name);
+					//System.out.println(ele.name);
 				}
 			
 			out.close();

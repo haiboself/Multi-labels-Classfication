@@ -6,6 +6,9 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -21,7 +24,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
+import haibo.alogrithm.Annotate;
 import haibo.alogrithm.Train;
+import weka.gui.streams.InstanceJoiner;
 
 /**
  * 
@@ -42,6 +47,8 @@ public class MainWindow extends JFrame implements ActionListener{
 	private JFileChooser chooser;  //用于保存和打开文件
 
 	private Train train;
+	
+	private Scanner inRawData;	//需要进行标注的文件
 
 	private MainWindow(){
 		chooser 	= new JFileChooser();
@@ -99,7 +106,7 @@ public class MainWindow extends JFrame implements ActionListener{
 			showTrainDialog();
 		}
 		if(e.getSource() == annotateJbt) {
-			//help.setVisible(true);
+			annotate();
 		}
 		if(e.getSource() == saveResult){
 			//new MapEditor();
@@ -108,9 +115,40 @@ public class MainWindow extends JFrame implements ActionListener{
 			int returnVal = chooser.showOpenDialog(getParent());
 
 			if(returnVal == JFileChooser.APPROVE_OPTION) {
-				rawDataJtx.setText("hhj");
+				try {
+					inRawData = new Scanner(chooser.getSelectedFile());
+					while(inRawData.hasNextLine()){
+						rawDataJtx.append(inRawData.nextLine()+"\n");
+					}
+					
+					inRawData.close();
+				} catch (FileNotFoundException e1) {
+					e1.printStackTrace();
+				}
 			}
 		}
+	}
+
+	//进行标注
+	private void annotate() {
+		if(rawDataJtx.getText() != null){
+			inRawData = new Scanner(rawDataJtx.getText());
+			Annotate anno = new Annotate(inRawData);
+			
+			try {
+				Scanner in = new Scanner(new File(anno.annotate()));
+				while(in.hasNextLine())
+					resultJtx.append(in.nextLine()+"\n");
+				in.close();
+				
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}else return;
 	}
 
 	//用于获取训练所需要的文件路径

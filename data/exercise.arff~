@@ -1,3 +1,705 @@
+@relation MultiLabelExample
+@attribute feature1 numeric
+@attribute feature2 numeric
+@attribute feature3 numeric
+@attribute feature4 numeric
+@attribute feature5 numeric
+@attribute feature6 numeric
+@attribute feature7 numeric
+@attribute feature8 numeric
+@attribute feature9 numeric
+@attribute feature10 numeric
+@attribute feature11 numeric
+@attribute feature12 numeric
+@attribute feature13 numeric
+@attribute feature14 numeric
+@attribute feature15 numeric
+@attribute feature16 numeric
+@attribute feature17 numeric
+@attribute feature18 numeric
+@attribute feature19 numeric
+@attribute feature20 numeric
+@attribute feature21 numeric
+@attribute feature22 numeric
+@attribute feature23 numeric
+@attribute feature24 numeric
+@attribute feature25 numeric
+@attribute feature26 numeric
+@attribute feature27 numeric
+@attribute feature28 numeric
+@attribute feature29 numeric
+@attribute feature30 numeric
+@attribute feature31 numeric
+@attribute feature32 numeric
+@attribute feature33 numeric
+@attribute feature34 numeric
+@attribute feature35 numeric
+@attribute feature36 numeric
+@attribute feature37 numeric
+@attribute feature38 numeric
+@attribute feature39 numeric
+@attribute feature40 numeric
+@attribute feature41 numeric
+@attribute feature42 numeric
+@attribute feature43 numeric
+@attribute feature44 numeric
+@attribute feature45 numeric
+@attribute feature46 numeric
+@attribute feature47 numeric
+@attribute feature48 numeric
+@attribute feature49 numeric
+@attribute feature50 numeric
+@attribute feature51 numeric
+@attribute feature52 numeric
+@attribute feature53 numeric
+@attribute feature54 numeric
+@attribute feature55 numeric
+@attribute feature56 numeric
+@attribute feature57 numeric
+@attribute feature58 numeric
+@attribute feature59 numeric
+@attribute feature60 numeric
+@attribute feature61 numeric
+@attribute feature62 numeric
+@attribute feature63 numeric
+@attribute feature64 numeric
+@attribute feature65 numeric
+@attribute feature66 numeric
+@attribute feature67 numeric
+@attribute feature68 numeric
+@attribute feature69 numeric
+@attribute feature70 numeric
+@attribute feature71 numeric
+@attribute feature72 numeric
+@attribute feature73 numeric
+@attribute feature74 numeric
+@attribute feature75 numeric
+@attribute feature76 numeric
+@attribute feature77 numeric
+@attribute feature78 numeric
+@attribute feature79 numeric
+@attribute feature80 numeric
+@attribute feature81 numeric
+@attribute feature82 numeric
+@attribute feature83 numeric
+@attribute feature84 numeric
+@attribute feature85 numeric
+@attribute feature86 numeric
+@attribute feature87 numeric
+@attribute feature88 numeric
+@attribute feature89 numeric
+@attribute feature90 numeric
+@attribute feature91 numeric
+@attribute feature92 numeric
+@attribute feature93 numeric
+@attribute feature94 numeric
+@attribute feature95 numeric
+@attribute feature96 numeric
+@attribute feature97 numeric
+@attribute feature98 numeric
+@attribute feature99 numeric
+@attribute feature100 numeric
+@attribute feature101 numeric
+@attribute feature102 numeric
+@attribute feature103 numeric
+@attribute feature104 numeric
+@attribute feature105 numeric
+@attribute feature106 numeric
+@attribute feature107 numeric
+@attribute feature108 numeric
+@attribute feature109 numeric
+@attribute feature110 numeric
+@attribute feature111 numeric
+@attribute feature112 numeric
+@attribute feature113 numeric
+@attribute feature114 numeric
+@attribute feature115 numeric
+@attribute feature116 numeric
+@attribute feature117 numeric
+@attribute feature118 numeric
+@attribute feature119 numeric
+@attribute feature120 numeric
+@attribute feature121 numeric
+@attribute feature122 numeric
+@attribute feature123 numeric
+@attribute feature124 numeric
+@attribute feature125 numeric
+@attribute feature126 numeric
+@attribute feature127 numeric
+@attribute feature128 numeric
+@attribute feature129 numeric
+@attribute feature130 numeric
+@attribute feature131 numeric
+@attribute feature132 numeric
+@attribute feature133 numeric
+@attribute feature134 numeric
+@attribute feature135 numeric
+@attribute feature136 numeric
+@attribute feature137 numeric
+@attribute feature138 numeric
+@attribute feature139 numeric
+@attribute feature140 numeric
+@attribute feature141 numeric
+@attribute feature142 numeric
+@attribute feature143 numeric
+@attribute feature144 numeric
+@attribute feature145 numeric
+@attribute feature146 numeric
+@attribute feature147 numeric
+@attribute feature148 numeric
+@attribute feature149 numeric
+@attribute feature150 numeric
+@attribute feature151 numeric
+@attribute feature152 numeric
+@attribute feature153 numeric
+@attribute feature154 numeric
+@attribute feature155 numeric
+@attribute feature156 numeric
+@attribute feature157 numeric
+@attribute feature158 numeric
+@attribute feature159 numeric
+@attribute feature160 numeric
+@attribute feature161 numeric
+@attribute feature162 numeric
+@attribute feature163 numeric
+@attribute feature164 numeric
+@attribute feature165 numeric
+@attribute feature166 numeric
+@attribute feature167 numeric
+@attribute feature168 numeric
+@attribute feature169 numeric
+@attribute feature170 numeric
+@attribute feature171 numeric
+@attribute feature172 numeric
+@attribute feature173 numeric
+@attribute feature174 numeric
+@attribute feature175 numeric
+@attribute feature176 numeric
+@attribute feature177 numeric
+@attribute feature178 numeric
+@attribute feature179 numeric
+@attribute feature180 numeric
+@attribute feature181 numeric
+@attribute feature182 numeric
+@attribute feature183 numeric
+@attribute feature184 numeric
+@attribute feature185 numeric
+@attribute feature186 numeric
+@attribute feature187 numeric
+@attribute feature188 numeric
+@attribute feature189 numeric
+@attribute feature190 numeric
+@attribute feature191 numeric
+@attribute feature192 numeric
+@attribute feature193 numeric
+@attribute feature194 numeric
+@attribute feature195 numeric
+@attribute feature196 numeric
+@attribute feature197 numeric
+@attribute feature198 numeric
+@attribute feature199 numeric
+@attribute feature200 numeric
+@attribute feature201 numeric
+@attribute feature202 numeric
+@attribute feature203 numeric
+@attribute feature204 numeric
+@attribute feature205 numeric
+@attribute feature206 numeric
+@attribute feature207 numeric
+@attribute feature208 numeric
+@attribute feature209 numeric
+@attribute feature210 numeric
+@attribute feature211 numeric
+@attribute feature212 numeric
+@attribute feature213 numeric
+@attribute feature214 numeric
+@attribute feature215 numeric
+@attribute feature216 numeric
+@attribute feature217 numeric
+@attribute feature218 numeric
+@attribute feature219 numeric
+@attribute feature220 numeric
+@attribute feature221 numeric
+@attribute feature222 numeric
+@attribute feature223 numeric
+@attribute feature224 numeric
+@attribute feature225 numeric
+@attribute feature226 numeric
+@attribute feature227 numeric
+@attribute feature228 numeric
+@attribute feature229 numeric
+@attribute feature230 numeric
+@attribute feature231 numeric
+@attribute feature232 numeric
+@attribute feature233 numeric
+@attribute feature234 numeric
+@attribute feature235 numeric
+@attribute feature236 numeric
+@attribute feature237 numeric
+@attribute feature238 numeric
+@attribute feature239 numeric
+@attribute feature240 numeric
+@attribute feature241 numeric
+@attribute feature242 numeric
+@attribute feature243 numeric
+@attribute feature244 numeric
+@attribute feature245 numeric
+@attribute feature246 numeric
+@attribute feature247 numeric
+@attribute feature248 numeric
+@attribute feature249 numeric
+@attribute feature250 numeric
+@attribute feature251 numeric
+@attribute feature252 numeric
+@attribute feature253 numeric
+@attribute feature254 numeric
+@attribute feature255 numeric
+@attribute feature256 numeric
+@attribute feature257 numeric
+@attribute feature258 numeric
+@attribute feature259 numeric
+@attribute feature260 numeric
+@attribute feature261 numeric
+@attribute feature262 numeric
+@attribute feature263 numeric
+@attribute feature264 numeric
+@attribute feature265 numeric
+@attribute feature266 numeric
+@attribute feature267 numeric
+@attribute feature268 numeric
+@attribute feature269 numeric
+@attribute feature270 numeric
+@attribute feature271 numeric
+@attribute feature272 numeric
+@attribute feature273 numeric
+@attribute feature274 numeric
+@attribute feature275 numeric
+@attribute feature276 numeric
+@attribute feature277 numeric
+@attribute feature278 numeric
+@attribute feature279 numeric
+@attribute feature280 numeric
+@attribute feature281 numeric
+@attribute feature282 numeric
+@attribute feature283 numeric
+@attribute feature284 numeric
+@attribute feature285 numeric
+@attribute feature286 numeric
+@attribute feature287 numeric
+@attribute feature288 numeric
+@attribute feature289 numeric
+@attribute feature290 numeric
+@attribute feature291 numeric
+@attribute feature292 numeric
+@attribute feature293 numeric
+@attribute feature294 numeric
+@attribute feature295 numeric
+@attribute feature296 numeric
+@attribute feature297 numeric
+@attribute feature298 numeric
+@attribute feature299 numeric
+@attribute feature300 numeric
+@attribute feature301 numeric
+@attribute feature302 numeric
+@attribute feature303 numeric
+@attribute feature304 numeric
+@attribute feature305 numeric
+@attribute feature306 numeric
+@attribute feature307 numeric
+@attribute feature308 numeric
+@attribute feature309 numeric
+@attribute feature310 numeric
+@attribute feature311 numeric
+@attribute feature312 numeric
+@attribute feature313 numeric
+@attribute feature314 numeric
+@attribute feature315 numeric
+@attribute feature316 numeric
+@attribute feature317 numeric
+@attribute feature318 numeric
+@attribute feature319 numeric
+@attribute feature320 numeric
+@attribute feature321 numeric
+@attribute feature322 numeric
+@attribute feature323 numeric
+@attribute feature324 numeric
+@attribute feature325 numeric
+@attribute feature326 numeric
+@attribute feature327 numeric
+@attribute feature328 numeric
+@attribute feature329 numeric
+@attribute feature330 numeric
+@attribute feature331 numeric
+@attribute feature332 numeric
+@attribute feature333 numeric
+@attribute feature334 numeric
+@attribute feature335 numeric
+@attribute feature336 numeric
+@attribute feature337 numeric
+@attribute feature338 numeric
+@attribute feature339 numeric
+@attribute feature340 numeric
+@attribute feature341 numeric
+@attribute feature342 numeric
+@attribute feature343 numeric
+@attribute feature344 numeric
+@attribute feature345 numeric
+@attribute feature346 numeric
+@attribute feature347 numeric
+@attribute feature348 numeric
+@attribute feature349 numeric
+@attribute feature350 numeric
+@attribute feature351 numeric
+@attribute feature352 numeric
+@attribute feature353 numeric
+@attribute feature354 numeric
+@attribute feature355 numeric
+@attribute feature356 numeric
+@attribute feature357 numeric
+@attribute feature358 numeric
+@attribute feature359 numeric
+@attribute feature360 numeric
+@attribute feature361 numeric
+@attribute feature362 numeric
+@attribute feature363 numeric
+@attribute feature364 numeric
+@attribute feature365 numeric
+@attribute feature366 numeric
+@attribute feature367 numeric
+@attribute feature368 numeric
+@attribute feature369 numeric
+@attribute feature370 numeric
+@attribute feature371 numeric
+@attribute feature372 numeric
+@attribute feature373 numeric
+@attribute feature374 numeric
+@attribute feature375 numeric
+@attribute feature376 numeric
+@attribute feature377 numeric
+@attribute feature378 numeric
+@attribute feature379 numeric
+@attribute feature380 numeric
+@attribute feature381 numeric
+@attribute feature382 numeric
+@attribute feature383 numeric
+@attribute feature384 numeric
+@attribute feature385 numeric
+@attribute feature386 numeric
+@attribute feature387 numeric
+@attribute feature388 numeric
+@attribute feature389 numeric
+@attribute feature390 numeric
+@attribute feature391 numeric
+@attribute feature392 numeric
+@attribute feature393 numeric
+@attribute feature394 numeric
+@attribute feature395 numeric
+@attribute feature396 numeric
+@attribute feature397 numeric
+@attribute feature398 numeric
+@attribute feature399 numeric
+@attribute feature400 numeric
+@attribute feature401 numeric
+@attribute feature402 numeric
+@attribute feature403 numeric
+@attribute feature404 numeric
+@attribute feature405 numeric
+@attribute feature406 numeric
+@attribute feature407 numeric
+@attribute feature408 numeric
+@attribute feature409 numeric
+@attribute feature410 numeric
+@attribute feature411 numeric
+@attribute feature412 numeric
+@attribute feature413 numeric
+@attribute feature414 numeric
+@attribute feature415 numeric
+@attribute feature416 numeric
+@attribute feature417 numeric
+@attribute feature418 numeric
+@attribute feature419 numeric
+@attribute feature420 numeric
+@attribute feature421 numeric
+@attribute feature422 numeric
+@attribute feature423 numeric
+@attribute feature424 numeric
+@attribute feature425 numeric
+@attribute feature426 numeric
+@attribute feature427 numeric
+@attribute feature428 numeric
+@attribute feature429 numeric
+@attribute feature430 numeric
+@attribute feature431 numeric
+@attribute feature432 numeric
+@attribute feature433 numeric
+@attribute feature434 numeric
+@attribute feature435 numeric
+@attribute feature436 numeric
+@attribute feature437 numeric
+@attribute feature438 numeric
+@attribute feature439 numeric
+@attribute feature440 numeric
+@attribute feature441 numeric
+@attribute feature442 numeric
+@attribute feature443 numeric
+@attribute feature444 numeric
+@attribute feature445 numeric
+@attribute feature446 numeric
+@attribute feature447 numeric
+@attribute feature448 numeric
+@attribute feature449 numeric
+@attribute feature450 numeric
+@attribute feature451 numeric
+@attribute feature452 numeric
+@attribute feature453 numeric
+@attribute feature454 numeric
+@attribute feature455 numeric
+@attribute feature456 numeric
+@attribute feature457 numeric
+@attribute feature458 numeric
+@attribute feature459 numeric
+@attribute feature460 numeric
+@attribute feature461 numeric
+@attribute feature462 numeric
+@attribute label1 {0, 1}
+@attribute label2 {0, 1}
+@attribute label3 {0, 1}
+@attribute label4 {0, 1}
+@attribute label5 {0, 1}
+@attribute label6 {0, 1}
+@attribute label7 {0, 1}
+@attribute label8 {0, 1}
+@attribute label9 {0, 1}
+@attribute label10 {0, 1}
+@attribute label11 {0, 1}
+@attribute label12 {0, 1}
+@attribute label13 {0, 1}
+@attribute label14 {0, 1}
+@attribute label15 {0, 1}
+@attribute label16 {0, 1}
+@attribute label17 {0, 1}
+@attribute label18 {0, 1}
+@attribute label19 {0, 1}
+@attribute label20 {0, 1}
+@attribute label21 {0, 1}
+@attribute label22 {0, 1}
+@attribute label23 {0, 1}
+@attribute label24 {0, 1}
+@attribute label25 {0, 1}
+@attribute label26 {0, 1}
+@attribute label27 {0, 1}
+@attribute label28 {0, 1}
+@attribute label29 {0, 1}
+@attribute label30 {0, 1}
+@attribute label31 {0, 1}
+@attribute label32 {0, 1}
+@attribute label33 {0, 1}
+@attribute label34 {0, 1}
+@attribute label35 {0, 1}
+@attribute label36 {0, 1}
+@attribute label37 {0, 1}
+@attribute label38 {0, 1}
+@attribute label39 {0, 1}
+@attribute label40 {0, 1}
+@attribute label41 {0, 1}
+@attribute label42 {0, 1}
+@attribute label43 {0, 1}
+@attribute label44 {0, 1}
+@attribute label45 {0, 1}
+@attribute label46 {0, 1}
+@attribute label47 {0, 1}
+@attribute label48 {0, 1}
+@attribute label49 {0, 1}
+@attribute label50 {0, 1}
+@attribute label51 {0, 1}
+@attribute label52 {0, 1}
+@attribute label53 {0, 1}
+@attribute label54 {0, 1}
+@attribute label55 {0, 1}
+@attribute label56 {0, 1}
+@attribute label57 {0, 1}
+@attribute label58 {0, 1}
+@attribute label59 {0, 1}
+@attribute label60 {0, 1}
+@attribute label61 {0, 1}
+@attribute label62 {0, 1}
+@attribute label63 {0, 1}
+@attribute label64 {0, 1}
+@attribute label65 {0, 1}
+@attribute label66 {0, 1}
+@attribute label67 {0, 1}
+@attribute label68 {0, 1}
+@attribute label69 {0, 1}
+@attribute label70 {0, 1}
+@attribute label71 {0, 1}
+@attribute label72 {0, 1}
+@attribute label73 {0, 1}
+@attribute label74 {0, 1}
+@attribute label75 {0, 1}
+@attribute label76 {0, 1}
+@attribute label77 {0, 1}
+@attribute label78 {0, 1}
+@attribute label79 {0, 1}
+@attribute label80 {0, 1}
+@attribute label81 {0, 1}
+@attribute label82 {0, 1}
+@attribute label83 {0, 1}
+@attribute label84 {0, 1}
+@attribute label85 {0, 1}
+@attribute label86 {0, 1}
+@attribute label87 {0, 1}
+@attribute label88 {0, 1}
+@attribute label89 {0, 1}
+@attribute label90 {0, 1}
+@attribute label91 {0, 1}
+@attribute label92 {0, 1}
+@attribute label93 {0, 1}
+@attribute label94 {0, 1}
+@attribute label95 {0, 1}
+@attribute label96 {0, 1}
+@attribute label97 {0, 1}
+@attribute label98 {0, 1}
+@attribute label99 {0, 1}
+@attribute label100 {0, 1}
+@attribute label101 {0, 1}
+@attribute label102 {0, 1}
+@attribute label103 {0, 1}
+@attribute label104 {0, 1}
+@attribute label105 {0, 1}
+@attribute label106 {0, 1}
+@attribute label107 {0, 1}
+@attribute label108 {0, 1}
+@attribute label109 {0, 1}
+@attribute label110 {0, 1}
+@attribute label111 {0, 1}
+@attribute label112 {0, 1}
+@attribute label113 {0, 1}
+@attribute label114 {0, 1}
+@attribute label115 {0, 1}
+@attribute label116 {0, 1}
+@attribute label117 {0, 1}
+@attribute label118 {0, 1}
+@attribute label119 {0, 1}
+@attribute label120 {0, 1}
+@attribute label121 {0, 1}
+@attribute label122 {0, 1}
+@attribute label123 {0, 1}
+@attribute label124 {0, 1}
+@attribute label125 {0, 1}
+@attribute label126 {0, 1}
+@attribute label127 {0, 1}
+@attribute label128 {0, 1}
+@attribute label129 {0, 1}
+@attribute label130 {0, 1}
+@attribute label131 {0, 1}
+@attribute label132 {0, 1}
+@attribute label133 {0, 1}
+@attribute label134 {0, 1}
+@attribute label135 {0, 1}
+@attribute label136 {0, 1}
+@attribute label137 {0, 1}
+@attribute label138 {0, 1}
+@attribute label139 {0, 1}
+@attribute label140 {0, 1}
+@attribute label141 {0, 1}
+@attribute label142 {0, 1}
+@attribute label143 {0, 1}
+@attribute label144 {0, 1}
+@attribute label145 {0, 1}
+@attribute label146 {0, 1}
+@attribute label147 {0, 1}
+@attribute label148 {0, 1}
+@attribute label149 {0, 1}
+@attribute label150 {0, 1}
+@attribute label151 {0, 1}
+@attribute label152 {0, 1}
+@attribute label153 {0, 1}
+@attribute label154 {0, 1}
+@attribute label155 {0, 1}
+@attribute label156 {0, 1}
+@attribute label157 {0, 1}
+@attribute label158 {0, 1}
+@attribute label159 {0, 1}
+@attribute label160 {0, 1}
+@attribute label161 {0, 1}
+@attribute label162 {0, 1}
+@attribute label163 {0, 1}
+@attribute label164 {0, 1}
+@attribute label165 {0, 1}
+@attribute label166 {0, 1}
+@attribute label167 {0, 1}
+@attribute label168 {0, 1}
+@attribute label169 {0, 1}
+@attribute label170 {0, 1}
+@attribute label171 {0, 1}
+@attribute label172 {0, 1}
+@attribute label173 {0, 1}
+@attribute label174 {0, 1}
+@attribute label175 {0, 1}
+@attribute label176 {0, 1}
+@attribute label177 {0, 1}
+@attribute label178 {0, 1}
+@attribute label179 {0, 1}
+@attribute label180 {0, 1}
+@attribute label181 {0, 1}
+@attribute label182 {0, 1}
+@attribute label183 {0, 1}
+@attribute label184 {0, 1}
+@attribute label185 {0, 1}
+@attribute label186 {0, 1}
+@attribute label187 {0, 1}
+@attribute label188 {0, 1}
+@attribute label189 {0, 1}
+@attribute label190 {0, 1}
+@attribute label191 {0, 1}
+@attribute label192 {0, 1}
+@attribute label193 {0, 1}
+@attribute label194 {0, 1}
+@attribute label195 {0, 1}
+@attribute label196 {0, 1}
+@attribute label197 {0, 1}
+@attribute label198 {0, 1}
+@attribute label199 {0, 1}
+@attribute label200 {0, 1}
+@attribute label201 {0, 1}
+@attribute label202 {0, 1}
+@attribute label203 {0, 1}
+@attribute label204 {0, 1}
+@attribute label205 {0, 1}
+@attribute label206 {0, 1}
+@attribute label207 {0, 1}
+@attribute label208 {0, 1}
+@attribute label209 {0, 1}
+@attribute label210 {0, 1}
+@attribute label211 {0, 1}
+@attribute label212 {0, 1}
+@attribute label213 {0, 1}
+@attribute label214 {0, 1}
+@attribute label215 {0, 1}
+@attribute label216 {0, 1}
+@attribute label217 {0, 1}
+@attribute label218 {0, 1}
+@attribute label219 {0, 1}
+@attribute label220 {0, 1}
+@attribute label221 {0, 1}
+@attribute label222 {0, 1}
+@attribute label223 {0, 1}
+@attribute label224 {0, 1}
+@attribute label225 {0, 1}
+@attribute label226 {0, 1}
+@attribute label227 {0, 1}
+@attribute label228 {0, 1}
+@attribute label229 {0, 1}
+@attribute label230 {0, 1}
+@attribute label231 {0, 1}
+@attribute label232 {0, 1}
+@attribute label233 {0, 1}
+@attribute label234 {0, 1}
+@attribute label235 {0, 1}
+@attribute label236 {0, 1}
+@attribute label237 {0, 1}
+
+@data
 4.23410650459726,0.6931471805599453,0.0,4.110873864173311,4.02535169073515,1.6094379124341003,4.727387818712341,1.6094379124341003,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 2.70805020110221,0.6931471805599453,0.0,2.3978952727983707,4.110873864173311,2.8903717578961645,4.727387818712341,1.6094379124341003,5.0689042022202315,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 2.70805020110221,0.6931471805599453,0.0,5.176149732573829,4.02535169073515,2.8903717578961645,4.727387818712341,1.6094379124341003,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

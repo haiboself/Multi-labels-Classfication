@@ -58,12 +58,12 @@ public class Train {
 		//从labels文件生成xml文件作为mulan的输入
 		createXmlFile();
 		//训练
-		train();
+		//train();
 	}
 
 	//生成存储标签信息的xml文件
 	private void createXmlFile(){
-		File xmlFile = new File("./data/exercise.xml");
+		File xmlFile = new File(Util.XML_FILE);
 
 		//创建xml文件
 		try {
@@ -72,7 +72,7 @@ public class Train {
 			PrintWriter out = new PrintWriter(xmlFile);
 
 			out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
-			out.write("<labels xmlns=\"haiboself\">\n");
+			out.write("<labels xmlns=\"http://mulan.sourceforge.net/labels\">\n");
 			for(int i=1;i<=Util.LABELSNUM;i++)
 				out.write("<label name=\"label"+i+"\"></label>\n");
 			out.write("</labels>\n");
@@ -93,7 +93,7 @@ public class Train {
 		//第二步统计labels和训练集标注结果的相关信息
 		collectLabelInfo();
 		//第三步特征选择
-		loadFileInMemory();//将所需文件读入内存
+		Util.LoadFileInMemory(annotation, segments, annotationFile, segmentFile);//将所需文件读入内存
 		selectTerm();
 		//第四步。根据锁选择的特征向量将文件内容抽象为向量表示。
 		transferTextToVector();
@@ -101,35 +101,14 @@ public class Train {
 		clearMemory();
 		//第五步生成arff文件
 		try {
-			arffFile();
+			arffFile = Util.ArffFile(Util.EXEARFF_FILE,Util.EXETRANSFER,IGZ.size());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	private void arffFile() throws IOException {
-		arffFile = new File("./data/exercise.arff");
-		if(!arffFile.exists()) arffFile.createNewFile();
-		PrintWriter out = new PrintWriter(arffFile);
-		
-		Scanner in = new Scanner(new File("./data/transferResult.txt"));
-		
-		out.println("@relation MultiLabelExample");
-		for(int i=1;i<=IGZ.size();i++)
-			out.println("@attribute feature"+i+" numeric");
-		for(int i=1;i<=Util.LABELSNUM;i++)
-			out.println("@attribute label"+i+" {0, 1}");
-		
-		out.println(" @data");
-		while(in.hasNextLine()){
-			out.println(in.nextLine());
-		}
-		
-		in.close();
-		out.close();
-	}
-
+	
 	//释放一些占用的空间
 	private void clearMemory() {
 		labelMap = null;
@@ -140,8 +119,8 @@ public class Train {
 
 	//根据锁选择的特征向量将文件内容抽象为向量表示。
 	private void transferTextToVector() {
-		Transfer transfer = new Transfer(termMap, annotationFile, segmentFile, IGZ);
-		transfer.transfer();
+		Transfer transfer = new Transfer(termMap, annotationFile, segmentFile, IGZ,Util.EXETRANSFER);
+		transfer.transfer(Util.INSANENUM);
 	}
 
 	//特征选择
@@ -204,52 +183,22 @@ public class Train {
 
         MultiLabelInstances dataset = null;
 		try {
-			dataset = new MultiLabelInstances(arffFile.getPath(), xmlFile.getPath());
+			dataset = new MultiLabelInstances(Util.EXEARFF_FILE,Util.XML_FILE);
 		} catch (InvalidDataFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
         RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
-        MLkNN learner2 = new MLkNN();
+        //MLkNN learner2 = new MLkNN();
 
         Evaluator eval = new Evaluator();
         MultipleEvaluation results;
 
-        int numFolds = 10;
+        int numFolds = 1;
         results = eval.crossValidate(learner1, dataset, numFolds);
         System.out.println(results);
-        results = eval.crossValidate(learner2, dataset, numFolds);
-        System.out.println(results);
+        //results = eval.crossValidate(learner2, dataset, numFolds);
+        //System.out.println(results);
 	}
-	
-	private void loadFileInMemory() {
-		try{
-			Scanner inAnno = new Scanner(annotation);
-			Scanner inCont = new Scanner(segments);
-			
-			while(inAnno.hasNextLine()){
-				HashSet<Integer> annoSet = new HashSet<>();
-				String[] tags = inAnno.nextLine().split(" |\t|\n|\r");
-				for(String tag : tags)
-					annoSet.add(Integer.parseInt(tag.trim()));
-				annotationFile.add(annoSet);
-				
-				HashMap<String,Integer> segMap = new HashMap<>();
-				String[] words = inCont.nextLine().split(" |\t|\n|\r");
-				for(String word : words){
-					if(segMap.containsKey(word))
-						segMap.put(word,segMap.get(word).intValue()+1);
-					else segMap.put(word, 1);
-				}
-				segmentFile.add(segMap);
-			}
-			
-			inAnno.close();
-			inCont.close();
-		}catch (Exception e) {
-			// TODO: handle exception
-		}
-	}
-
 }

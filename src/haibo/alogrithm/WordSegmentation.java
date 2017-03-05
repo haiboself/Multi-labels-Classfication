@@ -1,5 +1,6 @@
 package haibo.alogrithm;
 
+import java.awt.datatransfer.StringSelection;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,6 +8,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -30,16 +33,46 @@ public class WordSegmentation {
 	private File targetFile;	//分词结果
 	private File termsFile;		//保存terms
 	
+	private Scanner in;			//需要进行分词的数据
 	private HashMap<String,Integer> termMap;	//保存特征和包含其的实例数量
 	
 	private int insaneNum = 0;
+	private boolean isExercise;	//训练数据or未标注数据
 	
+	private HashSet<String> featureSet;	//存储最终选择的特征向量
+	
+	//进行标注
+	public WordSegmentation(Scanner in){
+		this.in	    = in;
+		targetFile 	= new File(Util.RAWDATA_SEGRES);
+		termsFile 		= new File(Util.RAWTERMS_FILE);
+		isExercise = false;
+		
+		Scanner featureIn;
+		try {
+			featureSet = new HashSet<>();
+			featureIn = new Scanner(new File(Util.EXESELETERMS));
+			
+			while(featureIn.hasNextLine()){
+				featureSet.add(featureIn.nextLine().split(" |\t|\r")[0]);
+			}
+			featureIn.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//进行训练
 	public WordSegmentation(File sourceFile){
 		this.sourceFile = sourceFile;
-		targetFile 		= new File("./data/wordSegRes.txt");
-		termsFile 		= new File("./data/originTerms.txt");
+		targetFile 		= new File(Util.EXEDATA_SEGRES);
+		termsFile 		= new File(Util.EXETERMS_FILE);
+		isExercise = true;
 
 		try{
+			in = new Scanner(this.sourceFile);
+			
 			if(!targetFile.exists())
 				targetFile.createNewFile();
 			if(!targetFile.exists())
@@ -47,14 +80,13 @@ public class WordSegmentation {
 		}catch (Exception e) {
 			// TODO: handle exception
 		}
-		
-		termMap = new HashMap<>();
 	}
-
-	//进行分词
+	
+	//进行分词;保存分词结果.
+	//统计所有特征并保存;
 	public void execute() throws FileNotFoundException {
-		Scanner in = new Scanner(sourceFile);
 		PrintWriter out = new PrintWriter(targetFile);
+		termMap = new HashMap<>();
 
 		while(in.hasNextLine()){
 			String text = in.nextLine(); 	//读取一条实例的内容
@@ -66,7 +98,6 @@ public class WordSegmentation {
 			IKSegmenter ik = new IKSegmenter(re,true);
 			Lexeme lex = null;
 			
-			
 			try {
 				while((lex=ik.next())!=null){
 					//得到一个切割的词
@@ -76,11 +107,16 @@ public class WordSegmentation {
 					if(word == null) continue;
 					
 					//更新特征和包含其的实例数量
-					if(!termMap.containsKey(word))
-						termMap.put(word, 1);
+					if(!termMap.containsKey(word)){
+						if(isExercise) termMap.put(word, 1);
+						else if(!isExercise && featureSet.contains(word))	termMap.put(word, 1);
+						
+					}
 					else{
 						if(strbuf.indexOf(word)==-1){//确保不是同一个实例中的相同单词
-							termMap.put(word,termMap.get(word).intValue()+1);
+							if(isExercise) termMap.put(word,termMap.get(word).intValue()+1);
+							else if(!isExercise && featureSet.contains(word))
+								termMap.put(word,termMap.get(word).intValue()+1);
 						}
 					}
 					
@@ -93,8 +129,11 @@ public class WordSegmentation {
 			}
 		}	
 		
-		Util.INSANENUM = insaneNum-1;
-		Util.TERMSNUM = termMap.size();
+		if(isExercise){
+			Util.INSANENUM = insaneNum-1;
+			Util.TERMSNUM = termMap.size();
+		}else Util.RAWINSANESUM = insaneNum;
+		
 		saveMap();
 		in.close();
 		out.close();	
@@ -138,5 +177,12 @@ public class WordSegmentation {
 	public File getTargetFile(){
 		//if(termMap == null) throw new NullPointerException();
 		return targetFile;
+	}
+
+	public ArrayList<Term> getFeatureSet() {
+		ArrayList<Term> list = new ArrayList<>();
+		for(String s : termMap.keySet())
+			list.add(new Term(s,0));
+		return list;
 	}
 }

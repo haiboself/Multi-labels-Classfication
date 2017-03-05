@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.annotation.Target;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -29,14 +30,14 @@ public class Transfer {
 	private PrintWriter out;
 	
 	public Transfer(HashMap<String, Integer> termMap,ArrayList<HashSet<Integer>> annotationFile,
-			ArrayList<HashMap<String,Integer>> segmentFile,ArrayList<Term> IGZ){
+			ArrayList<HashMap<String,Integer>> segmentFile,ArrayList<Term> IGZ,String saveTransfer){
 		
 		this.termMap = termMap;
 		this.annotationFile = annotationFile;
 		this.segmentFile = segmentFile;
 		this.IGZ = IGZ;
 		
-		transferResult = new File("./data/transferResult.txt");
+		transferResult = new File(saveTransfer);
 		if(!transferResult.exists())
 			try {
 				transferResult.createNewFile();
@@ -46,7 +47,7 @@ public class Transfer {
 			}
 	}
 	
-	public void transfer(){
+	public void transfer(int insaneNum){
 		double TF=0,	//词条频率
 				DF=0,	//文档频率
 				IDF=0;	//逆文档频率
@@ -79,19 +80,26 @@ public class Transfer {
 					//System.out.println(IGZ.get(j).name + i +" "+j);
 					TF = insane.get(IGZ.get(j).name).intValue();
 					
-					IDF = Math.log(Util.INSANENUM/termMap.get(IGZ.get(j).name).intValue());
+					IDF = Math.log(insaneNum/termMap.get(IGZ.get(j).name).intValue());
+					if(IDF == 0) IDF = 1;
+					
 					val =  TF * IDF; //特征向量的值
 					
 					rst.append(val+",");
-				}
+				}else rst.append(0+",");
 			}
 			
 			//标注信息
-			for(int x=1;x<=Util.LABELSNUM;x++){
+			for(int x=1;x<Util.LABELSNUM;x++){
 				if(tagset.contains(x))
-					rst.append("1,");
-				else rst.append("0,");
+					rst.append(1+",");
+				else rst.append(0+",");
 			}
+			
+			if(tagset.contains(Util.LABELSNUM))
+				rst.append(1+"");
+			else rst.append(0+"");
+			
 			out.println(rst);
 		}
 		

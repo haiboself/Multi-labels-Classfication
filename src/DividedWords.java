@@ -11,7 +11,7 @@ import org.wltea.analyzer.core.Lexeme;
 
 public class DividedWords {
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner in = new Scanner(new File("/home/haiboself/GraduateProject/dataset/exercise_content.txt"));
+		Scanner in = new Scanner("dfghkjnkml,;.szxdcfgvhbjnmk,");
 		
 		String text = in.nextLine(); 
 		//独立Lucene实现

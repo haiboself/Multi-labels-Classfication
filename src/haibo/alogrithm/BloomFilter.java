@@ -5,6 +5,15 @@ import java.io.FileNotFoundException;
 import java.util.BitSet;
 import java.util.Scanner;
 
+import mulan.classifier.lazy.MLkNN;
+import mulan.classifier.meta.RAkEL;
+import mulan.classifier.transformation.LabelPowerset;
+import mulan.data.InvalidDataFormatException;
+import mulan.data.MultiLabelInstances;
+import mulan.evaluation.Evaluator;
+import mulan.evaluation.MultipleEvaluation;
+import weka.classifiers.trees.J48;
+
 //布隆过滤器
 public class BloomFilter {
 	private static final int DEFAULT_SIZE = 2 << 24;//布隆过滤器的比特长度
@@ -37,15 +46,26 @@ public class BloomFilter {
 	}
 	
 	public static void main(String[] args){
-		String value = "设 一 整型 变量 占用 2个 字节 则 下述 共同体 变量 所 占用 内存 字节数 为 14个 7个 8个 随机 而定";
-		BloomFilter bloomFilter = new BloomFilter();
 		
-		String strs[] = value.split(" |\t|\r");
-		for(String s : strs)
-			bloomFilter.add(s);
-		
-		if(bloomFilter.contains("号"))
-			System.out.println("dsfasfasdf");
+		 MultiLabelInstances dataset = null;
+			try {
+				dataset = new MultiLabelInstances("./data/exercise.arff", "./data/exercise.xml");
+			} catch (InvalidDataFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	        RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
+	        //MLkNN learner2 = new MLkNN();
+
+	        Evaluator eval = new Evaluator();
+	        MultipleEvaluation results;
+
+	        int numFolds = 2;
+	        results = eval.crossValidate(learner1, dataset, numFolds);
+	        System.out.println(results);
+	        // results = eval.crossValidate(learner2, dataset, numFolds);
+	        //System.out.println(results);
 	}
 }
 

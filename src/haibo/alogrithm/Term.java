@@ -21,4 +21,8 @@ public class Term {
 	public double getNum(){
 		return num;
 	}
+	
+	public boolean equals(Term o){
+		return name.equals(o.name);
+	}
 }
