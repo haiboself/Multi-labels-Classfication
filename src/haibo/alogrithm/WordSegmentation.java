@@ -1,23 +1,15 @@
 package haibo.alogrithm;
 
-import java.awt.datatransfer.StringSelection;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.lang.model.element.Element;
 
 import org.wltea.analyzer.core.IKSegmenter;
 import org.wltea.analyzer.core.Lexeme;
@@ -56,6 +48,9 @@ public class WordSegmentation {
 			while(featureIn.hasNextLine()){
 				featureSet.add(featureIn.nextLine().split(" |\t|\r")[0]);
 			}
+			
+			//选择的特征的数量
+			Util.TERMSELECTEDNUM = featureSet.size();
 			featureIn.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -67,7 +62,7 @@ public class WordSegmentation {
 	public WordSegmentation(File sourceFile){
 		this.sourceFile = sourceFile;
 		targetFile 		= new File(Util.EXEDATA_SEGRES);
-		termsFile 		= new File(Util.EXETERMS_FILE);
+		//termsFile 		= new File(Util.EXETERMS_FILE);
 		isExercise = true;
 
 		try{
@@ -130,11 +125,11 @@ public class WordSegmentation {
 		}	
 		
 		if(isExercise){
-			Util.INSANENUM = insaneNum-1;
+			Util.INSANENUM = insaneNum;
 			Util.TERMSNUM = termMap.size();
 		}else Util.RAWINSANESUM = insaneNum;
 		
-		saveMap();
+//		saveMap();
 		in.close();
 		out.close();	
 		
@@ -181,7 +176,7 @@ public class WordSegmentation {
 
 	public ArrayList<Term> getFeatureSet() {
 		ArrayList<Term> list = new ArrayList<>();
-		for(String s : termMap.keySet())
+		for(String s : featureSet)
 			list.add(new Term(s,0));
 		return list;
 	}

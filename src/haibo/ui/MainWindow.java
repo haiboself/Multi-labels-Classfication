@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.security.KeyStore.PrivateKeyEntry;
+import java.security.cert.PKIXRevocationChecker.Option;
 import java.util.Scanner;
 
 import javax.swing.BorderFactory;
@@ -17,16 +20,15 @@ import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSlider;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.border.Border;
 
 import haibo.alogrithm.Annotate;
 import haibo.alogrithm.Train;
-import weka.gui.streams.InstanceJoiner;
+import haibo.alogrithm.Util;
 
 /**
  * 
@@ -42,6 +44,7 @@ public class MainWindow extends JFrame implements ActionListener{
 	private JButton saveResult;    //保存标注结果
 	private JTextArea rawDataJtx;  //显示未标注的文件内容
 	private JTextArea resultJtx;   //显示标注的结果
+	private JButton exit;
 
 	private JDialog set;	//用于获取训练所需要的文件路径
 	private JFileChooser chooser;  //用于保存和打开文件
@@ -57,20 +60,22 @@ public class MainWindow extends JFrame implements ActionListener{
 		annotateJbt = new JButton("Annotation");
 		openRawData = new JButton("Open File");
 		saveResult  = new JButton("Save");
+		exit		= new JButton("Exit");
 
 		JPanel menu = new JPanel();
-		menu.setLayout(new GridLayout(0,4));
+		menu.setLayout(new GridLayout(0,5));
 
 		menu.add(trainJbt);
 		menu.add(annotateJbt);
 		menu.add(openRawData);
 		menu.add(saveResult);
+		menu.add(exit);
 
 		add(menu,BorderLayout.NORTH);
 
 		//文本显示区域布局
-		rawDataJtx = new JTextArea("这里显示未标记数据");
-		resultJtx  = new JTextArea("这里显示标记结果");
+		rawDataJtx = new JTextArea("show raw data.");
+		resultJtx  = new JTextArea("show result after marking.");
 		rawDataJtx.setBorder(BorderFactory.createLineBorder(Color.GREEN,3));
 		resultJtx.setBorder(BorderFactory.createLineBorder(Color.ORANGE,3));
 
@@ -92,6 +97,7 @@ public class MainWindow extends JFrame implements ActionListener{
 		annotateJbt.addActionListener(this);
 		openRawData.addActionListener(this);
 		saveResult.addActionListener(this);
+		exit.addActionListener(this);
 
 	}
 
@@ -106,10 +112,20 @@ public class MainWindow extends JFrame implements ActionListener{
 			showTrainDialog();
 		}
 		if(e.getSource() == annotateJbt) {
-			annotate();
+			try {
+				annotate();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 		if(e.getSource() == saveResult){
-			//new MapEditor();
+			try {
+				saveRes();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}	//保存标注结果
 		}
 		if(e.getSource() == openRawData ){
 			int returnVal = chooser.showOpenDialog(getParent());
@@ -127,40 +143,65 @@ public class MainWindow extends JFrame implements ActionListener{
 				}
 			}
 		}
+		if(e.getSource() == exit){
+			System.exit(0);
+		}
+	}
+
+	private void saveRes() throws IOException {
+		if(resultJtx.getText().equals("show result after marking.") || resultJtx.getText() == null){
+			JOptionPane.showConfirmDialog(this,"Please click button Annotation first.");
+			return;
+		}
+		
+		int flag = chooser.showSaveDialog(this);
+		if(flag==JFileChooser.APPROVE_OPTION)   
+        {   
+            //获得你输入要保存的文件   
+              File fc = chooser.getSelectedFile();
+              if(!fc.exists())	fc.createNewFile();
+            //保存标注结果   
+              PrintWriter out = new PrintWriter(fc);
+              out.print(resultJtx.getText());
+              out.close();
+        }   
 	}
 
 	//进行标注
-	private void annotate() {
-		if(rawDataJtx.getText() != null){
-			inRawData = new Scanner(rawDataJtx.getText());
-			Annotate anno = new Annotate(inRawData);
-			
-			try {
-				Scanner in = new Scanner(new File(anno.annotate()));
-				while(in.hasNextLine())
-					resultJtx.append(in.nextLine()+"\n");
-				in.close();
-				
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}else return;
+	private void annotate() throws IOException {
+		//选择一个数据模型
+		File modelFileDir = new File(Util.MODEL);
+		String[] models = modelFileDir.list();
+		
+		//没有模型
+		if(models.length == 0){
+			JOptionPane.showConfirmDialog(this,"There has no DataModel,please click train button fisrt.");
+			return;
+		}
+		else{
+			int m = JOptionPane.showOptionDialog(this,"Please select a model:","Select Model",JOptionPane.CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE, null, models,0);
+			if(rawDataJtx.getText() .equals("show raw data.") || rawDataJtx.getText() == null)
+				inRawData = new Scanner(rawDataJtx.getText());
+			Annotate anno = new Annotate(inRawData,models[m]);
+	
+			resultJtx.setText(anno.annotate());
+		}
 	}
 
 	//用于获取训练所需要的文件路径
 	private void showTrainDialog() {
 		//对话框面板内容
+		JLabel	   tip			= new JLabel("Project Name : ");
+		JTextField proName 		= new JTextField("exercise",15);	//项目名称
 		FileSelect content 		= new FileSelect("Content","./data/exercise_content.txt");	//训练文件内容
 		FileSelect annotation   = new FileSelect("Annotation","./data/exercise_annotation.txt"); //训练文件内容的标注信息
 		FileSelect labels 		= new FileSelect("Labels","./data/labels.txt");	 	//训练文件的标签集信息
 		JButton    submit 		= new JButton("Submit");		//确认按钮
 
 		JPanel p = new JPanel();
-		p.setLayout(new GridLayout(4, 0));
+		p.setLayout(new GridLayout(6, 0));
+		p.add(tip);
+		p.add(proName);
 		p.add(content);
 		p.add(annotation);
 		p.add(labels);
@@ -169,7 +210,7 @@ public class MainWindow extends JFrame implements ActionListener{
 		submit.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				train = new Train(content.getPath(),annotation.getPath(),labels.getPath());
+				train = new Train(content.getPath(),annotation.getPath(),labels.getPath(),proName.getText());
 				set.setVisible(false);
 			}
 		});

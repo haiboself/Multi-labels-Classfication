@@ -1,9 +1,12 @@
 package haibo.alogrithm;
 
+import java.awt.Label;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,13 +15,8 @@ import java.util.Scanner;
 
 import mulan.classifier.MultiLabelOutput;
 import mulan.classifier.meta.RAkEL;
-import mulan.classifier.transformation.LabelPowerset;
-import mulan.data.InvalidDataFormatException;
-import mulan.data.MultiLabelInstances;
-import weka.classifiers.trees.J48;
 import weka.core.Instance;
 import weka.core.Instances;
-import weka.core.Utils;
 
 /**
  * 对未标注文件进行标注
@@ -28,18 +26,27 @@ import weka.core.Utils;
 public class Annotate {
 	
 	private Scanner in;	//未标注内容
-	private Scanner out; //标注结果
 	private File inAnno;
+	
+	private HashMap<Integer,String> labelMap;	//储存标签的编号和名称
+	private StringBuffer rsbuffer; //标注结果
+	private String modelName;	//使用的数据模型
 	
 	//将训练集直接存入内存，便于提升读写效率
 	private ArrayList<HashSet<Integer>> annotationFile;
 	private ArrayList<HashMap<String,Integer>> segmentFile;	
 	
-	public Annotate(Scanner in){
+	public Annotate(Scanner in,String modleName){
 		this.in = in;
+		this.modelName = modleName;
+		labelMap = new HashMap<>();
+		rsbuffer = new StringBuffer();
 	}
 	
 	public String annotate() throws IOException{
+		
+		//初始化，读入需要的数据
+		labelMap = Util.Init();
 		//第一步，分词
 		WordSegmentation wordSeg = new WordSegmentation(in);
 		try {
@@ -66,7 +73,7 @@ public class Annotate {
 				,Util.RAWTRANSFER);
 		transfer.transfer(Util.RAWINSANESUM);
 		//第三步，生称arff文件
-		Util.ArffFile(Util.RAWARFF_FIlE,Util.RAWTRANSFER,Util.LABELSNUM);
+		Util.ArffFile(Util.RAWARFF_FIlE,Util.RAWTRANSFER,Util.TERMSELECTEDNUM);
 		//第四步，进行标注
 		try {
 			mark();
@@ -74,30 +81,38 @@ public class Annotate {
 			e.printStackTrace();
 		}
 		
-		return Util.RAWANNOTATION;
+		return rsbuffer.toString();	//返回标注结果
 	}
 	
 	private void mark() throws Exception {
-		    String arffFilename = Util.EXEARFF_FILE;
-	        String xmlFilename = Util.XML_FILE;
-	        MultiLabelInstances dataset = new MultiLabelInstances(arffFilename, xmlFilename);
+	        //读取数据模型
+	        ObjectInputStream inModel = new ObjectInputStream(new FileInputStream(Util.MODEL+modelName));
+	        RAkEL model = (RAkEL) inModel.readObject();
+	        inModel.close();
 
-	        RAkEL model = new RAkEL(new LabelPowerset(new J48()));
-
-	        model.build(dataset);
-
-
-	        String unlabeledFilename = Util.RAWARFF_FIlE;
+	        String unlabeledFilename = "./data/test/birds-test.arff";
 	        FileReader reader = new FileReader(unlabeledFilename);
 	        Instances unlabeledData = new Instances(reader);
 
 	        int numInstances = unlabeledData.numInstances();
 
+	        //进行标注	
 	        for (int instanceIndex = 0; instanceIndex < numInstances; instanceIndex++) {
 	            Instance instance = unlabeledData.instance(instanceIndex);
 	            MultiLabelOutput output = model.makePrediction(instance);
-	            // do necessary operations with provided prediction output, here just print it out
-	            System.out.println(output);
+	            
+	            boolean[] rs = output.getBipartition();
+	            
+	            int num = 0;
+	            for(int i=1;i<=rs.length;i++){
+	            	if(rs[i-1]){
+	            		rsbuffer.append(labelMap.get(i)+",");
+	            		num++;
+	            	}
+	            }
+	            
+	            if(num == 0) rsbuffer.append("None");
+	            rsbuffer.append("\n");
 	        }
 	}
 }

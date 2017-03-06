@@ -2,7 +2,9 @@ package haibo.alogrithm;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,6 +31,7 @@ public class Train {
 	private File annotation;	//内容对应标注
 	private File labels;		//标签集
 	private File segments;		//分词结果
+	private File model;			//存储训练的模型
 
 	//mulan的输入
 	private File xmlFile;
@@ -45,11 +48,19 @@ public class Train {
 	private ArrayList<HashSet<Integer>> annotationFile;
 	private ArrayList<HashMap<String,Integer>> segmentFile;	
 
-	public Train(String content,String annotation,String labels){
-		this.content 	= new File(content);
-		this.annotation = new File(annotation);
-		this.labels	    = new File(labels);
-		
+	public Train(String content,String annotation,String labels,String modelName){
+		try {
+			this.content 	= new File(content);
+			this.annotation = new File(annotation);
+			this.labels	    = new File(labels);
+			
+			String path = Util.MODEL+modelName+".model";
+			this.model 		= new File(path);		//存储数据模型
+			if(this.model.exists()) this.model.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		annotationFile = new ArrayList<HashSet<Integer>>();
 		segmentFile	   = new ArrayList<HashMap<String,Integer>>();
 		
@@ -58,7 +69,7 @@ public class Train {
 		//从labels文件生成xml文件作为mulan的输入
 		createXmlFile();
 		//训练
-		//train();
+		train();
 	}
 
 	//生成存储标签信息的xml文件
@@ -133,7 +144,6 @@ public class Train {
 	//统计labels和训练集标注结果的相关信息
 	private void collectLabelInfo() {
 		labelMap = new HashMap<>();
-		
 		try {
 			Scanner in = new Scanner(annotation);
 			while(in.hasNextInt()){
@@ -152,14 +162,18 @@ public class Train {
 		}
 		
 		try{
-			File labelMapFile = new File("./data/labelStatistic.txt");
-			if(!labelMapFile.exists()) labelMapFile.createNewFile();
-			PrintWriter out = new PrintWriter(labelMapFile);
+			HashMap<Integer,String> mapLabel = new HashMap<>();	//存储标签标号和名称
+			Scanner inla = new Scanner(labels);
+			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(Util.LABELSTA));
 			
-			for(int key : labelMap.keySet())
-				out.println(key+"    "+labelMap.get(key).intValue());
+			int labelIndex = 1;
+			while(inla.hasNextLine()){
+				mapLabel.put(labelIndex++,inla.nextLine().trim());
+			}
+			inla.close();
+			
+			out.writeObject(mapLabel);
 			out.close();
-			
 		}catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -179,26 +193,26 @@ public class Train {
 		return wordSeg.getTermMap();
 	}
 
+	//训练
 	private void train() {
 
-        MultiLabelInstances dataset = null;
+		MultiLabelInstances dataset = null;
 		try {
 			dataset = new MultiLabelInstances(Util.EXEARFF_FILE,Util.XML_FILE);
+			RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
+			//MLkNN learner2 = new MLkNN();
+
+			RAkEL model = new RAkEL(new LabelPowerset(new J48()));
+			model.build(dataset);
+			
+			//存储训练的模型
+			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(this.model));
+			out.writeObject(model);
+			out.close();	
 		} catch (InvalidDataFormatException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-        RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
-        //MLkNN learner2 = new MLkNN();
-
-        Evaluator eval = new Evaluator();
-        MultipleEvaluation results;
-
-        int numFolds = 1;
-        results = eval.crossValidate(learner1, dataset, numFolds);
-        System.out.println(results);
-        //results = eval.crossValidate(learner2, dataset, numFolds);
-        //System.out.println(results);
 	}
 }

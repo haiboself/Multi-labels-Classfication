@@ -32,7 +32,7 @@ public class GetLabels {
 				String s = matcher.group(0);
 				s = s.substring(s.lastIndexOf('>')+1,s.lastIndexOf('('));
 				
-				out.write(index++ +" "+s+"\n");
+				out.write(s+"\n");
 				System.out.println(s);
 			}
 		}
