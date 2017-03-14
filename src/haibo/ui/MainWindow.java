@@ -190,6 +190,7 @@ public class MainWindow extends JFrame implements ActionListener{
 
 	//用于获取训练所需要的文件路径
 	private void showTrainDialog() {
+		
 		//对话框面板内容
 		JLabel	   tip			= new JLabel("Project Name : ");
 		JTextField proName 		= new JTextField("exercise",15);	//项目名称
