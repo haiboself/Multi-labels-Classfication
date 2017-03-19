@@ -87,7 +87,7 @@ public class Annotate {
 	private void mark() throws Exception {
 	        //读取数据模型
 	        ObjectInputStream inModel = new ObjectInputStream(new FileInputStream(Util.MODEL+modelName));
-	        RAkEL model = (RAkEL) inModel.readObject();
+	        RandomKLabelSets model = (RandomKLabelSets) inModel.readObject();
 	        inModel.close();
 
 	        String unlabeledFilename = "./data/test/birds-test.arff";

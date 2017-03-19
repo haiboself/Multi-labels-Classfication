@@ -113,5 +113,31 @@ public class Util {
 		}
 		return null;
 	}
+	
+	//生成存储标签信息的xml文件
+	public static void createXmlFile(){
+		File xmlFile = new File(Util.XML_FILE);
+
+		//创建xml文件
+		try {
+			if(!xmlFile.exists())
+				xmlFile.createNewFile();
+			PrintWriter out = new PrintWriter(xmlFile);
+
+			out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
+			out.write("<labels xmlns=\"http://mulan.sourceforge.net/labels\">\n");
+			for(int i=1;i<=Util.LABELSNUM;i++)
+				out.write("<label name=\"label"+i+"\"></label>\n");
+			out.write("</labels>\n");
+
+			out.close();
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+
+	}
+
 
 }

@@ -34,7 +34,11 @@ import haibo.alogrithm.Util;
  * 
  * @author haiboself
  * 2017-03-01
- * 这是程序的主界面
+ * 这是程序的主界面,程序入口.主要是程序的UI界面的实现,不牵扯程序背后的算法和逻辑
+ * 程序的功能包括:
+ * 1:进行数据模型训练并保存训练的模型,可以重复读取模型,避免重复训练. 
+ * 2:进行知识点标注,如果没有数据模型,要先进行训练.未标注的数据可以来自文件和UI上的未标记文本区域. 
+ * 3:标注结果将被显示在UI上的标记结果文本区域,可以选择保存标注结果到指定文件.
  */
 
 public class MainWindow extends JFrame implements ActionListener{

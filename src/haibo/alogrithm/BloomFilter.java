@@ -14,7 +14,7 @@ import mulan.evaluation.Evaluator;
 import mulan.evaluation.MultipleEvaluation;
 import weka.classifiers.trees.J48;
 
-//布隆过滤器
+//布隆过滤器,用于判断一个值是否包含在一个集合当中
 public class BloomFilter {
 	private static final int DEFAULT_SIZE = 2 << 24;//布隆过滤器的比特长度
 	private static final int[] seeds = {3,5,7,11,13,31,37,38};

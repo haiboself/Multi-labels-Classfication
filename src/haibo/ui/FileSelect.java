@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+//从磁盘中选择未标记的txt文件.
 public final class FileSelect extends JPanel{
 	private JLabel name;
 	private JTextField content;

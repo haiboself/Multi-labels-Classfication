@@ -23,8 +23,8 @@ import weka.classifiers.trees.J48;
 /**
  * 
  * @author haiboself
- * 训练分类器
- * 采用mulan
+ * 训练多标签分类器
+ * 
  */
 public class Train {
 	private File content;		//训练集内容
@@ -34,8 +34,8 @@ public class Train {
 	private File model;			//存储训练的模型
 
 	//mulan的输入
-	private File xmlFile;
-	private File arffFile;
+	//private File xmlFile;
+	//private File arffFile;
 	
 	private ArrayList<Term> IGZ; //存储最终选择的特征向量
 	
@@ -67,36 +67,12 @@ public class Train {
 		//从训练集文件生成arff文件作为mulan的输入
 		createArffFile();
 		//从labels文件生成xml文件作为mulan的输入
-		createXmlFile();
-		//训练
+		Util.createXmlFile();
+		//训练Random k-labelsets分类器
 		train();
 	}
 
-	//生成存储标签信息的xml文件
-	private void createXmlFile(){
-		File xmlFile = new File(Util.XML_FILE);
-
-		//创建xml文件
-		try {
-			if(!xmlFile.exists())
-				xmlFile.createNewFile();
-			PrintWriter out = new PrintWriter(xmlFile);
-
-			out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
-			out.write("<labels xmlns=\"http://mulan.sourceforge.net/labels\">\n");
-			for(int i=1;i<=Util.LABELSNUM;i++)
-				out.write("<label name=\"label"+i+"\"></label>\n");
-			out.write("</labels>\n");
-			
-			out.close();
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-
-	}
-
+	
 	//生成存储数据集信息的arff文件
 	private void createArffFile() {
 		//第一步进行分词
@@ -112,7 +88,7 @@ public class Train {
 		clearMemory();
 		//第五步生成arff文件
 		try {
-			arffFile = Util.ArffFile(Util.EXEARFF_FILE,Util.EXETRANSFER,IGZ.size());
+			Util.ArffFile(Util.EXEARFF_FILE,Util.EXETRANSFER,IGZ.size());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -128,7 +104,7 @@ public class Train {
 		segmentFile = null;
 	}
 
-	//根据锁选择的特征向量将文件内容抽象为向量表示。
+	//根据所选择的特征向量将文件内容抽象为向量表示。
 	private void transferTextToVector() {
 		Transfer transfer = new Transfer(termMap, annotationFile, segmentFile, IGZ,Util.EXETRANSFER);
 		transfer.transfer(Util.INSANENUM);
@@ -198,11 +174,11 @@ public class Train {
 
 		MultiLabelInstances dataset = null;
 		try {
+			//生成训练所需要的数据集
 			dataset = new MultiLabelInstances(Util.EXEARFF_FILE,Util.XML_FILE);
-			RAkEL learner1 = new RAkEL(new LabelPowerset(new J48()));
-			//MLkNN learner2 = new MLkNN();
 
-			RAkEL model = new RAkEL(new LabelPowerset(new J48()));
+			//训练RandomKLabelSets分类器
+			RandomKLabelSets model = new RandomKLabelSets(new LabelPowerset(new J48()));
 			model.build(dataset);
 			
 			//存储训练的模型
